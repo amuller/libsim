@@ -32,6 +32,16 @@
 		
 
 
+
+		<dependency>
+			<groupId>colt</groupId>
+			<artifactId>colt</artifactId>
+			<version>1.2.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+
   </dependencies>
 
 		
