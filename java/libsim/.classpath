@@ -7,5 +7,6 @@
       <attribute value="jar:file:/home/amuller/.m2/repository/junit/junit/4.2/junit-4.2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/simMachines/R01/1.0/R01-1.0.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 </classpath>
