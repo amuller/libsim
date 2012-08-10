@@ -14,7 +14,7 @@ import com.diapai.ramiel.exception.RAException;
  * Subclasses need to implement the store, load and clone methods described below. 
  * @author amuller
  */
-public abstract class EasyRA<N extends Comparable<N>>  implements RA<N> , Storable{
+public abstract class AbstractByteArray<N extends Comparable<N>>  implements RA<N> , Storable{
 
 	@Override
 	public void store(ByteBuffer buf) throws RAException {

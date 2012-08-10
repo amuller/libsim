@@ -22,6 +22,12 @@
       <scope>test</scope>
     </dependency>
 		
+		<dependency>
+			<groupId>colt</groupId>
+			<artifactId>colt</artifactId>
+			<version>1.2.0</version>
+			<scope>compile</scope>
+		</dependency>
 
     <dependency>
       <groupId>simMachines</groupId>
@@ -30,6 +36,8 @@
       <scope>test</scope>
     </dependency>
 		
+
+
 
 
   </dependencies>
