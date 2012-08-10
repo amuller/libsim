@@ -4,6 +4,7 @@ import com.diapai.ramiel.RA;
 import com.diapai.ramiel.exception.RAException;
 
 public class Leven extends AbstractByteArray<Integer> {
+	
 	protected String str;
 	
 	public Leven(){
