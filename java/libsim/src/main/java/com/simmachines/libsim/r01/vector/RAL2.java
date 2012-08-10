@@ -22,17 +22,6 @@ public class RAL2 extends AbstractVector{
 		super(vector);
 	}
 
-	@Override
-	public int hashCode(){
-		return super.hashCode();
-	}
-	
-	@Override
-	public boolean equals(Object o){
-		return super.equals(o);
-	}
-	
-	
 	/**
 	 * Clone must be implemented by all classes. 
 	 */

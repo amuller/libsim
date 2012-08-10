@@ -1,6 +1,6 @@
 package com.simmachines.libsim.asserts;
 /**
- *  
+ * Assert utilities that simplify 
  * @author amuller
  */
 public class Asserts {
