@@ -25,7 +25,7 @@ public class TestL2 {
 	}
 	
 	@Test
-	public void test6() {
+	public void test4() {
 		double[] v1 = new double[] {20, 30, 1000, 200, 3, 50};
 		double[] v2 = new double[] {10, 100, 500, 10, 1, 250};
 		double res = L2.distance(v1, v2);
