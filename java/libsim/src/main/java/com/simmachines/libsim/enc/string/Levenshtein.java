@@ -10,7 +10,14 @@ package com.simmachines.libsim.enc.string;
  * 
  */
 public class Levenshtein {
-
+	
+	
+	/**
+     * Calculates the Levenshtein distance
+     * @param str1 first sequence of characters
+     * @param str2 second sequence of characters
+     * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
+     */ 
 	public static int distance(int[] str1, int[] str2) {
 
 		int d[][];
