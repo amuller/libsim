@@ -1,11 +1,10 @@
 package com.simmachines.libsim.enc.string;
 
 /**
- * [Levenshtein distance]<p> 
- * :: Compares the similarity between two strings based on edit operations.<p>
- * [Reference]<p>
- * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer | 2009 <p>
- * (11.1 Distances on General Strings :: P.202)  
+ * [Levenshtein distance]
+ * <p>
+ * @see com.simmachines.libsim.r01.vector.RALevenshtein
+ * @see <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Wikipedia Article</a>
  * 
  * @author Arnoldo J. Muller Molina
  * 
@@ -80,8 +79,5 @@ public class Levenshtein {
 		return mi;
 
 	}
-	
-	
-	
 
 }
