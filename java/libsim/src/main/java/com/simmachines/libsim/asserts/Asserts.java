@@ -1,9 +1,13 @@
 package com.simmachines.libsim.asserts;
+
+
+
 /**
  * Assert utilities that simplify 
  * @author amuller
  */
 public class Asserts {
+	
 	
 	/**
 	 * If exp is false will throw an exception
