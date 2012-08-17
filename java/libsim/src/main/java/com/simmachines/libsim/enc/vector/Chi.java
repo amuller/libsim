@@ -1,7 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
 import com.simmachines.libsim.asserts.Asserts;
-import com.simmachines.libsim.common.CommunStats;
+import com.simmachines.libsim.common.CommonStats;
 
 /**
  * [Chi distance]
@@ -25,8 +25,8 @@ public class Chi {
 	 */
 	public static double distance(double[] o1, double[] o2) {
 		Asserts.validate(o1.length == o2.length, "Lengths must match");
-		double mean_v1 = CommunStats.mean(o1);
-		double mean_v2 = CommunStats.mean(o2);
+		double mean_v1 = CommonStats.mean(o1);
+		double mean_v2 = CommonStats.mean(o2);
 		double cons = (mean_v1 + mean_v2)
 				/ (o1.length * (mean_v1 * mean_v2) * (mean_v1 * mean_v2));
 		double res = 0;
