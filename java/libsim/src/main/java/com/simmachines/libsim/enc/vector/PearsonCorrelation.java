@@ -1,5 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.common.CommonStats;
+
 /**
  * [PearsonCorrelation distance]
  * <p>
@@ -11,22 +13,6 @@ package com.simmachines.libsim.enc.vector;
 
 public class PearsonCorrelation {
 	
-	
-	
-	
-	/**
-	 * Receives a double vector and calculates the vector's mean value.
-	 * @param v vector received.
-	 * @return mean value.
-	 */
-	
-	public static double Mean(double v[]){ 
-        double sum=0;
-		for(int i=0;i<v.length;i++){
-            sum+=v[i];
-        }
-		return sum/v.length;
-    }
 	
 	
 	/**
@@ -55,8 +41,8 @@ public class PearsonCorrelation {
 
 	public static double distance(double v1[],double v2[]){
 	    double sum=0;
-		double meanV1=Mean(v1);
-		double meanV2=Mean(v2);
+		double meanV1=CommonStats.mean(v1);
+		double meanV2=CommonStats.mean(v2);
 		for(int i=0;i<v1.length;i++){
 			sum+=(v1[i]-meanV1)*(v2[i]-meanV2);
 		}
