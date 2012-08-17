@@ -28,7 +28,7 @@ public class Chi {
 		double mean_v1 = CommonStats.mean(o1);
 		double mean_v2 = CommonStats.mean(o2);
 		double cons = (mean_v1 + mean_v2)
-				/ (o1.length * (mean_v1 * mean_v2) * (mean_v1 * mean_v2));
+				/ (((double)o1.length) * (mean_v1 * mean_v2) * (mean_v1 * mean_v2));	//casting (double) a o1.length
 		double res = 0;
 		int i = 0;
 		while (i < o1.length) {
