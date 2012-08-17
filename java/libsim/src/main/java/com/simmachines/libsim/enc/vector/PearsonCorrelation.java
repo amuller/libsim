@@ -30,10 +30,10 @@ public class PearsonCorrelation {
 	
 	
 	/**
-	 * Receives a double vector and its mean value, and calculates the sumatory: \( \sum (a_i-\overline{a})^2 \)
-	 * @param v vector receved.
+	 * Receives a double vector and its mean value, and calculates the summatory: \( \sum (a_i-\overline{a})^2 \)
+	 * @param v vector received.
 	 * @param mean mean value of v.
-	 * @return sumatory result
+	 * @return summatory result
 	 */
 	
 	public static double sumDenom(double v[],double mean){   
