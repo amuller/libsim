@@ -1,5 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
+import java.nio.ByteBuffer;
+
 import com.diapai.ramiel.RA;
 import com.simmachines.libsim.enc.vector.Chi;
 import com.simmachines.libsim.r01.abst.AbstractVector;
@@ -62,12 +64,16 @@ public class RAChi extends AbstractVector{
 				return new RAChi(cloneHelper());
 		}
 		
+		
+		
+		
 		/** Calculates the Chi distance between this and
 		 *  @param other sequence of doubles
 		 *  @return The minimum number of inserts, deletes and renames required to convert one sequence of symbols into the other.
 		 */ 
 		@Override
 				public Double distance(RA<Double> other) {
+			
 				return Double.valueOf(Chi.distance(super.getVector(),
 						((AbstractVector) other).getVector()));
 		}

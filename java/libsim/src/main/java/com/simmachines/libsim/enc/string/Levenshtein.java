@@ -39,6 +39,7 @@ public class Levenshtein {
 		if (m == 0) {
 			return n;
 		}
+		// initialize dynamic programming matrix. 
 		d = new int[n + 1][m + 1];
 
 		for (i = 0; i <= n; i++) {
@@ -56,13 +57,13 @@ public class Levenshtein {
 			for (j = 1; j <= m; j++) {
 
 				t_j = t[j - 1];
-
+				// cost values 
 				if (s_i == t_j) {
 					cost = 0;
 				} else {
 					cost = 1;
 				}
-
+				// update dp matrix 
 				d[i][j] = min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1]
 						+ cost);
 
