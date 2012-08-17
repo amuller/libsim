@@ -48,6 +48,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * 
  */
 public class RALevenshtein extends AbstractIntVector {
+	
 	/**
 	 * Default constructor required by R-01
 	 */
