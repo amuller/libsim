@@ -1,5 +1,14 @@
 package com.simmachines.libsim.enc.vector;
 
+/**
+ * [PearsonCorrelation distance]
+ * <p>
+ * :: The Pearson Correlation is a measure of the linear dependence between two variables.
+ * <p>
+ * @see com.simmachines.libsim.enc.vector.PearsonCorrelation;
+ * @author  Jose Daniel Salazar-Vargas
+ */ 
+
 public class PearsonCorrelation {
 	
 	
@@ -11,7 +20,7 @@ public class PearsonCorrelation {
 	 * @return mean value.
 	 */
 	
-	public static double Prom(double v[]){ 
+	public static double Mean(double v[]){ 
         double sum=0;
 		for(int i=0;i<v.length;i++){
             sum+=v[i];
@@ -21,16 +30,16 @@ public class PearsonCorrelation {
 	
 	
 	/**
-	 * Receives a double vector and calculates the sumatories (individually) in the denominator's square-roots.
+	 * Receives a double vector and its mean value, and calculates the sumatory: \( \sum (a_i-\overline{a})^2 \)
 	 * @param v vector receved.
-	 * @param prom mean value of v.
+	 * @param mean mean value of v.
 	 * @return sumatory result
 	 */
 	
-	public static double sumDenom(double v[],double prom){   
+	public static double sumDenom(double v[],double mean){   
         double sum=0;
         for(int i=0;i<v.length;i++){
-        	 sum+=Math.pow((v[i]-prom), 2);
+        	 sum+=Math.pow((v[i]-mean), 2);
         }
         return sum;
     }
@@ -46,12 +55,12 @@ public class PearsonCorrelation {
 
 	public static double distance(double v1[],double v2[]){
 	    double sum=0;
-		double promV1=Prom(v1);
-		double promV2=Prom(v2);
+		double meanV1=Mean(v1);
+		double meanV2=Mean(v2);
 		for(int i=0;i<v1.length;i++){
-			sum+=(v1[i]-promV1)*(v2[i]-promV2);
+			sum+=(v1[i]-meanV1)*(v2[i]-meanV2);
 		}
-		return 1-(sum/Math.sqrt(sumDenom(v1,promV1)*sumDenom(v2,promV2)));
+		return 1-(sum/Math.sqrt(sumDenom(v1,meanV1)*sumDenom(v2,meanV2)));
     }
 
 }

@@ -10,8 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * [Brief Description]
  * <p>
- * The Pearson Correlation (or by its full name, Pearson product-moment correlation linear coefficient)
- * is a measure of the correlation (linear dependence) between two variables X and Y, giving a value between +1 and -1 inclusive. The dissimilarity (1-s) is called the Pearson Correlation distance, giving a value between 0 and 2 inclusive.
+ * The Pearson Correlation (or by its full name, Pearson product-moment correlation linear coefficient) is a measure of the correlation (linear dependence) between two variables X and Y, giving a value between +1 and -1 inclusive. The dissimilarity (1-s) is called the Pearson Correlation distance, giving a value between 0 and 2 inclusive.
  * <p>
  * [Definition]
  * <p>
