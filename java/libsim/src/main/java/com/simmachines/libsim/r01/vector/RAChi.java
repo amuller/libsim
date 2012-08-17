@@ -13,15 +13,8 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * The Chi distance... 
  * <p>
  * [Definition]
- * {@code
- <latex>
- 
- The Chi distance between two Vectors <math>a, b</math> is given by <math>\operatorname{Chi_{a,b}(|a|,|b|)</math> where
- 
- :<math>latex-formula</math>
- 
- </latex>
- * }
+ * <p>
+ The Chi distance between two Vectors \(a, b \) is given by \( \operatorname{Chi_{a,b}(|a|,|b|) \) where: 
  * <p>
  * [Reference]
  * <p>
@@ -36,6 +29,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * 
  */
 public class RAChi extends AbstractVector{
+	
 		/** 
 		 * Default constructor required by R-01
 		 */

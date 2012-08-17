@@ -19,19 +19,15 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * [Definition]
  * <p>
- * {@code <latex>
  * 
- * 
- * Mathematically, the Levenshtein distance between two strings <math>a,
- * b</math> is given by <math>\operatorname lev}_{a,b}(|a|,|b|)</math> where
- * 
- * :<math>\qquad\operatorname{lev}_{a,b}(i,j) = \begin{cases} 0 &, i=j=0 \\ i &,
+ * Mathematically, the Levenshtein distance between two strings \(a, b\)  is given by \( \operatorname{lev}_{a,b}(|a|,|b|) \) where
+ * <p>
+ * \( \qquad\operatorname{lev}_{a,b}(i,j) = \begin{cases} 0 &, i=j=0 \\ i &,
  * j = 0 \land i > 0 \\ j &, i = 0 \land j > 0 \\ \min \begin{cases}
  * \operatorname{lev}_{a,b}(i-1,j) + 1 \\ \operatorname{lev}_{a,b}(i,j-1) + 1 \\
  * \operatorname{lev}_{a,b}(i-1,j-1) + [a_i \neq b_j] \end{cases} &, \text{
- * else} \end{cases}</math>
+ * else} \end{cases} \)
  * 
- * </latex> }
  * <p>
  * [Reference]
  * <p>
