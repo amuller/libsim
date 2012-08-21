@@ -34,7 +34,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer |
  * 2009
  * <p>
- * | 11.1 :: Distances on General Strings :: P.202 |
+ * | 11.1 :: Distances on General Strings :: P. 202 |
  * <p>
  * 
  * @see <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Wikipedia
