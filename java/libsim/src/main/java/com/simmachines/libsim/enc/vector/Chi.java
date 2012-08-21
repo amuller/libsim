@@ -1,30 +1,38 @@
 package com.simmachines.libsim.enc.vector;
 
-import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
-/**
- * [Chi distance]
- * <p>
- * :: Receives two double vectors and calculates the chi square distance
- * <p>
- * 
- * @see com.simmachines.libsim.enc.vector.Chi;
- * @author Juan Francisco Quesada-Brizuela author
- */
+
+
 public class Chi {
 
 	/**
-	 * Calculates the Chi distance
+	 * [Chi distance]
+	 * <p>
+	 * :: Receives two double vectors and calculates the chi square distance
+	 * <p>
+	 * [Brief Description]
+	 * <p>
+	 * The Chi distance... 
+	 * <p>
+	 * [Definition]
+	 * <p>
+	 The Chi distance between two Vectors \(a, b \) is given by \( \operatorname{Chi_{a,b}(|a|,|b|) \) where: 
+	 * <p>
+	 * [Reference]
+	 * <p>
+	 * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer |
+	 * 2009
+	 * <p>
+	 * | 17.2 :: Relatives of Euclidean distance :: P.303 |
+	 * <p>
+	 * @see <a href="http://wikipedia-article">Wikipedia Article</a>
 	 * 
-	 * @param o1
-	 *            vector number 1
-	 * @param o2
-	 *            vector number 2
-	 * @return The chi square distance
+	 * @author Juan Francisco Quesada-Brizuela author
+	 * 
 	 */
+	
 	public static double distance(double[] o1, double[] o2) {
-		Asserts.validate(o1.length == o2.length, "Lengths must match");
 		double mean_v1 = CommonStats.mean(o1);
 		double mean_v2 = CommonStats.mean(o2);
 		double cons = (mean_v1 + mean_v2)

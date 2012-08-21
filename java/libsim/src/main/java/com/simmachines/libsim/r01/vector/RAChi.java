@@ -1,35 +1,20 @@
 package com.simmachines.libsim.r01.vector;
 
-import java.nio.ByteBuffer;
 
 import com.diapai.ramiel.RA;
 import com.simmachines.libsim.enc.vector.Chi;
 import com.simmachines.libsim.r01.abst.AbstractVector;
+
 /**
  * [Chi distance]
  * <p>
  * :: Receives two double vectors and calculates the chi square distance
  * <p>
- * [Brief Description]
- * <p>
- * The Chi distance... 
- * <p>
- * [Definition]
- * <p>
- The Chi distance between two Vectors \(a, b \) is given by \( \operatorname{Chi_{a,b}(|a|,|b|) \) where: 
- * <p>
- * [Reference]
- * <p>
- * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer |
- * 2009
- * <p>
- * | 17.2 :: Relatives of Euclidean distance :: P.303 |
- * <p>
- * @see <a href="http://wikipedia-article">Wikipedia Article</a>
  * 
- * @author Juan Francisco Quesada-Brizuela author
- * 
+ * @see com.simmachines.libsim.enc.vector.Chi;
+ * @author Juan Francisco Quesada-Brizuela
  */
+
 public class RAChi extends AbstractVector{
 	
 		/** 
