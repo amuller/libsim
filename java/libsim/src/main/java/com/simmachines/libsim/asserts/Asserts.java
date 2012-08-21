@@ -1,5 +1,7 @@
 package com.simmachines.libsim.asserts;
 
+import com.simmachines.libsim.common.CommonChecks;
+
 
 
 /**
@@ -19,5 +21,19 @@ public class Asserts {
 			throw new IllegalArgumentException(msg);
 		}
 	}
+	
+	
+	public static void assertEquals(double a, double b){
+		validate(CommonChecks.equals(a, b),"The input values are not equals within the precision range");
+	}
+	
+	public static void assertLThanZero(double v[]){
+		validate(CommonChecks.lThanZero(v),"The input vector has at least one entry with a value less than zero");
+	}
+	
+	public static void assertHasZero(double v[]){
+		validate(CommonChecks.hasZero(v),"The input vector has at least one entry with a value equals to zero");
+	}
 
 }
+
