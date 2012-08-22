@@ -66,5 +66,49 @@ public class CommonChecks {
 		}
 		return false;
 	}
+	
+	/**
+	 * Checks if a number is greater or equal than a given value.
+	 * @param number number to check.
+	 * @param value comparison parameter.
+	 * @return true if the number is greater or equal than the value, false otherwise.
+	 * @see CommonChecks.greaterThanValue
+	 * @see CommonChecks.equalToValue
+	 */
+	
+	public static boolean greaterOrEqualThanValue(double number, double value){
+		if(greaterThanValue(number,value)||equalToValue(number,value)){
+			return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * Checks if a number is greater than a given value.
+	 * @param number number to check.
+	 * @param value comparison parameter.
+	 * @return true if the number is greater than the value, false otherwise.
+	 */
+	
+	public static boolean greaterThanValue(double number, double value){
+		if(number>value){
+			return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * Checks if a number is equal to a given value.
+	 * @param number number to check.
+	 * @param value comparison parameter.
+	 * @return true if the number is equal to the value, false otherwise.
+	 */
+	
+	public static boolean equalToValue(double number, double value){
+		if(number==value){
+			return true;
+		}
+		return false;
+	}
 
 }

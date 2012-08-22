@@ -68,6 +68,19 @@ public class Asserts {
 	public static void assertHasNoZero(double v[]){
 		validate(CommonChecks.hasNoZero(v),"The input vector has at least one entry with a value equals to zero");
 	}
+	
+	
+	/**
+	 * Verifies if a number is greater than a given value, if it isn't, throws an exception with a custom message.
+	 * @param number number to check.
+	 * @param value comparison parameter.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterOrEqualThanValue
+	 */
+	
+	public static void assertGreaterOrEqualThanValue(double number, double value){
+		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than the given value");
+	}
 
 }
 
