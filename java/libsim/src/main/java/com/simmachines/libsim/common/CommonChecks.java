@@ -28,9 +28,9 @@ public class CommonChecks {
 	 * @return true if there is at least one \( v_i < 0 \), false otherwise
 	 */
 
-	public static boolean lessThanZero(double v[]){
+	public static boolean greaterThanZero(double v[]){
 		for(int i=0;i<v.length;i++){
-			if(v[i]<0){
+			if(v[i]<=0){
 				return false;
 			}
 		}

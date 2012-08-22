@@ -16,9 +16,9 @@ import com.simmachines.libsim.common.CommonStats;
  * <p>
  
  
- The LP distance between two Vectors (\ a, b \) is given by \( \operatorname{l_p}_{a,b}(|a|,|b|) \) where:
+ The LP distance between two Vectors \( a, b \) is given by \( \operatorname{l_p}_{a,b}(|a|,|b|) \) where:
  <p>
- \( (\sum\limits_{i=1}^n |x_i-y_i|^p)^{1/p}  \)
+ \( \operatorname{l_p}_{a,b}=(\sum\limits_{i=1}^n |a_i-b_i|^p)^{1/p}  \)
  
  
  * 
@@ -39,7 +39,7 @@ import com.simmachines.libsim.common.CommonStats;
 public class LP {
 	
 	/**
-	 * Received two double vectors and one double value and calculates the LP distance
+	 * Received two double vectors and one double value and calculates the LP distance.
 	 * @param v1 vector number 1.
 	 * @param v2 vector number 2.
 	 * @param p indicates the norm in which the metric is going to be evaluated.

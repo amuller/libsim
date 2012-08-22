@@ -48,14 +48,14 @@ public class Asserts {
 	}
 	
 	/**
-	 * Verifies if the vector has at least one entry with a negative value, if has it, throws an exception with a custom message.
+	 * Verifies if the vector has at least one entry with a negative or zero value, if has it, throws an exception with a custom message.
 	 * @param v vector received.
 	 * @see Asserts.validate
-	 * @see CommonChecks.lessThanZero
+	 * @see CommonChecks.greaterThanZero
 	 */
 	
-	public static void assertLessThanZero(double v[]){
-		validate(CommonChecks.lessThanZero(v),"The input vector has at least one entry with a value less than zero");
+	public static void assertGreaterThanZero(double v[]){
+		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
 	
 	/**
@@ -79,7 +79,7 @@ public class Asserts {
 	 */
 	
 	public static void assertGreaterOrEqualThanValue(double number, double value){
-		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than the given value");
+		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than "+value);
 	}
 
 }
