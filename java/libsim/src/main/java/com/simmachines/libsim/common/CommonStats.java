@@ -1,5 +1,8 @@
 package com.simmachines.libsim.common;
 
+import java.util.HashSet;
+import java.util.Iterator;
+
 import hep.aida.bin.StaticBin1D;
 
 public class CommonStats {
@@ -30,6 +33,21 @@ public class CommonStats {
 			value*=-1;
 		}
 		return value;
+	}
+	
+	/**
+	 * Calculates the Euclidean norm (length) of a Set.
+	 * @param c Set received.
+	 * @return the Euclidean Norm (length).
+	 */
+	
+	public static double norm(HashSet<Double> c){
+		double sum = 0;
+		Iterator<Double> iter = c.iterator();
+		while(iter.hasNext()){
+			sum += Math.pow(iter.next().doubleValue(), 2);
+		}
+		return Math.sqrt(sum);
 	}
 	
 }
