@@ -1,13 +1,12 @@
-package com.simmachines.libsim.enc.vector;
+package com.simmachines.libsim.enc.set;
 
 import java.util.HashSet;
 import java.util.Iterator;
 
-import com.simmachines.libsim.common.Set;
 
-public class BitSet implements Set{
+public class HashBitSet implements Set{
 	
-	public BitSet(){
+	public HashBitSet(){
 		super();
 	}
 	
