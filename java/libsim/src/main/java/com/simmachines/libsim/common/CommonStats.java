@@ -1,7 +1,5 @@
 package com.simmachines.libsim.common;
 
-import java.util.HashSet;
-import java.util.Iterator;
 
 import hep.aida.bin.StaticBin1D;
 
@@ -36,18 +34,40 @@ public class CommonStats {
 	}
 	
 	/**
-	 * Calculates the Euclidean norm (length) of a Set.
-	 * @param c Set received.
-	 * @return the Euclidean Norm (length).
+	 * Calculates the Euclidean norm of a vector.
+	 * @param v vector received.
+	 * @return the Euclidean norm.
 	 */
 	
-	public static double norm(HashSet<Double> c){
+	public static double norm(double[] v){
 		double sum = 0;
-		Iterator<Double> iter = c.iterator();
-		while(iter.hasNext()){
-			sum += Math.pow(iter.next().doubleValue(), 2);
+		for(int i=0;i<v.length;i++){
+			sum += Math.pow(v[i], 2);
 		}
 		return Math.sqrt(sum);
+	}
+	
+	
+	/**
+	 * Receives three integer numbers and calculates which one is the least.
+	 * @param a first integer number.
+	 * @param b second integer number.
+	 * @param c third integer number.
+	 * @return the least number out of the three.
+	 */
+	
+	public static int min(int a, int b, int c) {
+		int mi;
+
+		mi = a;
+		if (b < mi) {
+			mi = b;
+		}
+		if (c < mi) {
+			mi = c;
+		}
+		return mi;
+
 	}
 	
 }

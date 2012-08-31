@@ -52,9 +52,9 @@ public class RAChi extends AbstractVector{
 		
 		
 		
-		/** Calculates the Chi distance between this and
-		 *  @param other sequence of doubles
-		 *  @return The minimum number of inserts, deletes and renames required to convert one sequence of symbols into the other.
+		/** Calculates the Chi distance between this and other RAChi object
+		 *  @param other RAChi object
+		 *  @return Chi distance
 		 */ 
 		@Override
 				public Double distance(RA<Double> other) {

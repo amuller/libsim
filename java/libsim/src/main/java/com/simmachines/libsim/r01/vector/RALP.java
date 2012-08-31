@@ -85,9 +85,9 @@ public class RALP extends AbstractVector{
 		}
 		
 		
-		/** Calculates the LP distance between this and other RALP vector
+		/** Calculates the LP distance between this and other RALP object
 		 *  @param other RALP object.
-		 *  @return the LP distance.
+		 *  @return LP distance.
 		 */ 
 		
 		@Override

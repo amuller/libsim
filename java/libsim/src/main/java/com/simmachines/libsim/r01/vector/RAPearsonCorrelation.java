@@ -21,13 +21,18 @@ public class RAPearsonCorrelation extends AbstractVector{
 				
 		}
 		
-		public RAPearsonCorrelation(double[] vector){
-				super(vector);
+		/**
+		 * Copy constructor
+		 * @param obj vector to copy
+		 */
+		
+		public RAPearsonCorrelation(double[] obj){
+				super(obj);
 		}
 		
 		/**
-		 * Parse a vector from a tab separated list of values. 
-		 * @param line
+		 * Parse a vector from a String
+		 * @param line String that contains an encoded version of the object. 
 		 */
 		public RAPearsonCorrelation(String line){
 				super(line);
@@ -35,14 +40,19 @@ public class RAPearsonCorrelation extends AbstractVector{
 		
 		
 		/**
-		 * Clone must be implemented by all classes. 
+		 * Clone must be implemented by all classes that implement RA. 
+		 * @see java.lang.Object#clone()
 		 */
 		@Override
 				public Object clone() {	
 				return new RAPearsonCorrelation(cloneHelper());
 		}
 		
-		
+		/**
+		 * Calculates the PearsonCorrelation distance between this and other RAPearsonCorrelation object.
+		 * @param other RAPearsonCorrelation object
+		 * @return PearsonCorrelation distance
+		 */
 		@Override
 				public Double distance(RA<Double> other) {
 				return PearsonCorrelation.distance(getVector(), ((RAPearsonCorrelation)other).getVector());

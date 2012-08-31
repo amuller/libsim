@@ -10,6 +10,11 @@ public class HashBitSet implements Set{
 		super();
 	}
 	
+	/**
+	 * Calculates the intersection between two sets.
+	 * @see com.simmachines.libsim.enc.set.Set.intersect
+	 */
+	
 	public HashSet<Double> intersect(HashSet<Double> c1,HashSet<Double> c2){
 		HashSet<Double> i = new HashSet<Double>();
 		Iterator<Double> iter = c2.iterator();
@@ -23,6 +28,12 @@ public class HashBitSet implements Set{
 		return i;
 	}
 	
+	
+	/**
+	 * Calculates the union between two sets.
+	 * @see com.simmachines.libsim.enc.set.Set.union
+	 */
+	
 	public HashSet<Double> union(HashSet<Double> c1,HashSet<Double> c2){
 		HashSet<Double> i = new HashSet<Double>();
 		Iterator<Double> iter = c1.iterator();
@@ -35,6 +46,12 @@ public class HashBitSet implements Set{
 		}
 		return i;
 	}
+	
+	
+	/**
+	 * Calculates difference between two sets.
+	 * @see com.simmachines.libsim.enc.set.Set.difference
+	 */
 	
 	public HashSet<Double> difference(HashSet<Double> c1,HashSet<Double> c2){
 		HashSet<Double> i = new HashSet<Double>();
