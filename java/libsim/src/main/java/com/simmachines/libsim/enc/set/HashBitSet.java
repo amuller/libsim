@@ -31,6 +31,12 @@ public class HashBitSet<O> implements Set{
 				res.add(x);
 			}
 		}
+		/*
+		for(O x : other){
+			if(set.contains(x)){
+				res.add(x);
+			}
+		}*/
 		return new HashBitSet<O>(res);
 	}
 	
