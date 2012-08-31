@@ -39,5 +39,9 @@ public interface Set extends Storable {
 	
 	public HashSet<Double> difference(HashSet<Double> c1,HashSet<Double> c2);
 	
+	/**
+	 * Deep copy of the set.  
+	 * @return A new, deep copied set.
+	 */
 	public Set deepCopy();
 }
