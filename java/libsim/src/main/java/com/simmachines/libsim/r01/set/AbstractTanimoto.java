@@ -8,6 +8,12 @@ public abstract class AbstractTanimoto extends AbstractSet {
 	
 	public Double distance(RA<Double> other){
 		//...
+		return null;
+	}
+	
+	
+	public Object clone(){
+		throw new UnsupportedOperationException();
 	}
 
 }

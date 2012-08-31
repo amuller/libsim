@@ -36,6 +36,8 @@ public abstract class AbstractSet implements RA<Double>{
 		set.store(buf);
 	}
 	
-	
+	public Object clone(){
+		throw new UnsupportedOperationException();
+	}
 	
 }
