@@ -16,7 +16,7 @@ public interface Set {
 	 * @return a set of all objects that are members of both A and B.
 	 */
 	
-	public HashSet<Double> intersect(HashSet<Double> c1,HashSet<Double> c2);
+	public Set  intersect(Set s1);
 	
 	
 	/**
