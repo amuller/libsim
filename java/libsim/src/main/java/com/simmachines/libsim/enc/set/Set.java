@@ -9,7 +9,7 @@ import com.diapai.ramiel.Storable;
  *
  */
 
-public interface Set extends Storable{
+public interface Set extends Storable {
 	
 	/**
 	 * Calculates the intersection between two sets.
@@ -38,4 +38,6 @@ public interface Set extends Storable{
 	 */
 	
 	public HashSet<Double> difference(HashSet<Double> c1,HashSet<Double> c2);
+	
+	public Set deepCopy();
 }

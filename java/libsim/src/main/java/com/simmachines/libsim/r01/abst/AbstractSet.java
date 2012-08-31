@@ -12,9 +12,7 @@ import com.simmachines.libsim.enc.set.Set;
 public abstract class AbstractSet<O extends Storable> implements Storable{
 	
 	protected Set set;
-	
-	
-	
+			
 	public AbstractSet() {
 		super();
 		set = getNewInstance();
