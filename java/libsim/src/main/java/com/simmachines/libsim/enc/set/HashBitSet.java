@@ -21,7 +21,7 @@ public class HashBitSet<O> implements Set{
 	 * @see com.simmachines.libsim.enc.set.Set.intersect
 	 */
 	
-	public HashSet<O> intersect(HashSet<O> other){
+	public HashBitSet<O> intersect(HashSet<O> other){
 		HashSet<O> res = new HashSet<O>();
 		Iterator<O> iter = other.iterator();
 		O x;
@@ -31,7 +31,7 @@ public class HashBitSet<O> implements Set{
 				res.add(x);
 			}
 		}
-		return res;
+		return new HashBitSet<O>(res);
 	}
 	
 	
