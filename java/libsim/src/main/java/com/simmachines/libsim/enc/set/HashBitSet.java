@@ -12,7 +12,7 @@ public class HashBitSet<O> implements Set{
 		super();
 	}
 	
-	public HashBitSet( HashSet<O> set){
+	public HashBitSet(HashSet<O> set){
 		this.set = set;
 	}
 	
@@ -26,7 +26,7 @@ public class HashBitSet<O> implements Set{
 		Iterator<O> iter = other.iterator();
 		O x;
 		while(iter.hasNext()){
-			x=iter.next();
+			x = iter.next();
 			if(set.contains(x)){
 				res.add(x);
 			}

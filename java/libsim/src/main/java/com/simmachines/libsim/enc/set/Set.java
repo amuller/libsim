@@ -2,12 +2,14 @@ package com.simmachines.libsim.enc.set;
 
 import java.util.HashSet;
 
+import com.diapai.ramiel.Storable;
+
 /**
  * The sets in the distance functions will be represented by this class.
  *
  */
 
-public interface Set {
+public interface Set extends Storable{
 	
 	/**
 	 * Calculates the intersection between two sets.
@@ -17,8 +19,7 @@ public interface Set {
 	 */
 	
 	public Set intersect(Set s1);
-	
-	
+
 	/**
 	 * Calculates the union between two sets.
 	 * @param c1 set number 1.
