@@ -40,4 +40,8 @@ public abstract class AbstractSet implements RA<Double>{
 		throw new UnsupportedOperationException();
 	}
 	
+	public Set cloneHelper(){
+		return set.deepCopy();
+	}
+	
 }
