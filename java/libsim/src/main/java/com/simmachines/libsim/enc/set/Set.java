@@ -35,8 +35,7 @@ public interface Set extends Storable {
 	 * @param c1 set number 1.
 	 * @param c2 set number 2.
 	 * @return a set of all members of c1 that are not members of c2.
-	 */
-	
+	 */	
 	public HashSet<Double> difference(HashSet<Double> c1,HashSet<Double> c2);
 	
 	/**

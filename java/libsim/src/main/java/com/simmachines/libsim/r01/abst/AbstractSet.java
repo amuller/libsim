@@ -4,12 +4,13 @@ import java.nio.ByteBuffer;
 import java.util.HashSet;
 import java.util.Iterator;
 
+import com.diapai.ramiel.RA;
 import com.diapai.ramiel.Storable;
 import com.diapai.ramiel.exception.RAException;
 import com.simmachines.libsim.enc.set.HashBitSet;
 import com.simmachines.libsim.enc.set.Set;
 
-public abstract class AbstractSet<O extends Storable> implements Storable{
+public abstract class AbstractSet implements RA<Double>{
 	
 	protected Set set;
 			
