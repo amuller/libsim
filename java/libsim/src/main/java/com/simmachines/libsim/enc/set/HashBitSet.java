@@ -4,10 +4,16 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 
-public class HashBitSet implements Set{
+public class HashBitSet<O> implements Set{
+	
+	private HashSet<O> set;
 	
 	public HashBitSet(){
 		super();
+	}
+	
+	public HashBitSet( HashSet<O> set){
+		this.set = set;
 	}
 	
 	/**
@@ -15,17 +21,17 @@ public class HashBitSet implements Set{
 	 * @see com.simmachines.libsim.enc.set.Set.intersect
 	 */
 	
-	public HashSet<Double> intersect(HashSet<Double> c1,HashSet<Double> c2){
-		HashSet<Double> i = new HashSet<Double>();
-		Iterator<Double> iter = c2.iterator();
-		Double x;
+	public HashSet<O> intersect(HashSet<O> other){
+		HashSet<O> res = new HashSet<O>();
+		Iterator<O> iter = other.iterator();
+		O x;
 		while(iter.hasNext()){
 			x=iter.next();
-			if(c1.contains(x)){
-				i.add(x);
+			if(set.contains(x)){
+				res.add(x);
 			}
 		}
-		return i;
+		return res;
 	}
 	
 	
