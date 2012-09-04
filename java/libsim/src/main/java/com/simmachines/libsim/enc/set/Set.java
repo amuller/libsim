@@ -1,7 +1,5 @@
 package com.simmachines.libsim.enc.set;
 
-import java.util.HashSet;
-
 import com.diapai.ramiel.Storable;
 
 /**
@@ -12,35 +10,37 @@ import com.diapai.ramiel.Storable;
 public interface Set extends Storable {
 	
 	/**
-	 * Calculates the intersection between two sets.
-	 * @param c1 set number 1.
-	 * @param c2 set number 2.
-	 * @return a set of all objects that are members of both A and B.
+	 * Calculates the intersection between this and other set.
+	 * @param s1 set received to operate along with this.
+	 * @return a set of all objects that are members of both this and s1.
 	 */
 	
 	public Set intersect(Set s1);
 
 	/**
-	 * Calculates the union between two sets.
-	 * @param c1 set number 1.
-	 * @param c2 set number 2.
-	 * @return a set of all objects that are a member of c1, or c2, or both.
+	 * Calculates the union between this and other set.
+	 * @param s1 set received to operate along with this.
+	 * @return a set of all objects that are a member of this, or s1, or both.
 	 */
 	
-	public HashSet<Double> union(HashSet<Double> c1,HashSet<Double> c2);
+	public Set union(Set s1);
 	
 	
 	/**
-	 * Calculates the difference between two sets.
-	 * @param c1 set number 1.
-	 * @param c2 set number 2.
-	 * @return a set of all members of c1 that are not members of c2.
+	 * Calculates the difference between this and other set.
+	 * @param s1 set that will be subtracted from this.
+	 * @return a set of all members of this that are not members of s1.
 	 */	
-	public HashSet<Double> difference(HashSet<Double> c1,HashSet<Double> c2);
+	public Set difference(Set s1);
 	
 	/**
 	 * Deep copy of the set.  
 	 * @return A new, deep copied set.
 	 */
 	public Set deepCopy();
+	
+	public int size();
+	
+	public boolean equals(Set s1);
+	
 }

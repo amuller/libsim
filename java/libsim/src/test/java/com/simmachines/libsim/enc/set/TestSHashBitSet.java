@@ -6,7 +6,7 @@ import java.util.Iterator;
 import org.junit.Test;
 
 
-public class TestHashBitSet {
+public class TestSHashBitSet {
 	
 	
 	public static void print(HashSet<Double> h){
@@ -17,10 +17,10 @@ public class TestHashBitSet {
 		System.out.println("----------------------");
 	}
 
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test1(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(1));
@@ -29,15 +29,16 @@ public class TestHashBitSet {
 		h2.add(new Double(3));
 		h2.add(new Double(4));
 		h2.add(new Double(5));
-		
-		print(hbs.intersect(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.intersect(s2)).getSet());
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test2(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(-93.24856));
@@ -46,15 +47,16 @@ public class TestHashBitSet {
 		h2.add(new Double(-872.169));
 		h2.add(new Double(-93.24856));
 		h2.add(new Double(4748.95));
-		
-		print(hbs.intersect(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.intersect(s2)).getSet());
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test3(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(1));
@@ -63,15 +65,16 @@ public class TestHashBitSet {
 		h2.add(new Double(3));
 		h2.add(new Double(4));
 		h2.add(new Double(5));
-		
-		print(hbs.union(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.union(s2)).getSet());
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test4(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(-93.24856));
@@ -80,15 +83,16 @@ public class TestHashBitSet {
 		h2.add(new Double(-872.169));
 		h2.add(new Double(-93.24856));
 		h2.add(new Double(4748.95));
-		
-		print(hbs.union(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.union(s2)).getSet());
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test5(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(1));
@@ -97,15 +101,16 @@ public class TestHashBitSet {
 		h2.add(new Double(3));
 		h2.add(new Double(4));
 		h2.add(new Double(5));
-		
-		print(hbs.difference(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.difference(s2)).getSet());
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	@Test
 	//jdsalazar
 	public void test6(){
-		HashBitSet hbs = new HashBitSet();
 		HashSet<Double> h1 = new HashSet<Double>();
 		HashSet<Double> h2 = new HashSet<Double>();
 		h1.add(new Double(-93.24856));
@@ -114,8 +119,9 @@ public class TestHashBitSet {
 		h2.add(new Double(-872.169));
 		h2.add(new Double(-93.24856));
 		h2.add(new Double(4748.95));
-		
-		print(hbs.difference(h1,h2));
+		SHashSet<Double> s1 = new SHashSet<Double>(h1);
+		SHashSet<Double> s2 = new SHashSet<Double>(h2);
+		print(((SHashSet<Double>)s1.difference(s2)).getSet());
 	}
 	
 }

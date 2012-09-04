@@ -63,11 +63,10 @@ public abstract class AbstractVector implements RA<Double> {
 	@Override
 	public boolean equals(Object other) {
 		return Arrays.equals(vector, ((AbstractVector) other).vector);
-	}
+	}    
 	
 	@Override
 	public void load(ByteBuffer buf) throws RAException {
-		
 		short size = buf.getShort();
 		int i = 0;
 		vector = new double[size];
