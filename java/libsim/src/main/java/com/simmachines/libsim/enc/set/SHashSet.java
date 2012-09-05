@@ -90,9 +90,9 @@ public class SHashSet<O extends Storable> implements Set{
 		int i = 0;
 		O x;
 		while(i < size){
-//			x = new O();
-//			x.load(buf);
-//			set.add(x);
+			x = new O();
+			x.load(buf);
+			set.add(x);
 			i++;
 		}
 		
@@ -156,6 +156,11 @@ public class SHashSet<O extends Storable> implements Set{
 	@SuppressWarnings("unchecked")
 	public boolean equals(Set s1){
 		return getSet().equals(((SHashSet<O>)s1).getSet());
+	}
+	
+	@Override
+	public int hashCode(){
+		return set.hashCode();
 	}
 
 }

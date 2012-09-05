@@ -52,4 +52,9 @@ public abstract class AbstractSet implements RA<Double>{
 		return set.equals(other);
 	}
 	
+	@Override
+	public int hashCode(){
+		return set.hashCode();
+	}
+	
 }

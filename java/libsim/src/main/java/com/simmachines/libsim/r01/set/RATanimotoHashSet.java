@@ -1,9 +1,10 @@
 package com.simmachines.libsim.r01.set;
 
+import com.diapai.ramiel.Storable;
 import com.simmachines.libsim.enc.set.SHashSet;
 import com.simmachines.libsim.enc.set.Set;
 
-public class RATanimotoHashSet<O> extends AbstractTanimoto {
+public class RATanimotoHashSet<O extends Storable> extends AbstractTanimoto {
 	
 	
 	public RATanimotoHashSet(){

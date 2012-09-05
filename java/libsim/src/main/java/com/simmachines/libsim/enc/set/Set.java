@@ -43,4 +43,7 @@ public interface Set extends Storable {
 	
 	public boolean equals(Set s1);
 	
+	@Override
+	public int hashCode();
+	
 }
