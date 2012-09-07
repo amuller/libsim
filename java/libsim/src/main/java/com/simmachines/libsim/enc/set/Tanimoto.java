@@ -45,7 +45,7 @@ public class Tanimoto {
 	 */
 	
 	public static double distance(Set s1,Set s2){
-		return 1-(s1.intersect(s2).size()/s1.union(s2).size());
+		return 1-(double)s1.intersect(s2).size()/(double)s1.union(s2).size();
 	}
 
 }

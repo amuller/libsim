@@ -3,22 +3,20 @@ package com.simmachines.libsim.r01.set;
 import com.simmachines.libsim.enc.set.SHashSetInt;
 import com.simmachines.libsim.enc.set.Set;
 
-
 /**
- * [Tanimoto distance]
+ * [CzekanowskyDice distance]
  * <p>
- * :: Is a statistic used for comparing the similarity and diversity of sample sets.
+ * :: The Dice coefficient, is a similarity measure over sets.
  * <p>
- * @see com.simmachines.libsim.enc.set.Tanimoto;
+ * @see com.simmachines.libsim.enc.set.CzekanowskyDice;
  * @author  Jose Daniel Salazar-Vargas
  */ 
+public class RACzekanowskyDiceHashSetInt extends AbstractCzekanowskyDice{
 
-public class RATanimotoHashSetInt extends AbstractTanimoto {
-	
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RATanimotoHashSetInt(){
+	public RACzekanowskyDiceHashSetInt(){
 		super();
 	}
 	
@@ -26,7 +24,7 @@ public class RATanimotoHashSetInt extends AbstractTanimoto {
 	 * Copy constructor
 	 * @param obj set to copy
 	 */
-	public RATanimotoHashSetInt(Set obj){
+	public RACzekanowskyDiceHashSetInt(Set obj){
 		super(obj);
 	}
 	
@@ -47,8 +45,7 @@ public class RATanimotoHashSetInt extends AbstractTanimoto {
 	 */
 	@Override
 	public Object clone(){
-		return new RATanimotoHashSetInt(cloneHelper());
+		return new RACzekanowskyDiceHashSetInt(cloneHelper());
 	}
-
-
+	
 }

@@ -28,52 +28,57 @@ public class SHashSetInt implements Set{
 	 * @see com.simmachines.libsim.enc.set.Set.intersect
 	 */
 	
-/*	public SHashSet<O> intersect(SHashSet<O> other){
-		HashSet<O> res = new HashSet<O>();
-		for(O x : other.getSet()){
+	@Override
+	public Set intersect(Set other) {
+		HashSet<Integer> res = new HashSet<Integer>();
+		for(Integer x : ((SHashSetInt)other).getSet()){
 			if(getSet().contains(x)){
 				res.add(x);
 			}
 		}
-		return new SHashSet<O>(res);
+		return new SHashSetInt(res);
 	}
-*/
 	
 	/**
 	 * Calculates the union between this and other set.
 	 * @see com.simmachines.libsim.enc.set.Set.union
 	 */
 	
-/*	public SHashSet<O> union(SHashSet<O> other){
-		HashSet<O> res = new HashSet<O>();
-		for(O x : getSet()){			
+	@Override
+	public Set union(Set other) {
+		HashSet<Integer> res = new HashSet<Integer>();
+		for(Integer x : getSet()){			
 			res.add(x);	
 		}
-		for(O x : other.getSet()){			
+		for(Integer x : ((SHashSetInt)other).getSet()){			
 			res.add(x);	
 		}
-		return new SHashSet<O>(res);
+		return new SHashSetInt(res);
 	}
-*/	
 	
 	/**
 	 * Calculates difference between this and other set.
 	 * @see com.simmachines.libsim.enc.set.Set.difference
 	 */
 	
-	
-/*	public SHashSet<O> difference(SHashSet<O> other){
-		HashSet<O> res = new HashSet<O>();
-		SHashSet<O> inters = intersect(other);
-		for(O x : getSet()){	
-			if(!inters.getSet().contains(x)){
+	@Override
+	public Set difference(Set other){
+		HashSet<Integer> res = new HashSet<Integer>();
+		Set inters = intersect(other);
+		for(Integer x : getSet()){	
+			if(!((SHashSetInt)inters).getSet().contains(x)){
 				res.add(x);
 			}
 		}
-		return new SHashSet<O>(res);
+		return new SHashSetInt(res);
 	}
-*/	
 	
+	
+	/**
+	 * Deep copy of the set.  
+	 * @return A new, deep copied set.
+	 * @see com.simmachines.libsim.enc.set.Set;
+	 */
 	public SHashSetInt deepCopy(){
 		HashSet<Integer> res = new HashSet<Integer>();
 		for(Integer x : getSet()){
@@ -81,6 +86,8 @@ public class SHashSetInt implements Set{
 		}
 		return new SHashSetInt(res);
 	}
+	
+	
 
 	@Override
 	public void load(ByteBuffer buf) throws RAException {
@@ -103,48 +110,22 @@ public class SHashSetInt implements Set{
 		
 	}
 
-	@Override
-	public Set intersect(Set other) {
-		HashSet<Integer> res = new HashSet<Integer>();
-		for(Integer x : ((SHashSetInt)other).getSet()){
-			if(getSet().contains(x)){
-				res.add(x);
-			}
-		}
-		return new SHashSetInt(res);
-	}
-
-	@Override
-	public Set union(Set other) {
-		HashSet<Integer> res = new HashSet<Integer>();
-		for(Integer x : getSet()){			
-			res.add(x);	
-		}
-		for(Integer x : ((SHashSetInt)other).getSet()){			
-			res.add(x);	
-		}
-		return new SHashSetInt(res);
-	}
-
-	@Override
-	public Set difference(Set other){
-		HashSet<Integer> res = new HashSet<Integer>();
-		Set inters = intersect(other);
-		for(Integer x : getSet()){	
-			if(!((SHashSetInt)inters).getSet().contains(x)){
-				res.add(x);
-			}
-		}
-		return new SHashSetInt(res);
-	}
-
-	public int size(){	//length
+	
+	/**
+	 * Size of the set (count of all the set's elements).
+	 * @return The size of the set.
+	 * @see com.simmachines.libsim.enc.set.Set;
+	 */
+	public int size(){	
 		return getSet().size();
 	}
 	
-	public boolean equals(Set s1){
-		return getSet().equals(((SHashSetInt)s1).getSet());
+	
+	@Override
+	public boolean equals(Object other){
+		return getSet().equals(((SHashSetInt)other).getSet());
 	}
+	
 	
 	@Override
 	public int hashCode(){

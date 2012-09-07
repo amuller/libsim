@@ -44,7 +44,7 @@ public class CzekanowskyDice {
 	 */
 	
 	public static double distance(Set s1,Set s2){
-		return 1-((2*s1.intersect(s2).size())/(s1.size()+s2.size()));
+		return 1-(double)(2*s1.intersect(s2).size())/(double)(s1.size()+s2.size());
 	}
 
 }
