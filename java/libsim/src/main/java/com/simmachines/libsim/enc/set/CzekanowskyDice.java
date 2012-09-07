@@ -43,7 +43,7 @@ public class CzekanowskyDice {
 	 * @return The Czekanowsky_Dice distance. 
 	 */
 	
-	public static double distance(SHashSet<Double> s1,SHashSet<Double> s2){
+	public static double distance(Set s1,Set s2){
 		return 1-((2*s1.intersect(s2).size())/(s1.size()+s2.size()));
 	}
 

@@ -90,7 +90,7 @@ public class SHashSet<O extends Storable> implements Set{
 		int i = 0;
 		O x;
 		while(i < size){
-			x = new O();
+			x = getInstance();
 			x.load(buf);
 			set.add(x);
 			i++;
