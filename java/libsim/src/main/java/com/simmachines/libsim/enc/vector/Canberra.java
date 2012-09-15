@@ -16,7 +16,7 @@ import com.simmachines.libsim.common.CommonStats;
  * <p>
  
  
- The Canberra distance between two vectors \(a,b\) is given by \( \operatorname{d^{CAD}}_{a,b}(|a|,|b|) \) where:
+ The Canberra distance between two vectors \(a,b\) is given by \( d^{CAD}_{a,b} (|a|,|b|) \) where:
  <p>
  \( d^{CAD}(a,b)=\sum \frac{|a_i-b_i|}{|a_i|+|b_i|} \)
  
