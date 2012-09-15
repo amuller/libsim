@@ -9,14 +9,14 @@ import com.simmachines.libsim.asserts.Asserts;
  * <p>
  * [Brief Description]
  * <p>
- * The Euclidean distance between points (\p\) and (\q\) is the length of the line segment connecting them ( \( \overline{pq} \) ).
+ * The Euclidean distance between points \( a \) and \( b \) is the length of the line segment connecting them.
  * <p>
  * [Definition]
  * <p>
  
  
- The L2 distance between two vectors \(a,b\) is given by \( \operatorname{d_E}_{a,b}(|a|,|b|) \) where:
- <p>
+ The L2 distance between two vectors \(a,b\) is given by: 
+  <p>
  \( d_E=\sqrt{(a_1-b_1)^2+\cdots+(a_n-b_n)^2} \)
  
  

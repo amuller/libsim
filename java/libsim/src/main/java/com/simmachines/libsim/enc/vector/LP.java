@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.CommonStats;
 /**
  * [LP distance]
  * <p>
- * :: It's a generalization of the Euclidean distance (L2).
+ * :: A generalization of the Euclidean distance (L2).
  * <p>
  * [Brief Description]
  * <p>
@@ -16,9 +16,9 @@ import com.simmachines.libsim.common.CommonStats;
  * <p>
  
  
- The LP distance between two Vectors \( a, b \) is given by \( \operatorname{l_p}_{a,b}(|a|,|b|) \) where:
+ The LP distance between two vectors \( a, b \) is given by:
  <p>
- \( \operatorname{l_p}_{a,b}=(\sum\limits_{i=1}^n |a_i-b_i|^p)^{1/p}  \)
+ \( {l_p}_{a,b}=(\sum\limits_{i=1}^n |a_i-b_i|^p)^{1/p}  \)
  
  
  * 
