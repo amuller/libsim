@@ -15,9 +15,9 @@ import com.simmachines.libsim.common.CommonStats;
  * <p>
  * 
  
- The PearsonCorrelation distance between two Vectors \( a, b \) is given by \( \operatorname{s}_{a,b}(|a|,|b|) \) where:
+ The PearsonCorrelation distance between two vectors \( a, b \) is given by:
  <p>
-\( \operatorname{s}_{a,b}(|a|,|b|) = 1-\frac{\sum(a_i-\overline{a})(b_i-\overline{b})}{\sqrt{(\sum (a_j-\overline{a})^2)(\sum (b_j-\overline{b})^2)}} \)
+\( s(a,b) = 1-\frac{\sum(a_i-\overline{a})(b_i-\overline{b})}{\sqrt{(\sum (a_j-\overline{a})^2)(\sum (b_j-\overline{b})^2)}} \)
  
  * 
  * <p>

@@ -17,7 +17,7 @@ import com.simmachines.libsim.asserts.Asserts;
  
  The L2 distance between two vectors \(a,b\) is given by: 
   <p>
- \( d_E=\sqrt{(a_1-b_1)^2+\cdots+(a_n-b_n)^2} \)
+ \( l_2(a,b)=\sqrt{(a_1-b_1)^2+\cdots+(a_n-b_n)^2} \)
  
  
  * 
