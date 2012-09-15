@@ -18,7 +18,7 @@ import com.simmachines.libsim.common.CommonStats;
  
  The LP distance between two vectors \( a, b \) is given by:
  <p>
- \( {l_p}_{a,b}=(\sum\limits_{i=1}^n |a_i-b_i|^p)^{1/p}  \)
+ \( {l_p}(a,b)=(\sum\limits_{i=1}^n |a_i-b_i|^p)^{1/p}  \)
  
  
  * 
