@@ -70,4 +70,50 @@ public class CommonStats {
 
 	}
 	
+	
+	/**
+	 * Receives two integer numbers and calculates which one is the least.
+	 * @param a first integer number.
+	 * @param b second integer number.
+	 * @return the least number out of the two.
+	 */
+	
+	public static double min(double a, double b) {
+		if(a<b){
+			return a;
+		}
+		return b;
+	}
+	
+	
+	/**
+	 * Receives two integer numbers and calculates which one is the highest.
+	 * @param a first integer number.
+	 * @param b second integer number.
+	 * @return the highest number out of the two.
+	 */
+	
+	public static double max(double a, double b) {
+		if(a>b){
+			return a;
+		}
+		return b;
+	}
+	
+	
+	/**
+	 * Recieves a vector and calculates the element with the highest value.
+	 * @param v vector received.
+	 * @return the number with the highest value of the vector.
+	 */
+	public static double max(double[] v){
+		double max=v[0];
+		for(double i: v){
+			if(i>max){
+				max=i;
+			}
+		}
+		return max;
+	}
+	
 }

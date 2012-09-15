@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
 /**
  * [Canberra distance]
  * <p>
- * :: The Canberra distance is a numerical measure of the distance between pairs of points in a vector space.one-line-description.
+ * :: The Canberra distance is a numerical measure of the distance between pairs of points in a vector space.
  * <p>
  * @see com.simmachines.libsim.enc.vector.Canberra;
  * @author Jose Daniel Salazar-Vargas
