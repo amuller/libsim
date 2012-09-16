@@ -18,7 +18,7 @@ public class CommonChecks {
 	 */
 
 	public static boolean equals(double a, double b){
-		return ((a - b) <= PRECISION);
+		return (Math.abs(a - b) <= PRECISION);
 	}
 	
 	

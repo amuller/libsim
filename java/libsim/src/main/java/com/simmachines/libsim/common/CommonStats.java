@@ -33,19 +33,6 @@ public class CommonStats {
 		return value;
 	}
 	
-	/**
-	 * Calculates the Euclidean norm of a vector.
-	 * @param v vector received.
-	 * @return the Euclidean norm.
-	 */
-	
-	public static double norm(double[] v){
-		double sum = 0;
-		for(int i=0;i<v.length;i++){
-			sum += Math.pow(v[i], 2);
-		}
-		return Math.sqrt(sum);
-	}
 	
 	
 	/**
@@ -114,6 +101,45 @@ public class CommonStats {
 			}
 		}
 		return max;
+	}
+	
+	/**
+	 * Receives two double vectors and calculates the difference between them.
+	 * @param v1 first double vector.
+	 * @param v2 second double vector.
+	 * @return the difference vector between them.
+	 */
+	public static double[] difference(double[] v1, double[] v2){
+		double res[] = new double[v1.length];
+		for(int i=0;i<v1.length;i++){
+			res[i]=v1[i] - v2[i];
+		}
+		return res;
+	}
+	
+	
+	/**
+	 * Receives two double vectors and calculates the dot product (inner product) of them.
+	 * @param v1 first double vector.
+	 * @param v2 second double vector.
+	 * @return the dot product (inner product) of them.
+	 */
+	public static double dotProduct(double[] v1, double[] v2){
+		double res = 0;
+		for(int i=0;i<v1.length;i++){
+			res += v1[i] * v2[i];
+		}
+		return res;
+	}
+	
+	/**
+	 * Calculates the Euclidean norm of a vector.
+	 * @param v vector received.
+	 * @return the Euclidean norm.
+	 */
+	
+	public static double norm(double[] v){
+		return Math.sqrt(dotProduct(v,v));
 	}
 	
 }
