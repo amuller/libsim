@@ -16,9 +16,8 @@ public class Mahalanobis {
 		 * @param o2 vector 2
 		 * @return  Mahalanobis distance
 		 */ 
-		public static double distance(double o1, double o2) {
-				double res = 0;
-				
+		public static double z(double o1, double o2) {
+				double res = 0;				
 				return res;
 		}
 		
