@@ -1,3 +1,4 @@
+
 package com.simmachines.libsim.common;
 
 public class CommonChecks {
@@ -106,6 +107,19 @@ public class CommonChecks {
 	
 	public static boolean equalToValue(double number, double value){
 		if(number==value){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * Checks if a number is between (including) the values 1 and -1.
+	 * @param number number to check.
+	 * @return true if the value is between (including) 1 and -1, false otherwise.
+	 */
+	public static boolean between1andMinus1(double number){
+		if(number<=1 && number>=-1){
 			return true;
 		}
 		return false;

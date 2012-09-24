@@ -81,6 +81,17 @@ public class Asserts {
 	public static void assertGreaterOrEqualThanValue(double number, double value){
 		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than "+value);
 	}
+	
+	
+	/**
+	 * Verifies if a number is between (including) the values 1 and -1, if it isn't, throws an exception with a custom message.
+	 * @param number number to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.between1andMinus1
+	 */
+	public static void assertBetween1andMinus1(double number){
+		validate(CommonChecks.between1andMinus1(number),"The number does not belong to the range: [-1,1]");
+	}
 
 }
 

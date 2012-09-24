@@ -142,4 +142,14 @@ public class CommonStats {
 		return Math.sqrt(dotProduct(v,v));
 	}
 	
+	
+	/**
+	 * Calculates the hyperbolic arctangent of a number.
+	 * @param number number received.
+	 * @return the hyperbolic arctangent.
+	 */
+	public static double arctanh(double number){
+		return Math.log((1+number)/(1-number))/2;
+	}
+	
 }
