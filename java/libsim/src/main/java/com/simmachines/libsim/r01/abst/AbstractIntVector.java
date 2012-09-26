@@ -54,7 +54,7 @@ public abstract class AbstractIntVector implements RA<Double>{
 	 * @return the size in bytes of the buffer. 
 	 */
 	public static int revealBufferSize(int dimensions){
-		return ByteConstants.Short.getSize() + (ByteConstants.Double.getSize() * dimensions);
+		return ByteConstants.Short.getSize() + (ByteConstants.Int.getSize() * dimensions);
 	}
 
 	@Override
@@ -89,8 +89,8 @@ public abstract class AbstractIntVector implements RA<Double>{
 	 * Clones the vector and returns a new copy of it.
 	 * @return
 	 */
-	protected double[] cloneHelper(){
-		double[] newF = new double[this.vector.length];
+	protected int[] cloneHelper(){
+		int[] newF = new int[this.vector.length];
 		System.arraycopy(vector, 0, newF, 0, vector.length);
 		return newF;
 	}

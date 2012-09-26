@@ -24,9 +24,9 @@ public class CommonChecks {
 	
 	
 	/**
-	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
+	 * Checks if:   \(\forall v_i \in V, \exists v_i <= 0 \) 
 	 * @param v vector received
-	 * @return true if there is at least one \( v_i < 0 \), false otherwise
+	 * @return false if there is at least one \( v_i <= 0 \), true otherwise
 	 */
 
 	public static boolean greaterThanZero(double v[]){
@@ -40,9 +40,25 @@ public class CommonChecks {
 	
 	
 	/**
+	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i < 0 \), true otherwise
+	 */
+
+	public static boolean positiveValues(int v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]<0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+	/**
 	 * Checks if:   \(\forall v_i \in V, \exists v_i = 0 \) 
 	 * @param v vector received
-	 * @return true if there is at least one \( v_i = 0 \), false otherwise
+	 * @return false if there is at least one \( v_i = 0 \), true otherwise
 	 */
 
 	public static boolean hasNoZero(double v[]){
@@ -62,6 +78,13 @@ public class CommonChecks {
 	 */
 	
 	public static boolean equalLength(double v1[], double v2[]){
+		if(v1.length == v2.length){
+			return true;
+		}
+		return false;
+	}
+	
+	public static boolean equalLength(int v1[], int v2[]){
 		if(v1.length == v2.length){
 			return true;
 		}

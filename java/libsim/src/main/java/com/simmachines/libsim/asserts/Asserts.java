@@ -34,6 +34,10 @@ public class Asserts {
 		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
 	}
 	
+	public static void assertEqualLength(int a[], int b[]){
+		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
+	}
+	
 	
 	/**
 	 * Verifies if both values are equal (within the precision range), if not, throws an exception with a custom message.
@@ -57,6 +61,19 @@ public class Asserts {
 	public static void assertGreaterThanZero(double v[]){
 		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
+	
+	
+	/**
+	 * Verifies if the vector has at least one entry with a negative value, if has it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterThanZero
+	 */
+	
+	public static void assertPositiveValues(int v[]){
+		validate(CommonChecks.positiveValues(v),"The input vector has at least one entry with a value less than zero");
+	}
+	
 	
 	/**
 	 * Verifies if the vector has at least one entry with a value equals to zero, if has it, throws an exception with a custom message.
