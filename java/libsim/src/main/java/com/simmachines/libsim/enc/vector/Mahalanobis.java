@@ -34,8 +34,8 @@ public class Mahalanobis {
 				RealMatrix m2 = new Array2DRowRealMatrix(new double[][] { temp });
 				RealMatrix m3 = m2.multiply(new LUDecompositionImpl(m1).getSolver().getInverse());
 				RealMatrix m4 = m3.multiply((new Array2DRowRealMatrix(new double[][] { temp })).transpose());
-				//return Math.sqrt(m4.getEntry(0, 0));
-				return m4.getEntry(0, 0);
+				return Math.sqrt(m4.getEntry(0, 0));
+				//return m4.getEntry(0, 0);
 		}
 		
 }
