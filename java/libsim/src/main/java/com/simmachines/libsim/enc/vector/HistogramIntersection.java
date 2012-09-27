@@ -34,7 +34,7 @@ import com.simmachines.libsim.common.CommonStats;
 public class HistogramIntersection {
 
 	/**
-	 * Received two double vectors and calculates the HistogramIntersection distance.
+	 * Received two integer vectors and calculates the HistogramIntersection distance.
 	 * @param h1 histogram number 1.
 	 * @param h2 histogram number 2.
 	 * @return The HistogramIntersection distance.
