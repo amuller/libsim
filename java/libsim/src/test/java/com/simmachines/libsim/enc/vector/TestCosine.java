@@ -36,4 +36,14 @@ public class TestCosine {
 		Asserts.assertEquals(res, 0.49267550457359);
 	}
 	
+	@Test
+	//jfquesada
+	public void test4(){
+		double[] v1 = new double[]{3, 5, 8};
+		double[] v2 = new double[]{4, 7, 1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 0.683876505);
+	}
+	
 }
