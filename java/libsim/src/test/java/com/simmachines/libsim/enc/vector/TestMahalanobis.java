@@ -28,7 +28,7 @@ public class TestMahalanobis {
 		RealMatrix m1 = new Array2DRowRealMatrix(new double[][] { {10.70, -17.95, 1.55}, {-17.95, 44.20, 0.95}, {1.55, 0.95, 3.70} });
 		Asserts.assertEqualLength(v1, v2);
 		double res = Mahalanobis.distance(v1, v2, m1);
-		Asserts.assertEquals(res, 1.750912);
+		Asserts.assertEquals(res, 1.323220219);
 	}
 	
 	@Test
@@ -39,7 +39,7 @@ public class TestMahalanobis {
 		RealMatrix m1 = new Array2DRowRealMatrix(new double[][] { {10.70, -17.95, 1.55}, {-17.95, 44.20, 0.95}, {1.55, 0.95, 3.70} });
 		Asserts.assertEqualLength(v1, v2);
 		double res = Mahalanobis.distance(v1, v2, m1);
-		Asserts.assertEquals(res, 4.585126);
+		Asserts.assertEquals(res, 2.141290741);
 	}
 	
 	@Test
@@ -50,7 +50,7 @@ public class TestMahalanobis {
 		RealMatrix m1 = new Array2DRowRealMatrix(new double[][] { {10.70, -17.95, 1.55}, {-17.95, 44.20, 0.95}, {1.55, 0.95, 3.70} });
 		Asserts.assertEqualLength(v1, v2);
 		double res = Mahalanobis.distance(v1, v2, m1);
-		Asserts.assertEquals(res, 5.010909);
+		Asserts.assertEquals(res, 2.238505943);
 	}
 	
 	@Test
@@ -61,6 +61,6 @@ public class TestMahalanobis {
 		RealMatrix m1 = new Array2DRowRealMatrix(new double[][] { {10.70, -17.95, 1.55}, {-17.95, 44.20, 0.95}, {1.55, 0.95, 3.70} });
 		Asserts.assertEqualLength(v1, v2);
 		double res = Mahalanobis.distance(v1, v2, m1);
-		Asserts.assertEquals(res, 7.552592);
+		Asserts.assertEquals(res, 2.748198002);
 	}
 }
