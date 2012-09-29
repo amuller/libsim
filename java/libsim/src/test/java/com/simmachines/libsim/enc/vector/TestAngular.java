@@ -76,4 +76,24 @@ public class TestAngular {
 		Asserts.assertEquals(res, 2.066171131);
 	}
 	
+	@Test
+	//jfquesada
+	public void test8(){
+		double[] v1 = new double[]{3, 5, 8};
+		double[] v2 = new double[]{0, 0, 0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Angular.distance(v1, v2);
+		Asserts.assertEquals(res, 1.570796327);
+	}
+	
+	@Test
+	//jfquesada
+	public void test9(){
+		double[] v1 = new double[]{3, 5, 8};
+		double[] v2 = new double[]{3, 5, 8};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Angular.distance(v1, v2);
+		Asserts.assertEquals(res, 0);
+	}
+	
 }
