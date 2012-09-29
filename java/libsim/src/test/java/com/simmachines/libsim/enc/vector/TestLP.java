@@ -14,7 +14,7 @@ public class TestLP {
 		double p = 3;
 		Asserts.assertEqualLength(v1, v2);
 		Asserts.assertGreaterOrEqualThanValue(p, 1);
-		double res = LP.distance(v1, v2,p);
+		double res = LP.distance(p, v1, v2);
 		Asserts.assertEquals(res, 6.46330407009565);
 	}
 	
@@ -26,7 +26,7 @@ public class TestLP {
 		double p = 5.7;
 		Asserts.assertEqualLength(v1, v2);
 		Asserts.assertGreaterOrEqualThanValue(p, 1);
-		double res = LP.distance(v1, v2,p);
+		double res = LP.distance(p, v1, v2);
 		Asserts.assertEquals(res, 1271.46862280352653);
 	}
 	
@@ -39,7 +39,7 @@ public class TestLP {
 		double p = 9.435;
 		Asserts.assertEqualLength(v1, v2);
 		Asserts.assertGreaterOrEqualThanValue(p, 1);
-		double res = LP.distance(v1, v2,p);
+		double res = LP.distance(p, v1, v2);
 		Asserts.assertEquals(res, 1225.56826706042989);
 	}
 	

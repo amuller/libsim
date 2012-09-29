@@ -68,7 +68,7 @@ public class RALevenshtein extends AbstractIntVector {
 	 */
 	@Override
 	public Object clone() {
-		return new RAL2(cloneHelper());
+		return new RALevenshtein(cloneHelper());
 	}
 
 }

@@ -36,4 +36,53 @@ public class TestCosine {
 		Asserts.assertEquals(res, 0.49267550457359);
 	}
 	
+	@Test
+	//jfquesada
+	public void test4(){
+		double[] v1 = new double[]{3, 5, 8};
+		double[] v2 = new double[]{4, 7, 1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 0.316123494);
+	}
+	
+	@Test
+	//jfquesada
+	public void test5(){
+		double[] v1 = new double[]{3, -5, 8};
+		double[] v2 = new double[]{4, 7, 1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 1.186511774);
+	}
+	
+	@Test
+	//jfquesada
+	public void test6(){
+		double[] v1 = new double[]{3, 5, 8};
+		double[] v2 = new double[]{3, 5, 8};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 0.0);
+	}
+	
+	@Test
+	//jfquesada
+	public void test7(){
+		double[] v1 = new double[]{-3, -5, -8};
+		double[] v2 = new double[]{0, 0, 0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 1);
+	}
+	
+	@Test
+	//jfquesada
+	public void test8(){
+		double[] v1 = new double[]{-3, -5, -8};
+		double[] v2 = new double[]{3, 5, 8};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Cosine.distance(v1, v2);
+		Asserts.assertEquals(res, 2);
+	}
 }

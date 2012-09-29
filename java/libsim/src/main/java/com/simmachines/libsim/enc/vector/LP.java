@@ -1,5 +1,6 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
 /**
@@ -44,12 +45,14 @@ public class LP {
 	 * @return the LP-metric distance.
 	 */
 
-	public static double distance(double v1[], double v2[], double p){
+	public static double distance(double p, double v1[], double v2[]){
 		double sum = 0;
 		for(int i=0; i < v1.length; i++){
 			sum+=Math.pow(CommonStats.abs(v1[i]-v2[i]),p);
 		}
-		return Math.pow(sum, 1/p);
+		double res = Math.pow(sum, 1/p);
+		Asserts.assertDistance(res);
+		return res;
 	}
 	
 }

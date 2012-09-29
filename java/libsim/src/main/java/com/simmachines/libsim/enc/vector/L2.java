@@ -53,6 +53,7 @@ public class L2 {
 			res += t;
 			i++;
 		}
+		Asserts.assertDistance(res);
 		return Math.sqrt(res);
 	}
 

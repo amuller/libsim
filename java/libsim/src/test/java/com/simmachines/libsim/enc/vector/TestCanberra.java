@@ -36,4 +36,43 @@ public class TestCanberra {
 		Asserts.assertEquals(res, 3.2418346975244);
 	}
 	
+	@Test
+	//jfquesada
+	public void test4(){
+		double[] v1 = new double[]{1, 5, 8, 4};
+		double[] v2 = new double[]{3, 10, 9, 6};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Canberra.distance(v1, v2);
+		Asserts.assertEquals(res, 1.092156863);
+	}
+	
+	@Test
+	//jfquesada
+	public void test5(){
+		double[] v1 = new double[]{-5, 15, 5, -1};
+		double[] v2 = new double[]{3, -8, -3, 1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Canberra.distance(v1, v2);
+		Asserts.assertEquals(res, 4);
+	}
+	
+	@Test
+	//jfquesada
+	public void test6(){
+		double[] v1 = new double[]{-5, -8, -3, -4};
+		double[] v2 = new double[]{-3, -10, -2, -8};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Canberra.distance(v1, v2);
+		Asserts.assertEquals(res, 0.894444444);
+	}
+	
+	@Test
+	//jfquesada
+	public void test7(){
+		double[] v1 = new double[]{-3.5, -47.83, 3.97, 50.2};
+		double[] v2 = new double[]{10.95, 88.52, -8.4, 38.7};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Canberra.distance(v1, v2);
+		Asserts.assertEquals(res, 3.12935883);
+	}
 }

@@ -34,6 +34,10 @@ public class Asserts {
 		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
 	}
 	
+	public static void assertEqualLength(int a[], int b[]){
+		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
+	}
+	
 	
 	/**
 	 * Verifies if both values are equal (within the precision range), if not, throws an exception with a custom message.
@@ -58,6 +62,19 @@ public class Asserts {
 		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
 	
+	
+	/**
+	 * Verifies if the vector has at least one entry with a negative value, if has it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterThanZero
+	 */
+	
+	public static void assertPositiveValues(int v[]){
+		validate(CommonChecks.positiveValues(v),"The input vector has at least one entry with a value less than zero");
+	}
+	
+	
 	/**
 	 * Verifies if the vector has at least one entry with a value equals to zero, if has it, throws an exception with a custom message.
 	 * @param v vector received.
@@ -80,6 +97,26 @@ public class Asserts {
 	
 	public static void assertGreaterOrEqualThanValue(double number, double value){
 		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than "+value);
+	}
+	
+	
+	/**
+	 * Verifies if a number is between (including) the values 1 and -1, if it isn't, throws an exception with a custom message.
+	 * @param number number to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.between1andMinus1
+	 */
+	public static void assertBetween1andMinus1(double number){
+		validate(CommonChecks.between1andMinus1(number),"The number does not belong to the range: [-1,1]");
+	}
+	
+	/**
+	 * Makes sure that the returned value is a distance function value. 
+	 * @param distanceValue
+	 * @see Asserts.validate
+	 */
+	public static void assertDistance(double distanceValue){
+		validate(distanceValue >= 0, "Must be >= zero");
 	}
 
 }

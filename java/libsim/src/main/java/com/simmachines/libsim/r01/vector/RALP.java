@@ -92,7 +92,7 @@ public class RALP extends AbstractVector{
 		
 		@Override
 				public Double distance(RA<Double> other) {
-				return LP.distance(getVector(), ((RALP)other).getVector(), getP());
+				return LP.distance(getP(), getVector(), ((RALP)other).getVector());
 		}
 		
 }

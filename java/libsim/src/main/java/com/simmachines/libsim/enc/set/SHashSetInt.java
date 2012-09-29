@@ -18,6 +18,15 @@ public class SHashSetInt implements Set{
 		this.set = set;
 	}
 	
+	public SHashSetInt(int... elems){
+		super();
+		HashSet<Integer> s = new HashSet<Integer>(elems.length);
+		for(int i : elems){
+			s.add(i);
+		}
+		this.set = s;
+	}
+	
 	public HashSet<Integer> getSet(){
 		return this.set;
 	}

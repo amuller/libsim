@@ -1,3 +1,4 @@
+
 package com.simmachines.libsim.common;
 
 public class CommonChecks {
@@ -23,9 +24,9 @@ public class CommonChecks {
 	
 	
 	/**
-	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
+	 * Checks if:   \(\forall v_i \in V, \exists v_i <= 0 \) 
 	 * @param v vector received
-	 * @return true if there is at least one \( v_i < 0 \), false otherwise
+	 * @return false if there is at least one \( v_i <= 0 \), true otherwise
 	 */
 
 	public static boolean greaterThanZero(double v[]){
@@ -39,9 +40,25 @@ public class CommonChecks {
 	
 	
 	/**
+	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i < 0 \), true otherwise
+	 */
+
+	public static boolean positiveValues(int v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]<0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+	/**
 	 * Checks if:   \(\forall v_i \in V, \exists v_i = 0 \) 
 	 * @param v vector received
-	 * @return true if there is at least one \( v_i = 0 \), false otherwise
+	 * @return false if there is at least one \( v_i = 0 \), true otherwise
 	 */
 
 	public static boolean hasNoZero(double v[]){
@@ -61,6 +78,13 @@ public class CommonChecks {
 	 */
 	
 	public static boolean equalLength(double v1[], double v2[]){
+		if(v1.length == v2.length){
+			return true;
+		}
+		return false;
+	}
+	
+	public static boolean equalLength(int v1[], int v2[]){
 		if(v1.length == v2.length){
 			return true;
 		}
@@ -106,6 +130,19 @@ public class CommonChecks {
 	
 	public static boolean equalToValue(double number, double value){
 		if(number==value){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * Checks if a number is between (including) the values 1 and -1.
+	 * @param number number to check.
+	 * @return true if the value is between (including) 1 and -1, false otherwise.
+	 */
+	public static boolean between1andMinus1(double number){
+		if(number<=1 && number>=-1){
 			return true;
 		}
 		return false;

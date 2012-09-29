@@ -26,6 +26,7 @@ public class L1 {
 			res += t;
 			i++;
 		}
+		Asserts.assertDistance(res);
 		return res;
 	}
 
