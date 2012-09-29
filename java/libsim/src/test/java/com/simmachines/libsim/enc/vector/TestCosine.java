@@ -43,7 +43,7 @@ public class TestCosine {
 		double[] v2 = new double[]{4, 7, 1};
 		Asserts.assertEqualLength(v1, v2);
 		double res = Cosine.distance(v1, v2);
-		Asserts.assertEquals(res, 0.683876505);
+		Asserts.assertEquals(res, 0.316123494);
 	}
 	
 }
