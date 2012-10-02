@@ -74,13 +74,20 @@ public class CommonStats {
 	
 	
 	/**
-	 * Receives two integer numbers and calculates which one is the highest.
-	 * @param a first integer number.
-	 * @param b second integer number.
+	 * Receives two numbers and calculates which one is the highest.
+	 * @param a first number.
+	 * @param b second number.
 	 * @return the highest number out of the two.
 	 */
 	
 	public static double max(double a, double b) {
+		if(a>b){
+			return a;
+		}
+		return b;
+	}
+	
+	public static int max(int a, int b) {
 		if(a>b){
 			return a;
 		}

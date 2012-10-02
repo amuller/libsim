@@ -91,6 +91,13 @@ public class CommonChecks {
 		return false;
 	}
 	
+	public static boolean equalLength(double m1[][], double m2[][]){
+		if(m1.length == m2.length && m1[0].length == m2[0].length){
+			return true;
+		}
+		return false;
+	}
+	
 	/**
 	 * Checks if a number is greater or equal than a given value.
 	 * @param number number to check.
@@ -146,6 +153,23 @@ public class CommonChecks {
 			return true;
 		}
 		return false;
+	}
+	
+	
+	/**
+	 * Checks if a matrix is a binary matrix (each entry has the value of 1 or 0).
+	 * @param matrix matrix to check.
+	 * @return true if each entry has the value of 1 or 0, false otherwise.
+	 */
+	public static boolean isBinary(double matrix[][]){
+		for(double r[] : matrix){
+			for(double i : r){
+				if(i!=1 && i!=0){
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 
 }

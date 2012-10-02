@@ -38,6 +38,10 @@ public class Asserts {
 		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
 	}
 	
+	public static void assertEqualLength(double a[][], double b[][]){
+		validate(CommonChecks.equalLength(a, b),"The matrices must have the same dimensions");
+	}
+	
 	
 	/**
 	 * Verifies if both values are equal (within the precision range), if not, throws an exception with a custom message.
@@ -117,6 +121,17 @@ public class Asserts {
 	 */
 	public static void assertDistance(double distanceValue){
 		validate(distanceValue >= 0, "Must be >= zero");
+	}
+	
+	
+	/**
+	 * Verifies if a matrix is a binary matrix (each entry has the value of 1 or 0), if it isn't, throws an exception with a custom message.
+	 * @param matrix matrix to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.isBinary
+	 */
+	public static void assertIsBinary(double matrix[][]){
+		validate(CommonChecks.isBinary(matrix),"The matrix is not a binary matrix");
 	}
 
 }
