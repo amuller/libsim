@@ -59,9 +59,9 @@ public class CommonStats {
 	
 	
 	/**
-	 * Receives two integer numbers and calculates which one is the least.
-	 * @param a first integer number.
-	 * @param b second integer number.
+	 * Receives two double numbers and calculates which one is the least.
+	 * @param a first double number.
+	 * @param b second double number.
 	 * @return the least number out of the two.
 	 */
 	
