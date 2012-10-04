@@ -33,7 +33,6 @@
       <groupId>simMachines</groupId>
       <artifactId>R01</artifactId>
       <version>1.0</version>
-      <scope>test</scope>
     </dependency>
 		
 		<dependency>
