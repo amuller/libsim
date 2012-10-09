@@ -48,7 +48,7 @@ public class RAPixel extends AbstractMatrix{
 	@Override
 	public void load(ByteBuffer buf) throws RAException{
 		matrix = new Array2DRowRealMatrix(preLoad(buf));
-	};
+	}
 	
 	
 	/**
