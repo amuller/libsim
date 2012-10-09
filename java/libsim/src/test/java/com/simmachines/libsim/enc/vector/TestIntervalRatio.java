@@ -15,7 +15,6 @@ public class TestIntervalRatio {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = IntervalRatio.distance(v1, v2);
-		System.out.println(res);
 		Asserts.assertEquals(res, 3.83333333);
 	}
 	
@@ -28,7 +27,6 @@ public class TestIntervalRatio {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = IntervalRatio.distance(v1, v2);
-		System.out.println(res);
 		Asserts.assertEquals(res, 6.95);
 	}
 	
@@ -41,7 +39,6 @@ public class TestIntervalRatio {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = IntervalRatio.distance(v1, v2);
-		System.out.println(res);
 		Asserts.assertEquals(res, 6.81666666);
 	}
 	
