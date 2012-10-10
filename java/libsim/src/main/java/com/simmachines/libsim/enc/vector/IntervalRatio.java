@@ -48,7 +48,7 @@ public class IntervalRatio {
 	
 	
 	/**
-	 * Received two int vectors and calculates the IntervalRatio distance.
+	 * Received two integer vectors and calculates the IntervalRatio distance.
 	 * @param t1 vector number 1.
 	 * @param t2 vector number 2.
 	 * @return The IntervalRatio distance.
