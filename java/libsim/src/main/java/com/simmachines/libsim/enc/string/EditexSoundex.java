@@ -47,7 +47,7 @@ public class EditexSoundex {
 	
 	/**
 	 * Receives an integer that represents a character, and returns the group code in which it is classified.
-	 * The character of the alphabet are representing by a consecutive integer number starting with a=1, b=2, until z=26; and they are grouped according to Soundex method.
+	 * The character of the alphabet are represented by a consecutive integer number starting with a=1, b=2, until z=26; and they are grouped according to Soundex method.
 	 * @param ch integer received.
 	 * @return the group code.
 	 */
