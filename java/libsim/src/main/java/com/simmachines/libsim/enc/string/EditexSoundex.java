@@ -52,7 +52,8 @@ public class EditexSoundex {
 	 * @return the group code.
 	 */
 	public static int groupCode(int ch){
-		if(ch==1||ch==5||ch==9||ch==15||ch==21||ch==8||ch==23||ch==25){
+		if(ch == (int) 'a'|| ch == (int) 'A' || 
+				ch==5||ch==9||ch==15||ch==21||ch==8||ch==23||ch==25){
 			return 0;
 		}
 		if(ch==2||ch==16||ch==6||ch==22){
@@ -90,6 +91,21 @@ public class EditexSoundex {
 			return 1;
 		}
 		return 2;
+	}
+	
+	
+	public static double distance(String str1, String str2){
+		return distance(convert(str1), convert(str2));
+	}
+	
+	public static int[] convert(String str){
+		int[] res = new int[str.length()];
+		int i = 0;
+		while(i < str.length()){
+			res[i] = str.charAt(i);
+			i++;
+		}
+		return res;
 	}
 
 	
