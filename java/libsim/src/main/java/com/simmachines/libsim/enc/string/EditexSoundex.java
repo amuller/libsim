@@ -113,7 +113,8 @@ public class EditexSoundex {
 	 * Received two integer vectors representing two words and calculates the EditexSoundex distance.
 	 * @param str1 vector number 1.
 	 * @param str2 vector number 2.
-	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, deletion and insertion of letters.
+	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, 
+	 * 			deletion and insertion of letters.
 	 */
 	public static double distance(int str1[],int str2[]){
 		int m = str1.length;
