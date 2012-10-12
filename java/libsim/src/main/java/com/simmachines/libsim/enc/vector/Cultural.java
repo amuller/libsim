@@ -1,5 +1,9 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
+
+
+
 
 /**
  * [Cultural distance]
@@ -40,6 +44,13 @@ package com.simmachines.libsim.enc.vector;
  */
 
 public class Cultural {
+	
+	
+	public static final int CULTURAL_DIM = 5;
+	
+	public static double[] culturalVectorHelper(double powerDistance, double uncertainlyAvoidance, double individualismVsCollectivism, double mascVsFem, double confusianDynamism){
+		return new double[]{powerDistance,  uncertainlyAvoidance, individualismVsCollectivism, mascVsFem, confusianDynamism };
+	}
 
 	/**
 	 * Received two double vectors and calculates the Cultural distance.
@@ -50,9 +61,14 @@ public class Cultural {
 	 */
 	
 	public static double distance(double[] var,double[] v1,double[] v2){
+		
+		Asserts.validate(v1.length == CULTURAL_DIM, "Invalid vector length: v1" );
+		Asserts.validate(v2.length == CULTURAL_DIM, "Invalid vector length: v2" );
+		Asserts.validate(var.length == CULTURAL_DIM, "Invalid vector length: var");
+		
 		double sum = 0;
-		for(int i=0;i<5;i++){
-			sum += Math.pow(v1[i]-v2[i], 2)/(5*var[i]);
+		for(int i=0;i<CULTURAL_DIM;i++){
+			sum += Math.pow(v1[i]-v2[i], 2)/(CULTURAL_DIM*var[i]);
 		}
 		return sum;
 	}
