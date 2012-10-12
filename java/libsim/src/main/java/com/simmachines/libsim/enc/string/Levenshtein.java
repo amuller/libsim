@@ -43,6 +43,8 @@ import com.simmachines.libsim.common.CommonStats;
 
 public class Levenshtein {
 	
+	public static CostCalculator DEFAULT_CC = new  DefaultCostCalculator();
+	
 	
 	/**
      * Calculates the Levenshtein distance
@@ -50,15 +52,26 @@ public class Levenshtein {
      * @param str2 second sequence of characters
      * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
      */ 
-	public static int distance(int[] str1, int[] str2) {
+	public static int distance(int[] str1, int[] str2){
+		return distance(str1, str2, DEFAULT_CC);
+	}
+	
+	
+	/**
+     * Calculates the Levenshtein distance
+     * @param str1 first sequence of characters
+     * @param str2 second sequence of characters
+     * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
+     */ 
+	public static int distance(int[] str1, int[] str2, CostCalculator c) {
 
 		int d[][];
 		int n;
 		int m;
 		int i;
 		int j;
-		int s_i;
-		int t_j;
+		int s_i; // the value that is being compared
+		int t_j; // the value that is being compared
 		int cost;
 		int[] s = str1;
 		int[] t = str2;
@@ -88,13 +101,8 @@ public class Levenshtein {
 
 			for (j = 1; j <= m; j++) {
 
-				t_j = t[j - 1];
-				// cost values 
-				if (s_i == t_j) {
-					cost = 0;
-				} else {
-					cost = 1;
-				}
+				t_j = t[j - 1];				
+				cost = c.cost(s_i, t_j);
 				// update dp matrix 
 				d[i][j] = CommonStats.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1]
 						+ cost);
