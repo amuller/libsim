@@ -89,7 +89,7 @@ public abstract class AbstractVector implements RA<Double> {
 	
 	/**
 	 * Clones the vector and returns a new copy of it.
-	 * @return
+	 * @return a new copy of the vector.
 	 */
 	protected double[] cloneHelper(){
 		double[] newF = new double[this.vector.length];

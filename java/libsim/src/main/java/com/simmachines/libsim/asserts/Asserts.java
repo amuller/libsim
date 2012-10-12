@@ -133,6 +133,17 @@ public class Asserts {
 	public static void assertIsBinary(double matrix[][]){
 		validate(CommonChecks.isBinary(matrix),"The matrix is not a binary matrix");
 	}
+	
+	
+	/**
+	 * Verifies if a vector has exactly five entries., if it isn't, throws an exception with a custom message.
+	 * @param v vector to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.hasFiveEntries
+	 */
+	public static void assertHasFiveEntries(double v[]){
+		validate(CommonChecks.hasFiveEntries(v),"The vector does not have five entries");
+	}
 
 }
 

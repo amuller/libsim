@@ -171,5 +171,18 @@ public class CommonChecks {
 		}
 		return true;
 	}
+	
+	
+	/**
+	 * Checks if a vector has exactly five entries.
+	 * @param v vector to check.
+	 * @return true if the vector has exactly five entries, false otherwise.
+	 */
+	public static boolean hasFiveEntries(double v[]){
+		if(v.length==5){
+			return true;
+		}
+		return false;
+	}
 
 }
