@@ -47,6 +47,22 @@ public class Levenshtein {
 	
 	
 	/**
+	 * Converts a string array into an integer array that represents it.
+	 * @param str string to convert.
+	 * @return an integer array that represents the string received.
+	 */
+	public static int[] convert(String str){
+		int[] res = new int[str.length()];
+		int i = 0;
+		while(i < str.length()){
+			res[i] = str.charAt(i);
+			i++;
+		}
+		return res;
+	}
+	
+	
+	/**
      * Calculates the Levenshtein distance
      * @param str1 first sequence of characters
      * @param str2 second sequence of characters
@@ -54,6 +70,29 @@ public class Levenshtein {
      */ 
 	public static int distance(int[] str1, int[] str2){
 		return distance(str1, str2, DEFAULT_CC);
+	}
+	
+	
+	
+	/**
+     * Calculates the Levenshtein distance
+     * @param str1 first sequence of characters
+     * @param str2 second sequence of characters
+     * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
+     */ 
+	public static int distance(String str1, String str2){
+		return distance(convert(str1), convert(str2), DEFAULT_CC);
+	}
+	
+	
+	/**
+     * Calculates the Levenshtein distance
+     * @param str1 first sequence of characters
+     * @param str2 second sequence of characters
+     * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
+     */ 
+	public static int distance(String str1, String str2, CostCalculator c){
+		return distance(convert(str1), convert(str2),c);
 	}
 	
 	
@@ -113,5 +152,6 @@ public class Levenshtein {
 
 		return d[n][m];
 	}
+	
 
 }

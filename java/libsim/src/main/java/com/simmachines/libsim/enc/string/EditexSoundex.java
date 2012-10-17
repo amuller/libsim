@@ -1,6 +1,5 @@
 package com.simmachines.libsim.enc.string;
 
-import com.simmachines.libsim.common.CommonStats;
 
 
 /**
@@ -48,21 +47,6 @@ public class EditexSoundex {
 	
 	
 	public static EditexSoundexCostCalculator costCalc = new EditexSoundexCostCalculator();
-	
-	
-	public static double distance(String str1, String str2){
-		return distance(convert(str1), convert(str2));
-	}
-	
-	public static int[] convert(String str){
-		int[] res = new int[str.length()];
-		int i = 0;
-		while(i < str.length()){
-			res[i] = str.charAt(i);
-			i++;
-		}
-		return res;
-	}
 
 	
 	/**
@@ -72,7 +56,19 @@ public class EditexSoundex {
 	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, 
 	 * 			deletion and insertion of letters.
 	 */
-	public static double distance(int str1[],int str2[]){
+	public static int distance(String str1,String str2){
+		return distance(Levenshtein.convert(str1),Levenshtein.convert(str2));
+	}
+	
+	
+	/**
+	 * Received two integer vectors representing two words and calculates the EditexSoundex distance.
+	 * @param str1 vector number 1.
+	 * @param str2 vector number 2.
+	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, 
+	 * 			deletion and insertion of letters.
+	 */
+	public static int distance(int str1[],int str2[]){
 		return Levenshtein.distance(str1, str2, costCalc);
 	}
 	

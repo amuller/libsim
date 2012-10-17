@@ -65,6 +65,7 @@ public class Cultural {
 		Asserts.validate(v1.length == CULTURAL_DIM, "Invalid vector length: v1" );
 		Asserts.validate(v2.length == CULTURAL_DIM, "Invalid vector length: v2" );
 		Asserts.validate(var.length == CULTURAL_DIM, "Invalid vector length: var");
+		Asserts.assertGreaterThanZero(var);
 		
 		double sum = 0;
 		for(int i=0;i<CULTURAL_DIM;i++){

@@ -24,31 +24,37 @@ public class EditexSoundexCostCalculator implements CostCalculator {
 	
 	/**
 	 * Receives an integer that represents a character, and returns the group code in which it is classified.
-	 * The character of the alphabet are represented by a consecutive integer number starting with a=1, b=2, until z=26; and they are grouped according to Soundex method.
+	 * The characters of the alphabet are grouped according to Soundex method.
 	 * @param ch integer received.
 	 * @return the group code.
 	 */
 	public int groupCode(int ch){
-		if(ch == (int) 'a'|| ch == (int) 'A' || 
-				ch==5||ch==9||ch==15||ch==21||ch==8||ch==23||ch==25){
+		if(ch == (int) 'a'|| ch == (int) 'A' || ch == (int) 'e'|| ch == (int) 'E'||
+		   ch == (int) 'i'|| ch == (int) 'I' || ch == (int) 'o'|| ch == (int) 'O'||
+		   ch == (int) 'u'|| ch == (int) 'U' || ch == (int) 'h'|| ch == (int) 'H'||
+		   ch == (int) 'w'|| ch == (int) 'W' || ch == (int) 'y'|| ch == (int) 'Y'){
 			return 0;
 		}
-		if(ch==2||ch==16||ch==6||ch==22){
+		if(ch == (int) 'b'|| ch == (int) 'B' || ch == (int) 'p'|| ch == (int) 'P'||
+		   ch == (int) 'f'|| ch == (int) 'F' || ch == (int) 'v'|| ch == (int) 'V'){
 			return 1;
 		}
-		if(ch==7||ch==10||ch==11||ch==17||ch==3||ch==19||ch==24||ch==26){
+		if(ch == (int) 'g'|| ch == (int) 'G' || ch == (int) 'j'|| ch == (int) 'J'||
+		   ch == (int) 'k'|| ch == (int) 'K' || ch == (int) 'q'|| ch == (int) 'Q'||
+		   ch == (int) 'c'|| ch == (int) 'C' || ch == (int) 's'|| ch == (int) 'S'||
+		   ch == (int) 'x'|| ch == (int) 'X' || ch == (int) 'z'|| ch == (int) 'Z'){
 			return 2;
 		}
-		if(ch==4||ch==20){
+		if(ch == (int) 'd'|| ch == (int) 'D' || ch == (int) 't'|| ch == (int) 'T'){
 			return 3;
 		}
-		if(ch==12){
+		if(ch == (int) 'l'|| ch == (int) 'L'){
 			return 4;
 		}
-		if(ch==13||ch==14){
+		if(ch == (int) 'm'|| ch == (int) 'M' || ch == (int) 'n'|| ch == (int) 'N'){
 			return 5;
 		}
-		if(ch==18){
+		if(ch == (int) 'r'|| ch == (int) 'R'){
 			return 6;
 		}
 		return -1;

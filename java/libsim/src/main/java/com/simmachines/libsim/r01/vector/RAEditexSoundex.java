@@ -53,7 +53,7 @@ public class RAEditexSoundex extends AbstractIntVector{
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return EditexSoundex.distance(getVector(),((RAEditexSoundex)other).getVector());
+			return Double.valueOf(EditexSoundex.distance(getVector(),((RAEditexSoundex)other).getVector()));
 	}
 
 }
