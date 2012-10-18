@@ -40,6 +40,31 @@ public class CommonChecks {
 	
 	
 	/**
+	 * Checks if a given value is greater than zero.
+	 * @param v value received.
+	 * @return true if the value is greater than zero, false otherwise.
+	 */
+	public static boolean greaterThanZero(double v){
+		if(v>0){
+			return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * Checks if a given value is greater than zero.
+	 * @param v value received.
+	 * @return true if the value is greater than zero, false otherwise.
+	 */
+	public static boolean greaterThanZero(int v){
+		if(v>0){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	/**
 	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
 	 * @param v vector received
 	 * @return false if there is at least one \( v_i < 0 \), true otherwise
@@ -113,6 +138,8 @@ public class CommonChecks {
 		}
 		return false;
 	}
+	
+	
 	
 	/**
 	 * Checks if a number is greater than a given value.

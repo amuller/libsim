@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import com.simmachines.libsim.asserts.Asserts;
 
-//import com.simmachines.libsim.enc.string.Levenshtein;
 
 public class TestEditexSoundex {
 

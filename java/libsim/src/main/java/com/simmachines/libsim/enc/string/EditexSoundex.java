@@ -1,5 +1,7 @@
 package com.simmachines.libsim.enc.string;
 
+import com.simmachines.libsim.common.CommonStats;
+
 
 
 /**
@@ -50,19 +52,19 @@ public class EditexSoundex {
 
 	
 	/**
-	 * Received two integer vectors representing two words and calculates the EditexSoundex distance.
-	 * @param str1 vector number 1.
-	 * @param str2 vector number 2.
+	 * Receives two strings representing two words and calculates the EditexSoundex distance.
+	 * @param str1 string number 1.
+	 * @param str2 string number 2.
 	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, 
 	 * 			deletion and insertion of letters.
 	 */
 	public static int distance(String str1,String str2){
-		return distance(Levenshtein.convert(str1),Levenshtein.convert(str2));
+		return distance(CommonStats.convertStringToIntArray(str1),CommonStats.convertStringToIntArray(str2));
 	}
 	
 	
 	/**
-	 * Received two integer vectors representing two words and calculates the EditexSoundex distance.
+	 * Receives two integer vectors representing two words and calculates the EditexSoundex distance.
 	 * @param str1 vector number 1.
 	 * @param str2 vector number 2.
 	 * @return The EditexSoundex distance, the minimal cost of transforming str1 into str2 by substitution, 

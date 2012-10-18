@@ -68,6 +68,27 @@ public class Asserts {
 	
 	
 	/**
+	 * Verifies if a given value is greater than zero, if it isn't, throws an exception with a custom message.
+	 * @param v value received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterThanZero
+	 */
+	public static void assertGreaterThanZero(double v){
+		validate(CommonChecks.greaterThanZero(v),"The input value is either equal or less than zero");
+	}
+	
+	/**
+	 * Verifies if a given value is greater than zero, if it isn't, throws an exception with a custom message.
+	 * @param v value received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterThanZero
+	 */
+	public static void assertGreaterThanZero(int v){
+		validate(CommonChecks.greaterThanZero(v),"The input value is either equal or less than zero");
+	}
+	
+	
+	/**
 	 * Verifies if the vector has at least one entry with a negative value, if has it, throws an exception with a custom message.
 	 * @param v vector received.
 	 * @see Asserts.validate
