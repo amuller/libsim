@@ -39,7 +39,7 @@ import com.simmachines.libsim.common.CommonStats;
 public class Cosine {
 	
 	/**
-	 * Received two double vectors and calculates the Cosine distance.
+	 * Receives two double vectors and calculates the Cosine distance.
 	 * @param v1 vector number 1.
 	 * @param v2 vector number 2.
 	 * @return The Cosine distance.

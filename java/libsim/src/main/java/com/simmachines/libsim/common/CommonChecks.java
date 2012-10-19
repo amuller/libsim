@@ -223,5 +223,22 @@ public class CommonChecks {
 		}
 		return false;
 	}
+	
+	
+	/**
+	 * Checks if the sum of all the vector entries is equal to 1.
+	 * @param v vector to check.
+	 * @return true if the sum of all the vector entries is equal to 1, false otherwise.
+	 */
+	public static boolean sumAllEntriesEqualToOne(double v[]){
+		double sum = 0;
+		for(double d:v){
+			sum += d;
+		}
+		if(sum==1){
+			return true;
+		}
+		return false;
+	}
 
 }
