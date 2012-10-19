@@ -1,6 +1,7 @@
 package com.simmachines.libsim.enc.string;
 
 import com.simmachines.libsim.common.CommonStats;
+import com.simmachines.libsim.common.Transformations;
 
 /**
  * [Levenshtein distance]
@@ -66,7 +67,7 @@ public class Levenshtein {
      * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
      */ 
 	public static int distance(String str1, String str2){
-		return distance(CommonStats.convertStringToIntArray(str1), CommonStats.convertStringToIntArray(str2), DEFAULT_CC);
+		return distance(Transformations.convertStringToIntArray(str1), Transformations.convertStringToIntArray(str2), DEFAULT_CC);
 	}
 	
 	
@@ -77,7 +78,7 @@ public class Levenshtein {
      * @return  The minimum number of insert, delete and rename operations required to transform str1 to str2.
      */ 
 	public static int distance(String str1, String str2, CostCalculator c){
-		return distance(CommonStats.convertStringToIntArray(str1), CommonStats.convertStringToIntArray(str2),c);
+		return distance(Transformations.convertStringToIntArray(str1), Transformations.convertStringToIntArray(str2),c);
 	}
 	
 	

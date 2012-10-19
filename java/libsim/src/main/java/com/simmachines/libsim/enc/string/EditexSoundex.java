@@ -1,6 +1,6 @@
 package com.simmachines.libsim.enc.string;
 
-import com.simmachines.libsim.common.CommonStats;
+import com.simmachines.libsim.common.Transformations;
 
 
 
@@ -59,7 +59,7 @@ public class EditexSoundex {
 	 * 			deletion and insertion of letters.
 	 */
 	public static int distance(String str1,String str2){
-		return distance(CommonStats.convertStringToIntArray(str1),CommonStats.convertStringToIntArray(str2));
+		return distance(Transformations.convertStringToIntArray(str1),Transformations.convertStringToIntArray(str2));
 	}
 	
 	

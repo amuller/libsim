@@ -1,6 +1,6 @@
 package com.simmachines.libsim.enc.string;
 
-import com.simmachines.libsim.common.CommonStats;
+import com.simmachines.libsim.common.Transformations;
 
 /**
  * [QGram distance]
@@ -77,7 +77,7 @@ public class QGram {
 	 * @return The q-gram similarity.
 	 */
 	public static double distance(int q, String str1,String str2){
-		return distance(q, CommonStats.convertStringToIntArray(str1),CommonStats.convertStringToIntArray(str2));
+		return distance(q, Transformations.convertStringToIntArray(str1),Transformations.convertStringToIntArray(str2));
 	}
 	
 	
