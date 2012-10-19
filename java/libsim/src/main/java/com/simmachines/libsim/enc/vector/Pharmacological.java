@@ -42,14 +42,19 @@ public class Pharmacological {
 	
 	/**
 	 * Received two affinity vectors and calculates the Pharmacological distance.
+	 * The affinity vector of kinase x is defined as: 
+	 * \( (-lnB_1(x), \ldots , =lnB_n(x)) \) 
+	 * <p> where \( B_i(x) \) is the binding
+	 * constant for the reaction of \( x \)  with drug \( a_i \), and \( B_i(x) = 1 \) 
+	 * <p> if no interaction was observed. 
 	 * @param v1 affinity vector number 1.
 	 * @param v2 affinity vector number 2.
 	 * @return The Pharmacological distance.
 	 */
-	public static double distance(double v1[],double v2[]){
+	public static double distance(double v1[],double v2[]){		
 		double res = 0;
 		for(int i=0;i<v1.length;i++){
-			res += Math.pow(-v1[i]+v2[i], 2);
+			res += Math.pow(v1[i] - v2[i], 2);
 		}
 		return Math.sqrt(res);
 	}

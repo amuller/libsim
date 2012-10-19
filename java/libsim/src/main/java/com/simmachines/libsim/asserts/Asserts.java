@@ -77,6 +77,17 @@ public class Asserts {
 		validate(CommonChecks.greaterThanZero(v),"The input value is either equal or less than zero");
 	}
 	
+	
+	/**
+	 * Verifies if a given value is lower than zero, if it isn't, throws an exception with a custom message.
+	 * @param v value received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterThanZero
+	 */
+	public static void assertLowerThanZero(double v){
+		validate(CommonChecks.greaterThanZero(v),"The input value is either equal or less than zero");
+	}
+	
 	/**
 	 * Verifies if a given value is greater than zero, if it isn't, throws an exception with a custom message.
 	 * @param v value received.

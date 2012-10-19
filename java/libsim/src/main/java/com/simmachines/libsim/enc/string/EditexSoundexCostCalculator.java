@@ -22,13 +22,53 @@ public class EditexSoundexCostCalculator implements CostCalculator {
 		return 2;
 	}
 	
+	/*
+	public static int compare(int target, int[] elems, int cost){
+		for(int e : elems){
+			if(target == e){
+				return cost;
+			}
+		}
+		
+		return -1;
+	}
+	
+	public static int[] prepare (char[] input){
+		int[] res = new int[input.length * 2];
+		int src = 0;
+		int target = 0;
+		while(src < res.length){
+			res[target] = (int) input[src];
+			target++;
+			res[target] = (int) Character.toUpperCase(input[src]);
+			target++;
+			src++;
+		}
+		return res;
+	}
+	
+	static int[] groupZero = prepare(new char[]{'a', 'i', 'u', 'w', 'e', 'o', 'h', 'y'});
+	static int[] groupOne = prepare(new char[]{'b', 'f'});
+	
+	public int myGroupCode(int ch){
+		int r = compare(ch, groupZero, 0);
+		if(r != -1){
+			return r;
+		}
+		
+		r = compare(ch, groupOne, 1);
+		if(r != -1){
+			return r;
+		}
+	}*/
+	
 	/**
 	 * Receives an integer that represents a character, and returns the group code in which it is classified.
 	 * The characters of the alphabet are grouped according to Soundex method.
 	 * @param ch integer received.
 	 * @return the group code.
 	 */
-	public int groupCode(int ch){
+	public int groupCode(int ch){		
 		if(ch == (int) 'a'|| ch == (int) 'A' || ch == (int) 'e'|| ch == (int) 'E'||
 		   ch == (int) 'i'|| ch == (int) 'I' || ch == (int) 'o'|| ch == (int) 'O'||
 		   ch == (int) 'u'|| ch == (int) 'U' || ch == (int) 'h'|| ch == (int) 'H'||
@@ -40,8 +80,8 @@ public class EditexSoundexCostCalculator implements CostCalculator {
 			return 1;
 		}
 		if(ch == (int) 'g'|| ch == (int) 'G' || ch == (int) 'j'|| ch == (int) 'J'||
-		   ch == (int) 'k'|| ch == (int) 'K' || ch == (int) 'q'|| ch == (int) 'Q'||
-		   ch == (int) 'c'|| ch == (int) 'C' || ch == (int) 's'|| ch == (int) 'S'||
+		   ch == (int) 'k' || ch == (int) 'K' || ch == (int) 'q'|| ch == (int) 'Q'||
+		   ch == (int) 'c' || ch == (int) 'C' || ch == (int) 's'|| ch == (int) 'S'||
 		   ch == (int) 'x'|| ch == (int) 'X' || ch == (int) 'z'|| ch == (int) 'Z'){
 			return 2;
 		}

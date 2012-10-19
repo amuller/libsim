@@ -52,6 +52,18 @@ public class CommonChecks {
 	}
 	
 	/**
+	 * Checks if a given value is lower than zero.
+	 * @param v value received.
+	 * @return true if the value is greater than zero, false otherwise.
+	 */
+	public static boolean lowerThanZero(double v){
+		if(v < 0){
+			return true;
+		}
+		return false;
+	}
+	
+	/**
 	 * Checks if a given value is greater than zero.
 	 * @param v value received.
 	 * @return true if the value is greater than zero, false otherwise.
