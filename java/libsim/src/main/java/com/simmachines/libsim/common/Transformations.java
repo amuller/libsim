@@ -1,5 +1,7 @@
 package com.simmachines.libsim.common;
 
+import com.simmachines.libsim.enc.set.MultiSetCounter;
+
 public class Transformations {
 
 	/**
@@ -24,6 +26,15 @@ public class Transformations {
 			b.appendCodePoint(i);
 		}
 		return b.toString();
+	}
+	
+	
+	public static MultiSetCounter<Integer> convertIntArrayToMultiSetCounter(int str[]){
+		MultiSetCounter<Integer> res = new MultiSetCounter<Integer>();
+		for(int i:str){
+			res.add(i);
+		}
+		return res;
 	}
 
 }

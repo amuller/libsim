@@ -166,4 +166,5 @@ public class CommonStats {
 		return Math.log((1+number)/(1-number))/2;
 	}
 	
+	
 }
