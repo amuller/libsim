@@ -1,5 +1,6 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
 
@@ -46,6 +47,8 @@ public class Cosine {
 	 */
 	
 	public static double distance(double[] v1,double[] v2){
+		Asserts.assertHasAllZeros(v1);
+		Asserts.assertHasAllZeros(v2);
 		return 1-CommonStats.dotProduct(v1, v2)/(CommonStats.norm(v1)*CommonStats.norm(v2));
 	}
 	

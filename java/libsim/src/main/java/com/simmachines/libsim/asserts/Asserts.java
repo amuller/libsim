@@ -44,6 +44,19 @@ public class Asserts {
 	
 	
 	/**
+	 * Verifies if both values are equal, if not, throws an exception with a custom message.
+	 * @param s1 value String 1.
+	 * @param s2 value String 2.
+	 * @see Asserts.validate
+	 * @see CommonChecks.equals
+	 */
+	
+	public static void assertEquals(String v1, String v2){
+		validate(CommonChecks.equals(v1, v2),"The input values are not equal");
+	}
+	
+	
+	/**
 	 * Verifies if both values are equal (within the precision range), if not, throws an exception with a custom message.
 	 * @param v1 value number 1.
 	 * @param v2 value number 2.
@@ -120,6 +133,17 @@ public class Asserts {
 	
 	public static void assertHasNoZero(double v[]){
 		validate(CommonChecks.hasNoZero(v),"The input vector has at least one entry with a value equals to zero");
+	}
+	
+	/**
+	 * Verifies if the vector has at least one entry with a value different to zero, if does not have it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts.validate
+	 * @see CommonChecks.hasNoZero
+	 */
+	
+	public static void assertHasAllZeros(double v[]){
+		validate(CommonChecks.hasAllZeros(v),"The input vector does not have at least one entry with a value different to zero");
 	}
 	
 	

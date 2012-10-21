@@ -44,6 +44,8 @@ public class Angular {
 	 */
 	
 	public static double distance(double[] v1,double[] v2){
+		Asserts.assertHasAllZeros(v1);
+		Asserts.assertHasAllZeros(v2);
 		if(v1==v2){
 			return 0;
 		}

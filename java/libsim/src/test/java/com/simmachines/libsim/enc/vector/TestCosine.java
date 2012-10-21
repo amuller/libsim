@@ -72,8 +72,13 @@ public class TestCosine {
 		double[] v1 = new double[]{-3, -5, -8};
 		double[] v2 = new double[]{0, 0, 0};
 		Asserts.assertEqualLength(v1, v2);
-		double res = Cosine.distance(v1, v2);
-		Asserts.assertEquals(res, 1);
+		try {
+			double res = Cosine.distance(v1, v2);
+			Asserts.assertEquals(res, 1.0);
+		}
+		catch ( IllegalArgumentException e ){
+			Asserts.assertEquals(e.getMessage(), "The input vector does not have at least one entry with a value different to zero");		
+		}
 	}
 	
 	@Test
