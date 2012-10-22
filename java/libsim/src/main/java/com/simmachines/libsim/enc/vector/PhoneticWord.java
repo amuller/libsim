@@ -24,6 +24,7 @@ public class PhoneticWord {
 				wf.add(cols[i]);
 				i++;
 			}
+			wf.addWord(cols);
 		}
 		fact = wf; 
 	}
