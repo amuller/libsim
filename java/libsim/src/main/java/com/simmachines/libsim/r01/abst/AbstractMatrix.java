@@ -75,8 +75,8 @@ public abstract class AbstractMatrix implements RA<Double> {
 		int row = buf.getInt();
 		int column = buf.getInt();
 		double res[][] = new double[row][column];
-		for(int i=0;i<matrix.getRowDimension();i++){
-			for(int j=0;j<matrix.getColumnDimension();j++){
+		for(int i=0;i<row;i++){
+			for(int j=0;j<column;j++){
 				res[i][j] = buf.getDouble();
 			}
 		}

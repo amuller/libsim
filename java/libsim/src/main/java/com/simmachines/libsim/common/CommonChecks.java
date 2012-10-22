@@ -22,6 +22,17 @@ public class CommonChecks {
 		return (Math.abs(a - b) <= PRECISION);
 	}
 	
+	/**
+	 * Checks if both strings are equal
+	 * @param a first string
+	 * @param b second string
+	 * @return true if the strings are equals, false otherwise
+	 */
+
+	public static boolean equals(String a, String b){
+		return (a == b);
+	}
+	
 	
 	/**
 	 * Checks if:   \(\forall v_i \in V, \exists v_i <= 0 \) 
@@ -105,6 +116,21 @@ public class CommonChecks {
 			}
 		}
 		return true;
+	}
+	
+	/**
+	 * Checks if:   \(\forall v_i \in V, v_i = 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i != 0 \), true otherwise
+	 */
+
+	public static boolean hasAllZeros(double v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]!=0){
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -219,6 +245,23 @@ public class CommonChecks {
 	 */
 	public static boolean hasFiveEntries(double v[]){
 		if(v.length==5){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	/**
+	 * Checks if the sum of all the vector entries is equal to 1.
+	 * @param v vector to check.
+	 * @return true if the sum of all the vector entries is equal to 1, false otherwise.
+	 */
+	public static boolean sumAllEntriesEqualToOne(double v[]){
+		double sum = 0;
+		for(double d:v){
+			sum += d;
+		}
+		if(sum==1){
 			return true;
 		}
 		return false;

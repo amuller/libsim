@@ -8,9 +8,9 @@ package com.simmachines.libsim.enc.vector;
  * <p>
  * [Brief Description]
  * <p>
- * Given a set $\{a_1 , \dots , a_n \}$ of drugs in use, the affinity vector of kinase $x$
- * is defined as $(− \ln B_1(x), \dots , − \ln B_n(x))$, where $B_i(x)$ is the binding constant
- * for the reaction of $x$ with drug $a_i$ , and $B_i(x)=1$ if no interaction
+ * Given a set \( \{a_1 , \dots , a_n \} \) of drugs in use, the affinity vector of kinase \( x \)
+ * is defined as \( (− \ln B_1(x), \dots , − \ln B_n(x)) \), where \( B_i(x) \) is the binding constant
+ * for the reaction of \( x \) with drug \( a_i \), and \( B_i(x)=1 \) if no interaction
  * was observed. The binding constants are the average of several experiments
  * where the concentration of binded kinase is measured at equilibrium. 
 
