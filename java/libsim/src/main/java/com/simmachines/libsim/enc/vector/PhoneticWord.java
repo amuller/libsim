@@ -6,7 +6,14 @@ import java.util.Map;
 public class PhoneticWord {
 	
 	
-	public static PhoneticWordFactory getFactory(File dictionary, boolean includeAccents){
+	public static PhoneticWordFactory fact = null;; 
+	/**
+	 * Call this method before using the Phonetic word distance
+	 * @param dictionary
+	 * @param includeAccents
+	 * @return
+	 */
+	public static void initializeFactory(File dictionary, boolean includeAccents){
 		
 		PhoneticWordFactory wf = new PhoneticWordFactory(includeAccents);
 		String[] lines = null;		
@@ -18,10 +25,11 @@ public class PhoneticWord {
 				i++;
 			}
 		}
-		return null;
+		fact = wf; 
 	}
 	
 	public class PhoneticWordFactory{
+		
 		Map<String, Integer>  m ; // maps phonemes to ints. 
 		private boolean considerAccents; 
 		private int count;
@@ -37,6 +45,15 @@ public class PhoneticWord {
 				id++;
 			}
 		}
+		
+		public int[] convertWord(String word){
+			return null;
+		}
+	}
+	
+	public static double distance( String w1, String w2){
+		// llamar al factory
+		// llamar al Levenstein. 
 	}
 
 }
