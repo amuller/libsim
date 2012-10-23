@@ -49,6 +49,15 @@ public class CommonChecks {
 		return true;
 	}
 	
+	public static boolean greaterThanZero(int v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]<=0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	
 	/**
 	 * Checks if a given value is greater than zero.

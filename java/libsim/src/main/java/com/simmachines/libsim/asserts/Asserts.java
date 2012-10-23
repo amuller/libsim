@@ -79,6 +79,10 @@ public class Asserts {
 		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
 	
+	public static void assertGreaterThanZero(int v[]){
+		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
+	}
+	
 	
 	/**
 	 * Verifies if a given value is greater than zero, if it isn't, throws an exception with a custom message.

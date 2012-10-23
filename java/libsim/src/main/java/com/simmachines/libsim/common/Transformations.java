@@ -36,5 +36,13 @@ public class Transformations {
 		}
 		return res;
 	}
+	
+	public static double[] convertIntArrayToDoubleArray(int v[]){
+		double res[] = new double[v.length];
+		for(int i=0;i<v.length;i++){
+			res[i]=v[i];
+		}
+		return res;
+	}
 
 }
