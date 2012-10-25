@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.string.Jaro;
+import com.simmachines.libsim.enc.string.Dice;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
- * [Jaro distance]
+ * [Dice similarity]
  * <p>
- * :: The Jaro Similarity is a distance between two strings used in Record Linkage.
+ * :: The Dice similarity is a statistic used for comparing the similarity of two samples.
  * <p>
- * @see com.simmachines.libsim.enc.string.Jaro;
+ * @see com.simmachines.libsim.enc.string.Dice;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RAJaro extends AbstractIntVector{
+public class RADice extends AbstractIntVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RAJaro(){
+	public RADice(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RAJaro(int[] obj){
+	public RADice(int[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RAJaro(String line){
+	public RADice(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,15 @@ public class RAJaro extends AbstractIntVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RAJaro(cloneHelper());
+			return new RADice(cloneHelper());
 	}
 	
-	/** Calculates the Jaro distance between this and other RAJaro object
-	 *  @param other RAJaro object
-	 *  @return Jaro distance
+	/** Calculates the Dice similarity between this and other RADice object
+	 *  @param other RADice object
+	 *  @return Dice similarity
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Jaro.distance(getVector(),((RAJaro)other).getVector());
+			return Dice.distance(getVector(),((RADice)other).getVector());
 	}
-
 }

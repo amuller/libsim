@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.string.Jaro;
+import com.simmachines.libsim.enc.string.JaroWinkler;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
- * [Jaro distance]
+ * [Jaro-Winkler distance]
  * <p>
- * :: The Jaro Similarity is a distance between two strings used in Record Linkage.
+ * :: The Jaro-Winkler distance is a measure of similarity between two strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.Jaro;
+ * @see com.simmachines.libsim.enc.string.JaroWinkler;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RAJaro extends AbstractIntVector{
+public class RAJaroWinkler extends AbstractIntVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RAJaro(){
+	public RAJaroWinkler(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RAJaro(int[] obj){
+	public RAJaroWinkler(int[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RAJaro(String line){
+	public RAJaroWinkler(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RAJaro extends AbstractIntVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RAJaro(cloneHelper());
+			return new RAJaroWinkler(cloneHelper());
 	}
 	
-	/** Calculates the Jaro distance between this and other RAJaro object
-	 *  @param other RAJaro object
-	 *  @return Jaro distance
+	/** Calculates the Jaro-Winkler distance between this and other RAJaroWinkler object
+	 *  @param other RAJaroWinkler object
+	 *  @return Jaro-Winkler distance
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Jaro.distance(getVector(),((RAJaro)other).getVector());
+			return JaroWinkler.distance(getVector(),((RAJaroWinkler)other).getVector());
 	}
 
 }

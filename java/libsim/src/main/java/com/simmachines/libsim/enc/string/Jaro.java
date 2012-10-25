@@ -49,8 +49,8 @@ public class Jaro {
 	
 	/**
 	 * Receives two integer arrays representing two words and calculates the Jaro distance.
-	 * @param str1 string number 1.
-	 * @param str2 string number 2.
+	 * @param str1 integer array number 1.
+	 * @param str2 integer array number 2.
 	 * @return The Jaro distance.
 	 */
 	public static double distance(int[] str1, int[] str2){

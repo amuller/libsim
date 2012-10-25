@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.string.Jaro;
+import com.simmachines.libsim.enc.string.Jaccard;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
- * [Jaro distance]
+ * [Jaccard similarity]
  * <p>
- * :: The Jaro Similarity is a distance between two strings used in Record Linkage.
+ * :: The Jaccard similarity is a statistic used for comparing the similarity and diversity of two samples.
  * <p>
- * @see com.simmachines.libsim.enc.string.Jaro;
+ * @see com.simmachines.libsim.enc.string.Jaccard;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RAJaro extends AbstractIntVector{
+public class RAJaccard extends AbstractIntVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RAJaro(){
+	public RAJaccard(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RAJaro(int[] obj){
+	public RAJaccard(int[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RAJaro extends AbstractIntVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RAJaro(String line){
+	public RAJaccard(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,15 @@ public class RAJaro extends AbstractIntVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RAJaro(cloneHelper());
+			return new RAJaccard(cloneHelper());
 	}
 	
-	/** Calculates the Jaro distance between this and other RAJaro object
-	 *  @param other RAJaro object
-	 *  @return Jaro distance
+	/** Calculates the Jaccard similarity between this and other RAJaccard object
+	 *  @param other RAJaccard object
+	 *  @return Jaccard similarity
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Jaro.distance(getVector(),((RAJaro)other).getVector());
+			return Jaccard.distance(getVector(),((RAJaccard)other).getVector());
 	}
-
 }
