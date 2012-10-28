@@ -127,7 +127,7 @@ public final class Jaro extends AbstractStringMetric implements Serializable {
         //get common characters
         final StringBuffer common1 = getCommonCharacters(string1, string2, halflen);
         final StringBuffer common2 = getCommonCharacters(string2, string1, halflen);
-
+        
         //check for zero in common
         if (common1.length() == 0 || common2.length() == 0) {
             return 0.0f;
@@ -145,7 +145,6 @@ public final class Jaro extends AbstractStringMetric implements Serializable {
                 transpositions++;
         }
         transpositions /= 2.0f;
-
         //calculate jaro metric
         return (common1.length() / ((float) string1.length()) +
                 common2.length() / ((float) string2.length()) +

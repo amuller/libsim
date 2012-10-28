@@ -19,8 +19,9 @@ import com.simmachines.libsim.common.Transformations;
  <p>
  \( JW(a,b)=Jaro(a,b)+\frac{max\{4,LCP(a,b)\}}{10}(1-Jaro(a,b)) \)
  * <p>
- * where \(Jaro(x, y)\) is the Jaro similarity, and \(LCP (x, y)\) is the length of the longest common prefix of \(x\) and \(y\).
+ * where \(Jaro(a,b)\) is the Jaro similarity, and \(LCP (a,b)\) is the length of the longest common prefix of \(a\) and \(b\).
  * 
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
  * <p>
  * [Reference]
  * <p>

@@ -186,7 +186,7 @@ public final class Soundex extends AbstractStringMetric implements Serializable 
         if (wordString.length() == 0) {
             return ("");
         }
-
+        
         //remove case
         wordString = wordString.toUpperCase();
 
@@ -195,7 +195,6 @@ public final class Soundex extends AbstractStringMetric implements Serializable 
         wordStr = wordString;
         wordStr = wordStr.replaceAll("[^A-Z]", " "); // rpl non-chars w space
         wordStr = wordStr.replaceAll("\\s+", "");   // remove spaces
-
         //check for empty input again the previous clean and tidy could of shrunk it to zero.
         if (wordStr.length() == 0) {
             return ("");
@@ -228,7 +227,6 @@ public final class Soundex extends AbstractStringMetric implements Serializable 
         wordStr = wordStr.replaceAll("[L]", "4");
         wordStr = wordStr.replaceAll("[MN]", "5");
         wordStr = wordStr.replaceAll("[R]", "6");
-
         // Remove extra equal adjacent digits
         wsLen = wordStr.length();
         lastChar = '-';
@@ -242,7 +240,7 @@ public final class Soundex extends AbstractStringMetric implements Serializable 
         }
         wordStr = tmpStr;
         wordStr = wordStr.substring(1);          /* Drop first letter code   */
-        wordStr = wordStr.replaceAll("0", "");  /* remove zeros             */
+        wordStr = wordStr.replaceAll("0", "");  /* remove zeros  */
         wordStr += "000000000000000000";              /* pad with zeros on right  */
         wordStr = firstLetter + "-" + wordStr;      /* Add first letter of word */
         wordStr = wordStr.substring(0, soundExLen); /* size to taste     */

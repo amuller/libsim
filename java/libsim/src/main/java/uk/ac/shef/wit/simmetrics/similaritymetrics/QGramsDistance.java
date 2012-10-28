@@ -141,7 +141,7 @@ public final class QGramsDistance extends AbstractStringMetric implements Serial
         final ArrayList<String> str2Tokens = tokeniser.tokenizeToArrayList(string2);
 
         final int maxQGramsMatching = str1Tokens.size() + str2Tokens.size();
-
+      
         //return
         if (maxQGramsMatching == 0) {
             return 0.0f;
