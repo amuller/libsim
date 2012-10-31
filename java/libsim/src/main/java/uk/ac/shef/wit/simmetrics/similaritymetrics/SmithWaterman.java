@@ -211,7 +211,7 @@ public final class SmithWaterman extends AbstractStringMetric implements Seriali
      */
     public float getSimilarity(final String string1, final String string2) {
         final float smithWaterman = getUnNormalisedSimilarity(string1, string2);
-
+        
         //normalise into zero to one region from min max possible
         float maxValue = Math.min(string1.length(), string2.length());
         if (dCostFunc.getMaxCost() > -gapCost) {
@@ -219,7 +219,7 @@ public final class SmithWaterman extends AbstractStringMetric implements Seriali
         } else {
             maxValue *= -gapCost;
         }
-
+        
         //check for 0 maxLen
         if (maxValue == 0) {
             return 1.0f; //as both strings identically zero length
