@@ -44,7 +44,7 @@ public class SpearmanRank {
 	 */
 	
 	public static double distance(int[] v1,int[] v2){
-		int res = 0;
+		double res = 0;
 		for(int i=0;i<v1.length;i++){
 			res += Math.pow(v1[i]-v2[i], 2);
 		}
