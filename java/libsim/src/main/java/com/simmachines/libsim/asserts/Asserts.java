@@ -65,7 +65,7 @@ public class Asserts {
 	 */
 	
 	public static void assertEquals(double v1, double v2){
-		validate(CommonChecks.equals(v1, v2),"The input values are not equals within the precision range");
+		validate(CommonChecks.equals(v1, v2),"The input values are not equals within the precision range. v1: " + v1 + " v2: " + v2);
 	}
 	
 	/**
