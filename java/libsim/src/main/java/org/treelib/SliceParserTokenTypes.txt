@@ -1,0 +1,8 @@
+// $ANTLR 2.7.4: Slice.g -> SliceParserTokenTypes.txt$
+SliceParser    // output token vocab name
+CONSTRUCT_NAME=4
+NUMBER=5
+LEFT_PAREN=6
+PARAM_SEPARATOR=7
+RIGHT_PAREN=8
+WS=9

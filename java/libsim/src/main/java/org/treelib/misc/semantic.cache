@@ -1,0 +1,16 @@
+;; Object misc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "misc/"
+  :tables (list 
+   (semanticdb-table "IntegerHolder.java"
+    :major-mode 'jde-mode
+    :tags '(("furia.misc" package nil nil [1 20]) ("IntegerHolder" type (:typemodifiers ("public") :interfaces ("Comparable") :members (("value" variable (:typemodifiers ("private") :type "int") (reparse-symbol class_member_declaration) [946 964]) ("getValue" function (:typemodifiers ("public") :type "int") (reparse-symbol class_member_declaration) [970 1021]) ("setValue" function (:typemodifiers ("public") :arguments (("value" variable (:type "int") (reparse-symbol formal_parameters) [1048 1057])) :type "void") (reparse-symbol class_member_declaration) [1027 1094]) ("IntegerHolder" function (:constructor-flag t :typemodifiers ("public") :arguments (("value" variable (:type "int") (reparse-symbol formal_parameters) [1121 1130]))) (reparse-symbol class_member_declaration) [1100 1184]) ("inc" function (:typemodifiers ("public") :type "void") (reparse-symbol class_member_declaration) [1190 1232]) ("dec" function (:typemodifiers ("public") :type "void") (reparse-symbol class_member_declaration) [1238 1280]) ("toString" function (:typemodifiers ("public") :type "String") (reparse-symbol class_member_declaration) [1286 1345]) ("add" function (:typemodifiers ("public") :arguments (("x" variable (:type "int") (reparse-symbol formal_parameters) [1458 1463])) :type "void") (reparse-symbol class_member_declaration) [1442 1492]) ("compareTo" function (:typemodifiers ("public") :arguments (("o" variable (:type "Object") (reparse-symbol formal_parameters) [1519 1527])) :type "int") (reparse-symbol class_member_declaration) [1498 1862])) :type "class") nil [890 1865]))
+    :file "IntegerHolder.java"
+    :pointmax 1866
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )

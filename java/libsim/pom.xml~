@@ -33,12 +33,13 @@
       <groupId>simMachines</groupId>
       <artifactId>R01</artifactId>
       <version>1.0</version>
-      <scope>test</scope>
     </dependency>
 		
-
-
-
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.0</version>
+		</dependency>
 
   </dependencies>
 
@@ -69,6 +70,24 @@
 
 	</configuration>
         </plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antlr-plugin</artifactId>
+				<configuration>
+					<sourceDirectory>${basedir}/src/main/java/antlr/</sourceDirectory>
+					<grammars>Slice.g</grammars>
+					<outputDirectory>${basedir}/src/main/java/antlr/</outputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
 
 

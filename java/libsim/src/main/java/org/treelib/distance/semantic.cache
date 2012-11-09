@@ -1,0 +1,23 @@
+;; Object distance/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "distance/"
+  :tables (list 
+   (semanticdb-table "TED.java"
+    :major-mode 'jde-mode
+    :tags '(("furia.slice.distance" package nil nil [1 30]) ("furia.slice.SliceAST" include nil nil [32 60]) ("furia.slice.SliceForest" include nil nil [61 92]) ("furia.slice.SliceForestStd" include nil nil [93 127]) ("TED" type (:typemodifiers ("public") :members (("DeleteCost" variable (:typemodifiers ("public") :type "int") (reparse-symbol interface_member_declaration) [1007 1033]) ("RenameCost" variable (:typemodifiers ("public") :type "int") (reparse-symbol interface_member_declaration) [1039 1065]) ("ted" function (:throws ("Exception") :typemodifiers ("public") :arguments (("a" variable (:type "SliceForest") (reparse-symbol formal_parameters) [1086 1099]) ("b" variable (:type "SliceForest") (reparse-symbol formal_parameters) [1101 1114])) :type "int") (reparse-symbol interface_member_declaration) [1071 1133]) ("tedSliceAST" function (:throws ("Exception") :typemodifiers ("public") :arguments (("a" variable (:type "SliceAST") (reparse-symbol formal_parameters) [1390 1400]) ("b" variable (:type "SliceAST") (reparse-symbol formal_parameters) [1402 1412])) :type "int") (reparse-symbol interface_member_declaration) [1367 1431])) :type "interface") nil [979 1434]))
+    :file "TED.java"
+    :pointmax 1435
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "UnmatchableException.java"
+    :major-mode 'jde-mode
+    :tags '(("furia.slice.distance" package nil nil [1 30]) ("UnmatchableException" type (:typemodifiers ("public") :superclasses "Exception" :type "class") nil [929 993]))
+    :file "UnmatchableException.java"
+    :pointmax 994
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )
