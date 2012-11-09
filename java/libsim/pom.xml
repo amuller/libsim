@@ -72,6 +72,24 @@
         </plugin>
 
 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antlr-plugin</artifactId>
+				<configuration>
+					<sourceDirectory>${basedir}/src/main/java/antlr/</sourceDirectory>
+					<grammars>Slice.g</grammars>
+					<outputDirectory>${basedir}/src/main/java/</outputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
 
 
     </plugins>
