@@ -19,7 +19,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.2</version>
-      <scope>test</scope>
     </dependency>
 		
 		<dependency>
@@ -27,6 +26,13 @@
 			<artifactId>colt</artifactId>
 			<version>1.2.0</version>
 						<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.6</version>
+			<scope>compile</scope>
 		</dependency>
 
     <dependency>

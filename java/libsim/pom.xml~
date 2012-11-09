@@ -29,6 +29,13 @@
 						<scope>compile</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.6</version>
+			<scope>compile</scope>
+		</dependency>
+
     <dependency>
       <groupId>simMachines</groupId>
       <artifactId>R01</artifactId>
@@ -78,7 +85,7 @@
 				<configuration>
 					<sourceDirectory>${basedir}/src/main/java/antlr/</sourceDirectory>
 					<grammars>Slice.g</grammars>
-					<outputDirectory>${basedir}/src/main/java/antlr/</outputDirectory>
+					<outputDirectory>${basedir}/src/main/java/</outputDirectory>
 				</configuration>
 				<executions>
 					<execution>
