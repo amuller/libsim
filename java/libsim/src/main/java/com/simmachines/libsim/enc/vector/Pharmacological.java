@@ -1,5 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
+
 
 /**
  * [Pharmacological distance]
@@ -51,7 +53,8 @@ public class Pharmacological {
 	 * @param v2 affinity vector number 2.
 	 * @return The Pharmacological distance.
 	 */
-	public static double distance(double v1[],double v2[]){		
+	public static double distance(double v1[],double v2[]){
+		Asserts.assertEqualLength(v1, v2);
 		double res = 0;
 		for(int i=0;i<v1.length;i++){
 			res += Math.pow(v1[i] - v2[i], 2);

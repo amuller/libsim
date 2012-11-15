@@ -54,7 +54,7 @@ Where:
  * <p>
  * @see <a href="http://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm">Wikipedia Article</a>
  * <p>
- * @see <a href="http://www.gen.tcd.ie/molevol/nwswat.html">Reference by author</a>
+ * @see <a href="http://www.gen.tcd.ie/molevol/nwswat.html">Additional Information</a>
  * 
  * @author Jose Daniel Salazar-Vargas
  * 
