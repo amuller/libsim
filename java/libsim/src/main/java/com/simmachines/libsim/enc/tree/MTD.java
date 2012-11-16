@@ -2,10 +2,10 @@ package com.simmachines.libsim.enc.tree;
 
 import org.treelib.TreeFactory;
 
+import com.simmachines.libsim.common.Transformations;
+
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
-
-import com.diapai.ramiel.RA;
 
 /**
  * [MTD distance]
@@ -40,7 +40,7 @@ import com.diapai.ramiel.RA;
  * | New Frontiers in Applied Data Mining :: P.87 - 98 |
  * <p>
  * 
- * @author Arnoldo Jose Muller-Molina 
+ * @author Jose Daniel Salazar-Vargas 
  * 
  */
 
@@ -60,10 +60,12 @@ public class MTD {
 					return t1.distance(t2);
 				} catch (RecognitionException | TokenStreamException e) {
 					throw new IllegalArgumentException(e);
-				}								
-				
+				}												
 		}
 		
+		public static double distance(int[] str1, int[] str2){
+			return distance(Transformations.convertIntArrayToString(str1), Transformations.convertIntArrayToString(str2));
+		}
 }
 
 
