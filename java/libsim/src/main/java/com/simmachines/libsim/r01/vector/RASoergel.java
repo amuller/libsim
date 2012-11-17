@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.Intersection;
+import com.simmachines.libsim.enc.vector.Soergel;
 import com.simmachines.libsim.r01.abst.AbstractVector;
 
 /**
- * [Intersection distance]
+ * [Soergel distance]
  * <p>
- * :: The Intersection is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
+ * :: The Soergel is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Intersection;
+ * @see com.simmachines.libsim.enc.vector.Soergel;
  * @author Jose Daniel Salazar-Vargas
  */
 
 
-public class RAIntersection extends AbstractVector{
+public class RASoergel extends AbstractVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RAIntersection(){
+	public RASoergel(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RAIntersection extends AbstractVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RAIntersection(double[] obj){
+	public RASoergel(double[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RAIntersection extends AbstractVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RAIntersection(String line){
+	public RASoergel(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RAIntersection extends AbstractVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RAIntersection(cloneHelper());
+			return new RASoergel(cloneHelper());
 	}
 	
-	/** Calculates the Intersection distance between this and other RAIntersection object
-	 *  @param other RAIntersection object
-	 *  @return Intersection distance
+	/** Calculates the Soergel distance between this and other RASoergel object
+	 *  @param other RASoergel object
+	 *  @return Soergel distance
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Intersection.distance(getVector(),((RAIntersection)other).getVector());
+			return Soergel.distance(getVector(),((RASoergel)other).getVector());
 	}
 
 }

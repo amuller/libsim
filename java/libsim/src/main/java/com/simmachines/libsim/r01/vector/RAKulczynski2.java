@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.Intersection;
+import com.simmachines.libsim.enc.vector.Kulczynski2;
 import com.simmachines.libsim.r01.abst.AbstractVector;
 
 /**
- * [Intersection distance]
+ * [Kulczynski-2 similarity]
  * <p>
- * :: The Intersection is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
+ * :: The Kulczynski-2 is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Intersection;
+ * @see com.simmachines.libsim.enc.vector.Kulczynski2;
  * @author Jose Daniel Salazar-Vargas
  */
 
 
-public class RAIntersection extends AbstractVector{
+public class RAKulczynski2 extends AbstractVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RAIntersection(){
+	public RAKulczynski2(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RAIntersection extends AbstractVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RAIntersection(double[] obj){
+	public RAKulczynski2(double[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RAIntersection extends AbstractVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RAIntersection(String line){
+	public RAKulczynski2(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RAIntersection extends AbstractVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RAIntersection(cloneHelper());
+			return new RAKulczynski2(cloneHelper());
 	}
 	
-	/** Calculates the Intersection distance between this and other RAIntersection object
-	 *  @param other RAIntersection object
-	 *  @return Intersection distance
+	/** Calculates the Kulczynski-2 similarity between this and other RAKulczynski2 object
+	 *  @param other RAKulczynski2 object
+	 *  @return Kulczynski-2 similarity
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Intersection.distance(getVector(),((RAIntersection)other).getVector());
+			return Kulczynski2.distance(getVector(),((RAKulczynski2)other).getVector());
 	}
 
 }
