@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.Roberts;
+import com.simmachines.libsim.enc.vector.Motyka;
 import com.simmachines.libsim.r01.abst.AbstractVector;
 
 /**
- * [Roberts similarity]
+ * [Motyka similarity]
  * <p>
- * :: The Roberts is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
+ * :: The Motyka is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Roberts;
+ * @see com.simmachines.libsim.enc.vector.Motyka;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RARoberts extends AbstractVector{
+public class RAMotyka extends AbstractVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RARoberts(){
+	public RAMotyka(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RARoberts extends AbstractVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RARoberts(double[] obj){
+	public RAMotyka(double[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RARoberts extends AbstractVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RARoberts(String line){
+	public RAMotyka(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RARoberts extends AbstractVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RARoberts(cloneHelper());
+			return new RAMotyka(cloneHelper());
 	}
 	
-	/** Calculates the Roberts similarity between this and other RARoberts object
-	 *  @param other RARoberts object
-	 *  @return Roberts similarity
+	/** Calculates the Motyka similarity between this and other RAMotyka object
+	 *  @param other RAMotyka object
+	 *  @return Motyka similarity
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Roberts.distance(getVector(),((RARoberts)other).getVector());
+			return Motyka.distance(getVector(),((RAMotyka)other).getVector());
 	}
 
 }

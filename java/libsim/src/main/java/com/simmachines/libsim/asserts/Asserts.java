@@ -165,6 +165,19 @@ public class Asserts {
 	
 	
 	/**
+	 * Verifies if a vector's entries are greater than a given value, if at least one of them isn't, throws an exception with a custom message.
+	 * @param vector vector to check.
+	 * @param value comparison parameter.
+	 * @see Asserts.validate
+	 * @see CommonChecks.greaterOrEqualThanValue
+	 */
+	
+	public static void assertGreaterOrEqualThanValue(double[] vector, double value){
+		validate(CommonChecks.greaterOrEqualThanValue(vector, value),"At least one entry of the vector received is less than "+value);
+	}
+	
+	
+	/**
 	 * Verifies if a number is between (including) the values 1 and -1, if it isn't, throws an exception with a custom message.
 	 * @param number number to check.
 	 * @see Asserts.validate

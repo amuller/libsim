@@ -187,6 +187,25 @@ public class CommonChecks {
 	}
 	
 	
+	/**
+	 * Checks if a vector's entries are greater or equal than a given value.
+	 * @param vector vector to check.
+	 * @param value comparison parameter..
+	 * @return true if the vector's entries are greater or equal than the value, false otherwise.
+	 * @see CommonChecks.greaterThanValue
+	 * @see CommonChecks.equalToValue
+	 */
+	
+	public static boolean greaterOrEqualThanValue(double[] vector, double value){
+		for(double v:vector){
+			if(!(greaterThanValue(v, value)||equalToValue(v, value))){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
 	
 	/**
 	 * Checks if a number is greater than a given value.
@@ -202,6 +221,23 @@ public class CommonChecks {
 		return false;
 	}
 	
+	
+	/**
+	 * Checks if a vector's entries are greater than a given value.
+	 * @param vector vector to check.
+	 * @param value comparison parameter.
+	 * @return true if the vector's entries are greater than the value, false otherwise.
+	 */
+	
+	public static boolean greaterThanValue(double[] vector, double value){
+		for(double v:vector){
+			if(value>=v){
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	/**
 	 * Checks if a number is equal to a given value.
 	 * @param number number to check.
@@ -214,6 +250,22 @@ public class CommonChecks {
 			return true;
 		}
 		return false;
+	}
+	
+	/**
+	 * Checks if a vector's entries are equal to a given value.
+	 * @param vector vector to check.
+	 * @param value comparison parameter.
+	 * @return true if the vector's entries are equal to the value, false otherwise.
+	 */
+	
+	public static boolean equalToValue(double[] vector, double value){
+		for(double v:vector){
+			if(value!=v){
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	
