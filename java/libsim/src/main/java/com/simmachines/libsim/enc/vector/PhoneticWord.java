@@ -10,7 +10,7 @@ public class PhoneticWord {
 	public static PhoneticWordFactory fact = null;
 	/**
 	 * Call this method before using the Phonetic word distance
-	 * @param dictionary !!!
+	 * @param dictionary
 	 * @param includeAccents
 	 * @return
 	 */
