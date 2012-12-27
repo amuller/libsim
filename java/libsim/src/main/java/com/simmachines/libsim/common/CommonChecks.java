@@ -281,6 +281,18 @@ public class CommonChecks {
 		return false;
 	}
 	
+	/**
+	 * Checks if a number is between (including) the values 0 and 1.
+	 * @param number number to check.
+	 * @return true if the value is between (including) 0 and 1, false otherwise.
+	 */
+	public static boolean betweenZeroandOne(double number){
+		if(number<=1 && number>=0){
+			return true;
+		}
+		return false;
+	}
+	
 	
 	/**
 	 * Checks if a matrix is a binary matrix (each entry has the value of 1 or 0).

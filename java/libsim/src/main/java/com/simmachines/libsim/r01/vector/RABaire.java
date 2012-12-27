@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.string.Bag;
+import com.simmachines.libsim.enc.string.Baire;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
- * [Bag distance]
+ * [Baire metric]
  * <p>
- * :: The Bag distance (or multiset metric, counting filter) is a distance between two strings, it is a (computationally) cheap approximation of the Levenshtein metric.
+ * :: The Baire metric is an ultrametric between finite or infinite strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.Bag;
+ * @see com.simmachines.libsim.enc.string.Baire;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RABag extends AbstractIntVector{
+public class RABaire extends AbstractIntVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RABag(){
+	public RABaire(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RABag extends AbstractIntVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RABag(int[] obj){
+	public RABaire(int[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RABag extends AbstractIntVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RABag(String line){
+	public RABaire(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RABag extends AbstractIntVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RABag(cloneHelper());
+			return new RABaire(cloneHelper());
 	}
 	
-	/** Calculates the Bag distance between this and other RABag object
-	 *  @param other RABag object
-	 *  @return Bag distance
+	/** Calculates the Baire metric between this and other RABaire object
+	 *  @param other RABaire object
+	 *  @return Baire metric
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Double.valueOf(Bag.distance(getVector(),((RABag)other).getVector()));
+			return Baire.distance(getVector(),((RABaire)other).getVector());
 	}
 
 }

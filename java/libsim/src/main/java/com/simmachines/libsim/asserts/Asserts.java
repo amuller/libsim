@@ -188,6 +188,16 @@ public class Asserts {
 	}
 	
 	/**
+	 * Verifies if a number is between (including) the values 0 and 1, if it isn't, throws an exception with a custom message.
+	 * @param number number to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.betweenZeroandOne
+	 */
+	public static void assertBetweenZeroandOne(double number){
+		validate(CommonChecks.betweenZeroandOne(number),"The number does not belong to the range: [0,1]");
+	}
+	
+	/**
 	 * Makes sure that the returned value is a distance function value. 
 	 * @param distanceValue
 	 * @see Asserts.validate

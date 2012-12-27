@@ -1,24 +1,24 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.string.Bag;
+import com.simmachines.libsim.enc.string.PrefixHamming;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
- * [Bag distance]
+ * [Prefix-Hamming metric]
  * <p>
- * :: The Bag distance (or multiset metric, counting filter) is a distance between two strings, it is a (computationally) cheap approximation of the Levenshtein metric.
+ * :: The Prefix-Hamming is a metric on general strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.Bag;
+ * @see com.simmachines.libsim.enc.string.PrefixHamming;
  * @author Jose Daniel Salazar-Vargas
  */ 
 
 
-public class RABag extends AbstractIntVector{
+public class RAPrefixHamming extends AbstractIntVector{
 	/** 
 	 * Default constructor required by R-01
 	 */
-	public RABag(){
+	public RAPrefixHamming(){
 			
 	}
 	
@@ -26,7 +26,7 @@ public class RABag extends AbstractIntVector{
 	 * Copy constructor
 	 * @param obj vector to copy.
 	 */ 
-	public RABag(int[] obj){
+	public RAPrefixHamming(int[] obj){
 			super(obj);
 	}
 	
@@ -34,7 +34,7 @@ public class RABag extends AbstractIntVector{
 	 * Parse a vector from a String
 	 * @param line String that contains an encoded version of the object. 
 	 */
-	public RABag(String line){
+	public RAPrefixHamming(String line){
 			super(line);
 	}
 	
@@ -44,16 +44,16 @@ public class RABag extends AbstractIntVector{
 	 * @see java.lang.Object#clone()
 	 */
 	public Object clone() {	
-			return new RABag(cloneHelper());
+			return new RAPrefixHamming(cloneHelper());
 	}
 	
-	/** Calculates the Bag distance between this and other RABag object
-	 *  @param other RABag object
-	 *  @return Bag distance
+	/** Calculates the Prefix-Hamming metric between this and other RAPrefixHamming object
+	 *  @param other RAPrefixHamming object
+	 *  @return Prefix-Hamming metric
 	 */ 
 	@Override
 			public Double distance(RA<Double> other) {
-			return Double.valueOf(Bag.distance(getVector(),((RABag)other).getVector()));
+			return Double.valueOf(PrefixHamming.distance(getVector(),((RAPrefixHamming)other).getVector()));
 	}
 
 }

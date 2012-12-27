@@ -166,5 +166,21 @@ public class CommonStats {
 		return Math.log((1+number)/(1-number))/2;
 	}
 	
+	/**
+	 * Calculates the Longest Common Prefix between two Strings represented by integer arrays.
+	 * @param str1 array number 1.
+	 * @param str2 array number 2.
+	 * @return the first n characters that are equal in both Strings (integer arrays).
+	 */
+	public static int LCP(int[] str1, int[] str2){
+		int min = min(str1.length,str2.length);
+		for (int i = 0; i < min; i++) {
+            if (str1[i] != str2[i]) {
+                return i;
+            }
+        }
+		return min;
+	}
+	
 	
 }
