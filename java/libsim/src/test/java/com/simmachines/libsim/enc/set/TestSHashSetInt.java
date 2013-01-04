@@ -118,4 +118,38 @@ public class TestSHashSetInt {
 		print(((SHashSetInt)s1.difference(s2)).getSet());
 	}
 	
+	
+	@Test
+	//jdsalazar
+	public void test7(){
+		HashSet<Integer> h1 = new HashSet<Integer>();
+		HashSet<Integer> h2 = new HashSet<Integer>();
+		h1.add(new Integer(1));
+		h1.add(new Integer(2));
+		h1.add(new Integer(3));
+		h2.add(new Integer(3));
+		h2.add(new Integer(4));
+		h2.add(new Integer(5));
+		SHashSetInt s1 = new SHashSetInt(h1);
+		SHashSetInt s2 = new SHashSetInt(h2);
+		print(((SHashSetInt)s1.symmetricDifference(s2)).getSet());
+	}
+	
+	
+	@Test
+	//jdsalazar
+	public void test8(){
+		HashSet<Integer> h1 = new HashSet<Integer>();
+		HashSet<Integer> h2 = new HashSet<Integer>();
+		h1.add(new Integer(-93));
+		h1.add(new Integer(-872));
+		h1.add(new Integer(3));
+		h2.add(new Integer(-872));
+		h2.add(new Integer(-93));
+		h2.add(new Integer(4748));
+		SHashSetInt s1 = new SHashSetInt(h1);
+		SHashSetInt s2 = new SHashSetInt(h2);
+		print(((SHashSetInt)s1.symmetricDifference(s2)).getSet());
+	}
+	
 }

@@ -84,6 +84,19 @@ public class SHashSetInt implements Set{
 	
 	
 	/**
+	 * Calculates difference between this and other set.
+	 * @see com.simmachines.libsim.enc.set.Set.difference
+	 */
+	
+	@Override
+	public Set symmetricDifference(Set other){
+		Set inters = intersect(other);
+		Set union = union(other);
+		return union.difference(inters);
+	}
+	
+	
+	/**
 	 * Deep copy of the set.  
 	 * @return A new, deep copied set.
 	 * @see com.simmachines.libsim.enc.set.Set;

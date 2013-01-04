@@ -310,6 +310,20 @@ public class CommonChecks {
 		return true;
 	}
 	
+	/**
+	 * Checks if a vector is a binary vector (each entry has the value of 1 or 0).
+	 * @param vector vector to check.
+	 * @return true if each entry has the value of 1 or 0, false otherwise.
+	 */
+	public static boolean isBinary(int vector[]){
+		for(double i : vector){
+			if(i!=1 && i!=0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	
 	/**
 	 * Checks if a vector has exactly five entries.

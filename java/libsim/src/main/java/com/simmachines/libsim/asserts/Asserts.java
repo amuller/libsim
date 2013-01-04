@@ -216,6 +216,16 @@ public class Asserts {
 	public static void assertIsBinary(double matrix[][]){
 		validate(CommonChecks.isBinary(matrix),"The matrix is not a binary matrix");
 	}
+	
+	/**
+	 * Verifies if a vector is a binary vector (each entry has the value of 1 or 0), if it isn't, throws an exception with a custom message.
+	 * @param vector vector to check.
+	 * @see Asserts.validate
+	 * @see CommonChecks.isBinary
+	 */
+	public static void assertIsBinary(int vector[]){
+		validate(CommonChecks.isBinary(vector),"The vector is not a binary vector");
+	}
 		
 	/**
 	 * Verifies if a vector has exactly five entries, if it isn't, throws an exception with a custom message.

@@ -182,5 +182,38 @@ public class CommonStats {
 		return min;
 	}
 	
+	/**
+	 * Process two binary vectors, calculating the number of variables that are positive for both objects, one of them or none of them.
+	 * @param v1 binary vector number 1
+	 * @param v2 binary vector number 2
+	 * @return an integer vector of four elements, in which the first element represents the number of variables that are positive for both objects (11),
+	 * the second element represents the number of variables that are positive for the first object but not for the second (10),
+	 * the third element represents the number of variables that are positive for the second object but not for the first (01)
+	 * and the fourth element represents the number of variables that are negative for both objects (00).
+	 */
+	public static int[] processBinaryVectors(int[] v1, int[] v2){
+		int[] res = new int[4];
+		res[0]=0;
+		res[1]=0;
+		res[2]=0;
+		res[3]=0;
+		for(int i=0;i<v1.length;i++){
+			if(v1[i]==1 && v2[i]==1){
+				res[0]++;
+			}else{
+				if(v1[i]==1 && v2[i]==0){
+					res[1]++;
+				}else{
+					if(v1[i]==0 && v2[i]==1){
+						res[2]++;
+					}else{
+						res[3]++;
+					}
+				}
+			}
+		}
+		return res;
+	}
+	
 	
 }

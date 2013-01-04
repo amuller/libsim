@@ -33,6 +33,14 @@ public interface Set extends Storable {
 	 */	
 	public Set difference(Set s1);
 	
+	
+	/**
+	 * Calculates the symmetric difference between this and other set.
+	 * @param s1 set that will be operated along with this.
+	 * @return A set of all members of this and s1 that are not members of this and s1 at the same time.
+	 */	
+	public Set symmetricDifference(Set s1);
+	
 	/**
 	 * Deep copy of the set.  
 	 * @return A new, deep copied set.
