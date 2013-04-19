@@ -150,6 +150,10 @@ public class Asserts {
 		validate(CommonChecks.hasAllZeros(v),"The input vector does not have at least one entry with a value different to zero");
 	}
 	
+	public static void assertHasAllZeros(int v[]){
+		validate(CommonChecks.hasAllZeros(v),"The input vector does not have at least one entry with a value different to zero");
+	}
+	
 	
 	/**
 	 * Verifies if a number is greater than a given value, if it isn't, throws an exception with a custom message.

@@ -44,7 +44,7 @@ public class SokalSneath3 {
 		Asserts.assertEqualLength(v1, v2);
 		Asserts.assertIsBinary(v1);
 		Asserts.assertIsBinary(v2);
-		int[] matches = CommonStats.processBinaryVectors(v1, v2);
+		int[] matches = CommonStats.processTwoBinaryVectors(v1, v2);
 		return (double)(matches[1]+matches[2])/(double)(matches[0]+matches[3]);
 	}
 	

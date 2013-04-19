@@ -142,6 +142,15 @@ public class CommonChecks {
 		return false;
 	}
 	
+	public static boolean hasAllZeros(int v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]!=0){
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	/**
 	 * Checks if two vectors have the same length.
 	 * @param v1 vector number 1.

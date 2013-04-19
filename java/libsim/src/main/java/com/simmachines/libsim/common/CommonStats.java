@@ -191,7 +191,7 @@ public class CommonStats {
 	 * the third element represents the number of variables that are positive for the second object but not for the first (01)
 	 * and the fourth element represents the number of variables that are negative for both objects (00).
 	 */
-	public static int[] processBinaryVectors(int[] v1, int[] v2){
+	public static int[] processTwoBinaryVectors(int[] v1, int[] v2){
 		int[] res = new int[4];
 		res[0]=0;
 		res[1]=0;
@@ -215,5 +215,26 @@ public class CommonStats {
 		return res;
 	}
 	
+	
+	
+	/**
+	 * Process a single binary vector, calculating the number of variables that are positive and the number that are negative.
+	 * @param v binary vector
+	 * @return an integer vector of two elements, in which the first element represents the number of variables that are positive (1),
+	 * the second element represents the number of variables that are negative (0).
+	 */
+	public static int[] processSingleBinaryVector(int[] v){
+		int[] res = new int[2];
+		res[0]=0;
+		res[1]=0;
+		for(int i=0;i<v.length;i++){
+			if(v[i]==1){
+				res[0]++;
+			}else{
+				res[1]++;
+			}
+		}
+		return res;
+	}
 	
 }
