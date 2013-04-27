@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Morisita-Horn similarity is a correlation similarity in data analisis on \( \mathbb{R}^n \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.MorisitaHorn;
+ * @see com.simmachines.libsim.enc.vector.MorisitaHorn
  * @author Jose Daniel Salazar-Vargas
  */
 

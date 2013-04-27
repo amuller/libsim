@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Chapman-Length-Deviation distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.ChapmanLengthDeviation;
+ * @see com.simmachines.libsim.enc.string.ChapmanLengthDeviation
  * @author Jose Daniel Salazar-Vargas
  * 
  */

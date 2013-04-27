@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The RMS log spectral distance (or root-mean-square distance, mean quadratic distance) is an audio distance between two discrete spectra. 
  * <p>
- * @see com.simmachines.libsim.enc.vector.RMSLogSpectral;
+ * @see com.simmachines.libsim.enc.vector.RMSLogSpectral
  * @author Jose Daniel Salazar-Vargas
  */ 
 

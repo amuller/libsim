@@ -40,7 +40,7 @@ public class Jaccard {
 
 	/**
 	 * SimMetrics JaccardSimilarity object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity jaccard = new uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity(); 
 	

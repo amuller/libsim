@@ -87,7 +87,6 @@ public abstract class AbstractIntVector implements RA<Double>{
 	
 	/**
 	 * Clones the vector and returns a new copy of it.
-	 * @return
 	 */
 	protected int[] cloneHelper(){
 		int[] newF = new int[this.vector.length];

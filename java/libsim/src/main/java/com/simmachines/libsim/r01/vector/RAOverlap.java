@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * ::The overlap coefficient is a similarity measure related to the Jaccard coefficient that computes the overlap between two sets
  * <p>
- * @see com.simmachines.libsim.enc.string.Overlap;
+ * @see com.simmachines.libsim.enc.string.Overlap
  * @author Jose Daniel Salazar-Vargas
  * 
  */

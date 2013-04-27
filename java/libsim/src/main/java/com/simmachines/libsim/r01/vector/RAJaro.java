@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Jaro Similarity is a distance between two strings used in Record Linkage.
  * <p>
- * @see com.simmachines.libsim.enc.string.Jaro;
+ * @see com.simmachines.libsim.enc.string.Jaro
  * @author Jose Daniel Salazar-Vargas
  */ 
 

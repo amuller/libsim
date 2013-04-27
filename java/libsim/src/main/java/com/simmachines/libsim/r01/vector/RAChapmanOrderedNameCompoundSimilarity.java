@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Chapman-Ordered-Name-Compound similarity]
  * <p>
- * @see com.simmachines.libsim.enc.string.ChapmanOrderedNameCompoundSimilarity;
+ * @see com.simmachines.libsim.enc.string.ChapmanOrderedNameCompoundSimilarity
  * @author Jose Daniel Salazar-Vargas
  * 
  */

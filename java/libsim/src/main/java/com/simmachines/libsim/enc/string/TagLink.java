@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Tag-Link distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class TagLink {
 
 	/**
 	 * SimMetrics TagLink object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink tagLink = new uk.ac.shef.wit.simmetrics.similaritymetrics.TagLink(); 
 	

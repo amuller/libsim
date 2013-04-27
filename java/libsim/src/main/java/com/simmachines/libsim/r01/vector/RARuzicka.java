@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Ruzicka distance is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Ruzicka;
+ * @see com.simmachines.libsim.enc.vector.Ruzicka
  * @author Jose Daniel Salazar-Vargas
  */ 
 

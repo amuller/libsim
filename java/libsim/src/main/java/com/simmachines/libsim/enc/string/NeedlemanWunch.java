@@ -48,7 +48,7 @@ public class NeedlemanWunch {
 
 	/**
 	 * SimMetrics NeedlemanWunch object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch needlemanWunch = new uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch(); 
 	

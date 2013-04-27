@@ -34,7 +34,7 @@ public abstract class AbstractMatrix implements RA<Double> {
 	/**
 	 * Returns the number of rows in the matrix.
 	 * @return the number of rows in the matrix.
-	 * @see org.apache.commons.math.linear.RealMatrix;
+	 * @see org.apache.commons.math.linear.RealMatrix
 	 */
 	public int getRowDimension(){
 		return matrix.getRowDimension();
@@ -44,7 +44,7 @@ public abstract class AbstractMatrix implements RA<Double> {
 	/**
 	 * Returns the number of columns in the matrix.
 	 * @return the number of columns in the matrix.
-	 * @see org.apache.commons.math.linear.RealMatrix;
+	 * @see org.apache.commons.math.linear.RealMatrix
 	 */
 	public int getColumnDimension(){
 		return matrix.getColumnDimension();
@@ -99,7 +99,7 @@ public abstract class AbstractMatrix implements RA<Double> {
 	/**
 	 * Clones the matrix and returns a new copy of it.
 	 * @return a new, deep copied matrix.
-	 * @see org.apache.commons.math.linear.RealMatrix;
+	 * @see org.apache.commons.math.linear.RealMatrix
 	 */
 	protected RealMatrix cloneHelper(){
 		return matrix.copy();

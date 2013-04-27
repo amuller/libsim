@@ -12,7 +12,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The LP distance is a generalization of the Euclidean distance (L2).
  * <p>
- * @see com.simmachines.libsim.enc.vector.LP;
+ * @see com.simmachines.libsim.enc.vector.LP
  * @author  Jose Daniel Salazar-Vargas
  */ 
 

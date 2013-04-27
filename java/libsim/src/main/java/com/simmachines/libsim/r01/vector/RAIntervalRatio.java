@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The interval-ratio in an audio distance between two rhythms (music patterns) represented by two rhythm-difference vectors.
  * <p>
- * @see com.simmachines.libsim.enc.vector.IntervalRatio;
+ * @see com.simmachines.libsim.enc.vector.IntervalRatio
  * @author Jose Daniel Salazar-Vargas
  */ 
 

@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Chapman-Mean-Length distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.ChapmanMeanLength;
+ * @see com.simmachines.libsim.enc.string.ChapmanMeanLength
  * @author Jose Daniel Salazar-Vargas
  * 
  */

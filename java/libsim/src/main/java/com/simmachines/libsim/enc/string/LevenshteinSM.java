@@ -46,7 +46,7 @@ public class LevenshteinSM {
 
 	/**
 	 * SimMetrics Levenshtein object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein levenshtein = new uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein(); 
 	

@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Editex distance between two words x and y is a cost-based editing metric, is the minimal cost of transforming x into y by substitution, deletion and insertion of letters. 
  * <p>
- * @see com.simmachines.libsim.enc.string.EditexSoundex;
+ * @see com.simmachines.libsim.enc.string.EditexSoundex
  * @author Jose Daniel Salazar-Vargas
  */ 
 

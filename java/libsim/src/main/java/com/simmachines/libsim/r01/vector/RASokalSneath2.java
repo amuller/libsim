@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Sokal-Sneath 2 distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.SokalSneath2;
+ * @see com.simmachines.libsim.enc.vector.SokalSneath2
  * @author Jose Daniel Salazar-Vargas
  */
 

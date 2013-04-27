@@ -60,7 +60,7 @@ public abstract class AbstractSet implements RA<Double>{
 	/**
 	 * Clones the set and returns a new copy of it.
 	 * @return A new, deep copied set.
-	 * @see com.simmachines.libsim.enc.set.Set;
+	 * @see com.simmachines.libsim.enc.set.Set
 	 */
 	public Set cloneHelper(){
 		return set.deepCopy();
@@ -70,7 +70,7 @@ public abstract class AbstractSet implements RA<Double>{
 	/**
 	 * Size of the set (count of all the set's elements).
 	 * @return The size of the set.
-	 * @see com.simmachines.libsim.enc.set.Set;
+	 * @see com.simmachines.libsim.enc.set.Set
 	 */
 	public int setSize(){
 		return set.size();

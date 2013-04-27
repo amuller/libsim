@@ -11,7 +11,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * :: Receives two double vectors and calculates the chi square distance
  * <p>
  * 
- * @see com.simmachines.libsim.enc.vector.Chi;
+ * @see com.simmachines.libsim.enc.vector.Chi
  * @author Juan Francisco Quesada-Brizuela
  */
 

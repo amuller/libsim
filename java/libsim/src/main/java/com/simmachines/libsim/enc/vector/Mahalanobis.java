@@ -9,7 +9,7 @@ import org.apache.commons.math.linear.RealMatrix;
  * <p>
  * :: one-line-description
  * <p>
- * @see com.simmachines.libsim.enc.vector.Mahalanobis;
+ * @see com.simmachines.libsim.enc.vector.Mahalanobis
  * @author Juan Francisco Quesada-Brizuela author
  */ 
 public class Mahalanobis {

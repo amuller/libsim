@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Dice similarity is a statistic used for comparing the similarity of two samples.
  * <p>
- * @see com.simmachines.libsim.enc.string.Dice;
+ * @see com.simmachines.libsim.enc.string.Dice
  * @author Jose Daniel Salazar-Vargas
  */ 
 

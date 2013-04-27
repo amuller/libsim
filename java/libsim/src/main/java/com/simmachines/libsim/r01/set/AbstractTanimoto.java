@@ -11,7 +11,7 @@ import com.simmachines.libsim.r01.abst.AbstractSet;
  * <p>
  * :: Is a statistic used for comparing the similarity and diversity of sample sets.
  * <p>
- * @see com.simmachines.libsim.enc.set.Tanimoto;
+ * @see com.simmachines.libsim.enc.set.Tanimoto
  * @author  Jose Daniel Salazar-Vargas
  */ 
 

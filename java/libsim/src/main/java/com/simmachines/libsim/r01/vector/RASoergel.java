@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Soergel is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Soergel;
+ * @see com.simmachines.libsim.enc.vector.Soergel
  * @author Jose Daniel Salazar-Vargas
  */
 

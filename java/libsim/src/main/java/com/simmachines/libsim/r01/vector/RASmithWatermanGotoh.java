@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Smith-Waterman-Gotoh distance is a measure between two strings applying an improved version (Gotoh) of the Smith-Waterman algorithm.
  * <p>
- * @see com.simmachines.libsim.enc.string.SmithWatermanGotoh;
+ * @see com.simmachines.libsim.enc.string.SmithWatermanGotoh
  * @author Jose Daniel Salazar-Vargas
  * 
  */

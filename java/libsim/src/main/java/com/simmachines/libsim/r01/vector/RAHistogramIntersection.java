@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The histogram intersection quasi-distance is an image distance between two color histograms.
  * <p>
- * @see com.simmachines.libsim.enc.vector.HistogramIntersection;
+ * @see com.simmachines.libsim.enc.vector.HistogramIntersection
  * @author Jose Daniel Salazar-Vargas
  */ 
 

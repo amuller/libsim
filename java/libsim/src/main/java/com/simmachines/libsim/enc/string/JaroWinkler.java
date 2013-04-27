@@ -21,7 +21,6 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * where \(Jaro(a,b)\) is the Jaro similarity, and \(LCP (a,b)\) is the length of the longest common prefix of \(a\) and \(b\).
  * 
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
  * <p>
  * [Reference]
  * <p>
@@ -30,6 +29,9 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 11.1 :: Distances on general strings :: P.206 |
  * <p>
+ * 
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
+ * 
  * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas
@@ -41,7 +43,7 @@ public class JaroWinkler {
 	
 	/**
 	 * SimMetrics JaroWinkler object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler jaroWinkler = new uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler(); 
 	

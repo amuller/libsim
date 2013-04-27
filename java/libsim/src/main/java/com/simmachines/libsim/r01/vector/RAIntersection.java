@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Intersection is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Intersection;
+ * @see com.simmachines.libsim.enc.vector.Intersection
  * @author Jose Daniel Salazar-Vargas
  */
 

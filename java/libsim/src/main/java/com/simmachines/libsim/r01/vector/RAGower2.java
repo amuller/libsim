@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Gower-2 distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Gower2;
+ * @see com.simmachines.libsim.enc.vector.Gower2
  * @author Jose Daniel Salazar-Vargas
  */
 

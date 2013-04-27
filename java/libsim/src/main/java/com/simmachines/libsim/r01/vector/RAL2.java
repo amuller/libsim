@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Euclidean distance is the "ordinary" distance between two points, and is given by the Pythagorean formula.
  * <p>
- * @see com.simmachines.libsim.enc.vector.L2;
+ * @see com.simmachines.libsim.enc.vector.L2
  * @author Arnoldo Jose Muller-Molina
  */
 

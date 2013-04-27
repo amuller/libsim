@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Spearman rank correlation is a non-parametric measure of statistical dependence between two variables.
  * <p>
- * @see com.simmachines.libsim.enc.vector.SpearmanRank;
+ * @see com.simmachines.libsim.enc.vector.SpearmanRank
  * @author Jose Daniel Salazar-Vargas
  */ 
 

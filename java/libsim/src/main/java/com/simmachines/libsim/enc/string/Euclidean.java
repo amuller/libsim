@@ -40,7 +40,7 @@ public class Euclidean {
 
 	/**
 	 * SimMetrics EuclideanDistance object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance euclidean = new uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance(); 
 	

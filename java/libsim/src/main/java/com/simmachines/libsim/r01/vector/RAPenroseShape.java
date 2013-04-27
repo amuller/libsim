@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Penrose shape distance is a distance in data analisis on \( \mathbb{R}^n \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.PenroseShape;
+ * @see com.simmachines.libsim.enc.vector.PenroseShape
  * @author Jose Daniel Salazar-Vargas
  */ 
 

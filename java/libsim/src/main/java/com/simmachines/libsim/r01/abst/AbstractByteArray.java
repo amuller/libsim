@@ -26,7 +26,7 @@ public abstract class AbstractByteArray<N extends Comparable<N>>  implements RA<
 	/**
 	 * Return the final buffer size of a class that inherits EasyRA. 
 	 * @param bufferSize
-	 * @return
+	 * @return final buffer size
 	 */
 	public static int revealBufferSize(int bufferSize){
 		return ByteConstants.Int.getSize() + bufferSize;

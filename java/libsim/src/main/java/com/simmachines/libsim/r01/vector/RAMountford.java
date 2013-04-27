@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Mountford distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Mountford;
+ * @see com.simmachines.libsim.enc.vector.Mountford
  * @author Jose Daniel Salazar-Vargas
  */
 

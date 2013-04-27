@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Cosine is a measure of similarity between two vectors (in this case strings) by measuring the cosine of the angle between them.
  * <p>
- * @see com.simmachines.libsim.enc.string.CosineSM;
+ * @see com.simmachines.libsim.enc.string.CosineSM
  * @author Jose Daniel Salazar-Vargas
  */
 

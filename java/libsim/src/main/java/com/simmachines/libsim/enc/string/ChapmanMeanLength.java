@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Chapman-Mean-Length distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class ChapmanMeanLength {
 
 	/**
 	 * SimMetrics ChapmanMeanLength object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength chapmanMeanLength = new uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength(); 
 	

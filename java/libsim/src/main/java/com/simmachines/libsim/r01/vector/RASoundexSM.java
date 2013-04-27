@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: Soundex is a phonetic algorithm for indexing names by sound, as pronounced in English.
  * <p>
- * @see com.simmachines.libsim.enc.string.SoundexSM;
+ * @see com.simmachines.libsim.enc.string.SoundexSM
  * @author Jose Daniel Salazar-Vargas
  */ 
 

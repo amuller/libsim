@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Kulczynski-2 is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Kulczynski2;
+ * @see com.simmachines.libsim.enc.vector.Kulczynski2
  * @author Jose Daniel Salazar-Vargas
  */
 

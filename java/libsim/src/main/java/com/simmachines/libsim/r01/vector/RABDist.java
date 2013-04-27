@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: Multi-set distance.
  * <p>
- * @see com.simmachines.libsim.enc.tree.BDist;
+ * @see com.simmachines.libsim.enc.tree.BDist
  * @author Jose Daniel Salazar-Vargas
  */ 
 

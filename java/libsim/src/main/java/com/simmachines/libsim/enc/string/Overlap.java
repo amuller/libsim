@@ -41,7 +41,7 @@ public class Overlap {
 
 	/**
 	 * SimMetrics OverlapCoefficient object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient overlap = new uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient(); 
 	

@@ -12,7 +12,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The cultural is an applied social science distance from the cultural dimensions theory, that describes the effects of a society's culture on the values of its members, and how these values relate to behavior, using a structure derived from factor analysis.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Cultural;
+ * @see com.simmachines.libsim.enc.vector.Cultural
  * @author  Jose Daniel Salazar-Vargas
  */ 
 

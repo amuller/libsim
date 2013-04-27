@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Hellinger distance is a distance in data analisis on \( \mathbb{R}^n_+ \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Hellinger;
+ * @see com.simmachines.libsim.enc.vector.Hellinger
  * @author Jose Daniel Salazar-Vargas
  */ 
 

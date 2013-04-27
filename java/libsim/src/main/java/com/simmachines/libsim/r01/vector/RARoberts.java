@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Roberts is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Roberts;
+ * @see com.simmachines.libsim.enc.vector.Roberts
  * @author Jose Daniel Salazar-Vargas
  */ 
 

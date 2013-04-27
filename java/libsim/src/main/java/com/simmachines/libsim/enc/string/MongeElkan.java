@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Monge-Elkan distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class MongeElkan {
 
 	/**
 	 * SimMetrics MongeElkan object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan mongeElkan = new uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan(); 
 	

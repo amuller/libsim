@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Cosine is a measure of similarity between two vectors by measuring the cosine of the angle between them.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Cosine;
+ * @see com.simmachines.libsim.enc.vector.Cosine
  * @author Jose Daniel Salazar-Vargas
  */ 
 

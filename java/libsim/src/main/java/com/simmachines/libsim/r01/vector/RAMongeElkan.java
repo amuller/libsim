@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Monge-Elkan distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.MongeElkan;
+ * @see com.simmachines.libsim.enc.string.MongeElkan
  * @author Jose Daniel Salazar-Vargas
  * 
  */

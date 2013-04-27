@@ -8,7 +8,7 @@ import com.simmachines.libsim.enc.set.Set;
  * <p>
  * :: The Dice coefficient, is a similarity measure over sets.
  * <p>
- * @see com.simmachines.libsim.enc.set.CzekanowskyDice;
+ * @see com.simmachines.libsim.enc.set.CzekanowskyDice
  * @author  Jose Daniel Salazar-Vargas
  */ 
 public class RACzekanowskyDiceHashSetInt extends AbstractCzekanowskyDice{

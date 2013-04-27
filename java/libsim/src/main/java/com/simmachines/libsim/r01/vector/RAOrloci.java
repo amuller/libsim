@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Orloci distance (or chord distance) is a distance in data analisis on \( \mathbb{R}^n \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Orloci;
+ * @see com.simmachines.libsim.enc.vector.Orloci
  * @author Jose Daniel Salazar-Vargas
  */
 

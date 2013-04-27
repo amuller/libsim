@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Rand distance (or Simple Matching similarity) is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Rand;
+ * @see com.simmachines.libsim.enc.vector.Rand
  * @author Jose Daniel Salazar-Vargas
  */ 
 

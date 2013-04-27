@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Kulczynski-1 is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Kulczynski1;
+ * @see com.simmachines.libsim.enc.vector.Kulczynski1
  * @author Jose Daniel Salazar-Vargas
  */
 

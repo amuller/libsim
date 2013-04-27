@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Prefix-Hamming is a metric on general strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.PrefixHamming;
+ * @see com.simmachines.libsim.enc.string.PrefixHamming
  * @author Jose Daniel Salazar-Vargas
  */ 
 

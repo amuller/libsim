@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Matching Coefficient distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.MatchingCoefficient;
+ * @see com.simmachines.libsim.enc.string.MatchingCoefficient
  * @author Jose Daniel Salazar-Vargas
  * 
  */

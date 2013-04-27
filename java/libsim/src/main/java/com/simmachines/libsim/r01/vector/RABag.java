@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Bag distance (or multiset metric, counting filter) is a distance between two strings, it is a (computationally) cheap approximation of the Levenshtein metric.
  * <p>
- * @see com.simmachines.libsim.enc.string.Bag;
+ * @see com.simmachines.libsim.enc.string.Bag
  * @author Jose Daniel Salazar-Vargas
  */ 
 

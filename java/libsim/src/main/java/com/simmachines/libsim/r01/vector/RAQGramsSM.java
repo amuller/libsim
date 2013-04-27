@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The q-gram is a similarity between strings using the q-gram function. 
  * <p>
- * @see com.simmachines.libsim.enc.string.QGram;
+ * @see com.simmachines.libsim.enc.string.QGram
  * @author Jose Daniel Salazar-Vargas
  */ 
 

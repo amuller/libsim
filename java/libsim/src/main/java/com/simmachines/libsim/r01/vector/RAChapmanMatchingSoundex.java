@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Chapman-Matching-Soundex distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.ChapmanMatchingSoundex;
+ * @see com.simmachines.libsim.enc.string.ChapmanMatchingSoundex
  * @author Jose Daniel Salazar-Vargas
  * 
  */

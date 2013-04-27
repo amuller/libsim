@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Chapman-Length-Deviation distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class ChapmanLengthDeviation {
 
 	/**
 	 * SimMetrics ChapmanLengthDeviation object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation chapmanLengthDeviation = new uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation(); 
 	

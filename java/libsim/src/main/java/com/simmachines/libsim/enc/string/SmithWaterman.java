@@ -65,7 +65,7 @@ public class SmithWaterman {
 
 	/**
 	 * SimMetrics SmithWaterman object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman smithWaterman = new uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman(); 
 	

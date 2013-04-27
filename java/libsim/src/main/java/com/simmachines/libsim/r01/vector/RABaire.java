@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Baire metric is an ultrametric between finite or infinite strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.Baire;
+ * @see com.simmachines.libsim.enc.string.Baire
  * @author Jose Daniel Salazar-Vargas
  */ 
 

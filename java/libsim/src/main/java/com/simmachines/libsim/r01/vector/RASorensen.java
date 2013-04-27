@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Sorensen is a distance on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Sorensen;
+ * @see com.simmachines.libsim.enc.vector.Sorensen
  * @author Jose Daniel Salazar-Vargas
  */
 

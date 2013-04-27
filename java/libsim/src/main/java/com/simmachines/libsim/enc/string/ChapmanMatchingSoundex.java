@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Chapman-Matching-Soundex distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class ChapmanMatchingSoundex {
 
 	/**
 	 * SimMetrics ChapmanMatchingSoundex object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex chapmanMatchingSoundex = new uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex(); 
 	

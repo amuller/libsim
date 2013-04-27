@@ -42,7 +42,7 @@ public class QGramsSM {
 
 	/**
 	 * SimMetrics QGramsDistance object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance qGram = new uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance(); 
 	

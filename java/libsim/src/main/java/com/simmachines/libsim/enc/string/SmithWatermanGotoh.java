@@ -9,7 +9,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * [Brief Description]
  * <p>
- * @see com.simmachines.libsim.enc.string.SmithWaterman; 
+ * @see com.simmachines.libsim.enc.string.SmithWaterman 
  * <p>
  * [Reference]
  * <p>
@@ -31,7 +31,7 @@ public class SmithWatermanGotoh {
 
 	/**
 	 * SimMetrics SmithWatermanGotoh object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotoh;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotoh
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotoh smithWatermanGotoh = new uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotoh(); 
 	

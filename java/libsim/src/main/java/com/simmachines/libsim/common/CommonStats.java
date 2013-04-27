@@ -237,4 +237,28 @@ public class CommonStats {
 		return res;
 	}
 	
+	
+	/**
+	 * Checks if the product of two doubles is equal to zero, and returns 1 or 0 depending on the wanted result
+	 * @param x double number 1
+	 * @param y double number 2
+	 * @param resultZero boolean that indicates if the zero is the wanted result or if the wanted is a non-zero result
+	 * @return if the result you need is zero, then returns 1 if resultZero is true (as long as the product result is zero), 0 if it is false; if the result you need is non-zero, then returns 1 if resultZero is false (as long as the porduct result is non-zero), 0 if it is true. 
+	 */
+	public static int zeroProduct(double x, double y, boolean resultZero){
+		if(x*y==0){
+			if(resultZero){
+				return 1;
+			}else{
+				return 0;
+			}
+		}else{
+			if(resultZero){
+				return 0;
+			}else{
+				return 1;
+			}
+		}
+	}
+	
 }

@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Ratio Similarity (or Kohonen similarity) is a correlation similarity on \( \mathbb{R}^n \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Ratio;
+ * @see com.simmachines.libsim.enc.vector.Ratio
  * @author Jose Daniel Salazar-Vargas
  */ 
 

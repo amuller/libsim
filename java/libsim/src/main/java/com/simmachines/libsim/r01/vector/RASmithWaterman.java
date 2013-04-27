@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Smith-Waterman distance is a measure between two strings applying the Smith-Waterman algorithm.
  * <p>
- * @see com.simmachines.libsim.enc.string.SmithWaterman;
+ * @see com.simmachines.libsim.enc.string.SmithWaterman
  * @author Jose Daniel Salazar-Vargas
  * 
  */

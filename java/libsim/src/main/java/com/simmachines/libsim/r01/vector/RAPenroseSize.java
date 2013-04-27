@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Penrose size distance is a distance in data analisis on \( \mathbb{R}^n \), it is proportional to the Manhattan metric. 
  * <p>
- * @see com.simmachines.libsim.enc.vector.PenroseSize;
+ * @see com.simmachines.libsim.enc.vector.PenroseSize
  * @author Jose Daniel Salazar-Vargas
  */ 
 

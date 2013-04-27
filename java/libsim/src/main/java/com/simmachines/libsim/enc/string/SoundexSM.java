@@ -32,8 +32,8 @@ import com.simmachines.libsim.common.Transformations;
  
  where \(Jaro(a',b')\) is the Jaro similarity, and \(LCP (a',b')\) is the length of the longest common prefix of \(a'\) and \(b'\).
  * 
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
  * <p>
  * [Reference]
  * <p>
@@ -53,7 +53,7 @@ public class SoundexSM {
 
 	/**
 	 * SimMetrics Soundex object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex soundex = new uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex(); 
 	

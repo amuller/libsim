@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Pearson Correlation is a measure of the linear dependence between two variables.
  * <p>
- * @see com.simmachines.libsim.enc.vector.PearsonCorrelation;
+ * @see com.simmachines.libsim.enc.vector.PearsonCorrelation
  * @author  Jose Daniel Salazar-Vargas
  */ 
 

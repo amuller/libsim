@@ -42,7 +42,7 @@ public class Jaro {
 	
 	/**
 	 * SimMetrics Jaro object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro jaro = new uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro(); 
 	

@@ -81,7 +81,7 @@ public class TechnologicalCosine {
 	 * @param v1 vector number 1.
 	 * @param v2 vector number 2.
 	 * @return The Technological distance.
-	 * @see com.simmachines.libsim.enc.vector.Cosine;
+	 * @see com.simmachines.libsim.enc.vector.Cosine
 	 */
 	public static double distance(int v1[], int v2[]){
 		return Cosine.distance(Transformations.convertIntArrayToDoubleArray(v1), Transformations.convertIntArrayToDoubleArray(v2));

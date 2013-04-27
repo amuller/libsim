@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Roger-Tanimoto distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.RogerTanimoto;
+ * @see com.simmachines.libsim.enc.vector.RogerTanimoto
  * @author Jose Daniel Salazar-Vargas
  */
 

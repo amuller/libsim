@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The technological distance between two firms is a distance between their patent portfolios.
  * <p>
- * @see com.simmachines.libsim.enc.vector.TechnologicalChi;
+ * @see com.simmachines.libsim.enc.vector.TechnologicalChi
  * @author Jose Daniel Salazar-Vargas
  */
 

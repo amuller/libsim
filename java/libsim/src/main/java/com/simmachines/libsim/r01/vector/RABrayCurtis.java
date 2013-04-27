@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Bray-Curtis is a similarity on \( \mathbb{R}^n \) in data analysis for numerical data.
  * <p>
- * @see com.simmachines.libsim.enc.vector.BrayCurtis;
+ * @see com.simmachines.libsim.enc.vector.BrayCurtis
  * @author Jose Daniel Salazar-Vargas
  */
 

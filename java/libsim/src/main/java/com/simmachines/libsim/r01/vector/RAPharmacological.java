@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The pharmological is a distance for protein data between two kinases represented by their affinity vectors.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Pharmacological;
+ * @see com.simmachines.libsim.enc.vector.Pharmacological
  * @author Jose Daniel Salazar-Vargas
  */ 
 

@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Jaro-Winkler distance is a measure of similarity between two strings.
  * <p>
- * @see com.simmachines.libsim.enc.string.JaroWinkler;
+ * @see com.simmachines.libsim.enc.string.JaroWinkler
  * @author Jose Daniel Salazar-Vargas
  */ 
 

@@ -34,7 +34,7 @@ public class SHashSetInt implements Set{
 	
 	/**
 	 * Calculates the intersection between this and other set.
-	 * @see com.simmachines.libsim.enc.set.Set.intersect
+	 * @see com.simmachines.libsim.enc.set.Set#intersect
 	 */
 	
 	@Override
@@ -50,7 +50,7 @@ public class SHashSetInt implements Set{
 	
 	/**
 	 * Calculates the union between this and other set.
-	 * @see com.simmachines.libsim.enc.set.Set.union
+	 * @see com.simmachines.libsim.enc.set.Set#union
 	 */
 	
 	@Override
@@ -67,7 +67,7 @@ public class SHashSetInt implements Set{
 	
 	/**
 	 * Calculates difference between this and other set.
-	 * @see com.simmachines.libsim.enc.set.Set.difference
+	 * @see com.simmachines.libsim.enc.set.Set#difference
 	 */
 	
 	@Override
@@ -85,7 +85,7 @@ public class SHashSetInt implements Set{
 	
 	/**
 	 * Calculates difference between this and other set.
-	 * @see com.simmachines.libsim.enc.set.Set.difference
+	 * @see com.simmachines.libsim.enc.set.Set#difference
 	 */
 	
 	@Override
@@ -99,7 +99,7 @@ public class SHashSetInt implements Set{
 	/**
 	 * Deep copy of the set.  
 	 * @return A new, deep copied set.
-	 * @see com.simmachines.libsim.enc.set.Set;
+	 * @see com.simmachines.libsim.enc.set.Set
 	 */
 	public SHashSetInt deepCopy(){
 		HashSet<Integer> res = new HashSet<Integer>();
@@ -136,7 +136,7 @@ public class SHashSetInt implements Set{
 	/**
 	 * Size of the set (count of all the set's elements).
 	 * @return The size of the set.
-	 * @see com.simmachines.libsim.enc.set.Set;
+	 * @see com.simmachines.libsim.enc.set.Set
 	 */
 	public int size(){	
 		return getSet().size();

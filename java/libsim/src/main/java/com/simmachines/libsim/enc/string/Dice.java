@@ -40,7 +40,7 @@ public class Dice {
 
 	/**
 	 * SimMetrics DiceSimilarity object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.DiceSimilarity;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.DiceSimilarity
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.DiceSimilarity dice = new uk.ac.shef.wit.simmetrics.similaritymetrics.DiceSimilarity(); 
 	

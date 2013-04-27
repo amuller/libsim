@@ -42,7 +42,7 @@ public class Block {
 
 	/**
 	 * SimMetrics BlockDistance object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance block = new uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance(); 
 	

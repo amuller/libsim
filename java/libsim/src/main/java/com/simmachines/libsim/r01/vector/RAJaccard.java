@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Jaccard similarity is a statistic used for comparing the similarity and diversity of two samples.
  * <p>
- * @see com.simmachines.libsim.enc.string.Jaccard;
+ * @see com.simmachines.libsim.enc.string.Jaccard
  * @author Jose Daniel Salazar-Vargas
  */ 
 

@@ -81,7 +81,7 @@ public class TechnologicalChi {
 	 * @param v1 vector number 1.
 	 * @param v2 vector number 2.
 	 * @return The Technological distance.
-	 * @see com.simmachines.libsim.enc.vector.Chi;
+	 * @see com.simmachines.libsim.enc.vector.Chi
 	 */
 	public static double distance(int v1[], int v2[]){
 		return Chi.distance(Transformations.convertIntArrayToDoubleArray(v1), Transformations.convertIntArrayToDoubleArray(v2));

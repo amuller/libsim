@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * ::Compares the similarity between two strings based on edit operations.
  * <p>
- * @see com.simmachines.libsim.enc.string.LevenshteinSM;
+ * @see com.simmachines.libsim.enc.string.LevenshteinSM
  * @author Jose Daniel Salazar-Vargas
  * 
  */

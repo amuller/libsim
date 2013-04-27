@@ -7,7 +7,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
 /**
  * [Tag-Link distance]
  * <p>
- * @see com.simmachines.libsim.enc.string.TagLink;
+ * @see com.simmachines.libsim.enc.string.TagLink
  * @author Jose Daniel Salazar-Vargas
  * 
  */

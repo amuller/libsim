@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Simpson distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Simpson;
+ * @see com.simmachines.libsim.enc.vector.Simpson
  * @author Jose Daniel Salazar-Vargas
  */
 

@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The angular semi-metric on \( \mathbb{R}^n \) is the angle (measured in radians) between two vectors.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Angular;
+ * @see com.simmachines.libsim.enc.vector.Angular
  * @author Jose Daniel Salazar-Vargas
  */ 
 

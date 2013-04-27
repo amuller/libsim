@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Block refers to city block distance, which is also known as rectilinear distance, \(L_1\) distance or \( \ell_1\) norm, Manhattan distance, or Manhattan length.
  * <p>
- * @see com.simmachines.libsim.enc.string.Block;
+ * @see com.simmachines.libsim.enc.string.Block
  * @author Jose Daniel Salazar-Vargas
  * 
  */

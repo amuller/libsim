@@ -5,7 +5,7 @@ import com.simmachines.libsim.common.Transformations;
 /**
  * [Matching Coefficient distance]
  * <p>
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient;
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient
  * @author Jose Daniel Salazar-Vargas
  * 
  */
@@ -15,7 +15,7 @@ public class MatchingCoefficient {
 
 	/**
 	 * SimMetrics MatchingCoefficient object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient matchingCoefficient = new uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient(); 
 	

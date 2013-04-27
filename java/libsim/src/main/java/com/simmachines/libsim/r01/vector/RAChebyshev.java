@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Chebyshev distance is a metric defined on a vector space between two vectors.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Chebyshev;
+ * @see com.simmachines.libsim.enc.vector.Chebyshev
  * @author Jose Daniel Salazar-Vargas
  */ 
 

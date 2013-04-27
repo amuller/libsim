@@ -13,7 +13,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Perception is a distance in applied social sciences between two specific stimuli (and their perception probabilities) from a set of stimuli.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Perception;
+ * @see com.simmachines.libsim.enc.vector.Perception
  * @author Jose Daniel Salazar-Vargas
  */ 
 

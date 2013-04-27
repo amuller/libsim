@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The modified Hausdorff distance is defined as the maximum of point-set distances averaged over two binary images, seen as non-empty finite subsets of a finite metric space.
  * <p>
- * @see com.simmachines.libsim.enc.vector.ModifiedHausdorff;
+ * @see com.simmachines.libsim.enc.vector.ModifiedHausdorff
  * @author Jose Daniel Salazar-Vargas
  */ 
 

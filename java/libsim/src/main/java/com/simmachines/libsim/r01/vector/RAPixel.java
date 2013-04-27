@@ -14,7 +14,7 @@ import org.apache.commons.math.linear.Array2DRowRealMatrix;
  * <p>
  * :: The pixel distance is an image distance between two digital images seen as binary matrices.
  * <p>
- * @see com.simmachines.libsim.enc.vector.Pixel;
+ * @see com.simmachines.libsim.enc.vector.Pixel
  * @author Jose Daniel Salazar-Vargas
  */ 
 

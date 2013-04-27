@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
  * <p>
  * :: The Clark distance is a distance in data analisis on \( \mathbb{R}^n \).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Clark;
+ * @see com.simmachines.libsim.enc.vector.Clark
  * @author Jose Daniel Salazar-Vargas
  */ 
 

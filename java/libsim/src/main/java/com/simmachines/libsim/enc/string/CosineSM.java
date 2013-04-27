@@ -41,7 +41,7 @@ public class CosineSM {
 
 	/**
 	 * SimMetrics CosineSimilarity object
-	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity;
+	 * @see uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity
 	 */
 	public static uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity cosine = new uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity(); 
 	

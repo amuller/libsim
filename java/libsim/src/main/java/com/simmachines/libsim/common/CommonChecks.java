@@ -15,7 +15,7 @@ public class CommonChecks {
 	 * @param a first vector
 	 * @param b second vector
 	 * @return true if the vectors are equals, false otherwise
-	 * @see CommonChecks.PRECISION
+	 * @see CommonChecks#PRECISION
 	 */
 
 	public static boolean equals(double a, double b){
@@ -111,6 +111,15 @@ public class CommonChecks {
 		return true;
 	}
 	
+	public static boolean positiveValues(double v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]<0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	
 	/**
 	 * Checks if:   \(\forall v_i \in V, \exists v_i = 0 \) 
@@ -184,8 +193,8 @@ public class CommonChecks {
 	 * @param number number to check.
 	 * @param value comparison parameter.
 	 * @return true if the number is greater or equal than the value, false otherwise.
-	 * @see CommonChecks.greaterThanValue
-	 * @see CommonChecks.equalToValue
+	 * @see CommonChecks#greaterThanValue
+	 * @see CommonChecks#equalToValue
 	 */
 	
 	public static boolean greaterOrEqualThanValue(double number, double value){
@@ -201,8 +210,8 @@ public class CommonChecks {
 	 * @param vector vector to check.
 	 * @param value comparison parameter..
 	 * @return true if the vector's entries are greater or equal than the value, false otherwise.
-	 * @see CommonChecks.greaterThanValue
-	 * @see CommonChecks.equalToValue
+	 * @see CommonChecks#greaterThanValue
+	 * @see CommonChecks#equalToValue
 	 */
 	
 	public static boolean greaterOrEqualThanValue(double[] vector, double value){
