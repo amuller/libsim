@@ -5,8 +5,7 @@ public class CommonChecks {
 
 	/**
 	 * Maximum accepted range for distance variability
-	 */
-	
+	 */	
 	public static double PRECISION = 0.00001;
 	
 	
@@ -17,7 +16,6 @@ public class CommonChecks {
 	 * @return true if the vectors are equals, false otherwise
 	 * @see CommonChecks#PRECISION
 	 */
-
 	public static boolean equals(double a, double b){
 		return (Math.abs(a - b) <= PRECISION);
 	}
@@ -28,7 +26,6 @@ public class CommonChecks {
 	 * @param b second string
 	 * @return true if the strings are equals, false otherwise
 	 */
-
 	public static boolean equals(String a, String b){
 		return (a == b);
 	}
@@ -39,7 +36,6 @@ public class CommonChecks {
 	 * @param v vector received
 	 * @return false if there is at least one \( v_i <= 0 \), true otherwise
 	 */
-
 	public static boolean greaterThanZero(double v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]<=0){
@@ -49,6 +45,11 @@ public class CommonChecks {
 		return true;
 	}
 	
+	/**
+	 * Checks if:   \(\forall v_i \in V, \exists v_i <= 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i <= 0 \), true otherwise
+	 */
 	public static boolean greaterThanZero(int v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]<=0){
@@ -101,7 +102,6 @@ public class CommonChecks {
 	 * @param v vector received
 	 * @return false if there is at least one \( v_i < 0 \), true otherwise
 	 */
-
 	public static boolean positiveValues(int v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]<0){
@@ -111,6 +111,11 @@ public class CommonChecks {
 		return true;
 	}
 	
+	/**
+	 * Checks if:   \(\forall v_i \in V, \exists v_i < 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i < 0 \), true otherwise
+	 */
 	public static boolean positiveValues(double v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]<0){
@@ -126,8 +131,21 @@ public class CommonChecks {
 	 * @param v vector received
 	 * @return false if there is at least one \( v_i = 0 \), true otherwise
 	 */
-
 	public static boolean hasNoZero(double v[]){
+		for(int i=0;i<v.length;i++){
+			if(v[i]==0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	/**
+	 * Checks if:   \(\forall v_i \in V, \exists v_i = 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i = 0 \), true otherwise
+	 */
+	public static boolean hasNoZero(int v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]==0){
 				return false;
@@ -141,7 +159,6 @@ public class CommonChecks {
 	 * @param v vector received
 	 * @return false if there is at least one \( v_i != 0 \), true otherwise
 	 */
-
 	public static boolean hasAllZeros(double v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]!=0){
@@ -151,6 +168,11 @@ public class CommonChecks {
 		return false;
 	}
 	
+	/**
+	 * Checks if:   \(\forall v_i \in V, v_i = 0 \) 
+	 * @param v vector received
+	 * @return false if there is at least one \( v_i != 0 \), true otherwise
+	 */
 	public static boolean hasAllZeros(int v[]){
 		for(int i=0;i<v.length;i++){
 			if(v[i]!=0){
@@ -166,7 +188,6 @@ public class CommonChecks {
 	 * @param v2 vector number 1.
 	 * @return true if the vectors have the same length, false otherwise.
 	 */
-	
 	public static boolean equalLength(double v1[], double v2[]){
 		if(v1.length == v2.length){
 			return true;
@@ -174,6 +195,12 @@ public class CommonChecks {
 		return false;
 	}
 	
+	/**
+	 * Checks if two vectors have the same length.
+	 * @param v1 vector number 1.
+	 * @param v2 vector number 1.
+	 * @return true if the vectors have the same length, false otherwise.
+	 */
 	public static boolean equalLength(int v1[], int v2[]){
 		if(v1.length == v2.length){
 			return true;
@@ -181,6 +208,12 @@ public class CommonChecks {
 		return false;
 	}
 	
+	/**
+	 * Checks if two matrices have the same dimensions..
+	 * @param v1 matrix number 1.
+	 * @param v2 matrix number 1.
+	 * @return true if the matrices have the same dimensions, false otherwise.
+	 */
 	public static boolean equalLength(double m1[][], double m2[][]){
 		if(m1.length == m2.length && m1[0].length == m2[0].length){
 			return true;
@@ -196,7 +229,6 @@ public class CommonChecks {
 	 * @see CommonChecks#greaterThanValue
 	 * @see CommonChecks#equalToValue
 	 */
-	
 	public static boolean greaterOrEqualThanValue(double number, double value){
 		if(greaterThanValue(number,value)||equalToValue(number,value)){
 			return true;
@@ -213,7 +245,6 @@ public class CommonChecks {
 	 * @see CommonChecks#greaterThanValue
 	 * @see CommonChecks#equalToValue
 	 */
-	
 	public static boolean greaterOrEqualThanValue(double[] vector, double value){
 		for(double v:vector){
 			if(!(greaterThanValue(v, value)||equalToValue(v, value))){
@@ -231,7 +262,6 @@ public class CommonChecks {
 	 * @param value comparison parameter.
 	 * @return true if the number is greater than the value, false otherwise.
 	 */
-	
 	public static boolean greaterThanValue(double number, double value){
 		if(number>value){
 			return true;
@@ -246,7 +276,6 @@ public class CommonChecks {
 	 * @param value comparison parameter.
 	 * @return true if the vector's entries are greater than the value, false otherwise.
 	 */
-	
 	public static boolean greaterThanValue(double[] vector, double value){
 		for(double v:vector){
 			if(value>=v){
@@ -262,7 +291,6 @@ public class CommonChecks {
 	 * @param value comparison parameter.
 	 * @return true if the number is equal to the value, false otherwise.
 	 */
-	
 	public static boolean equalToValue(double number, double value){
 		if(number==value){
 			return true;
@@ -276,7 +304,6 @@ public class CommonChecks {
 	 * @param value comparison parameter.
 	 * @return true if the vector's entries are equal to the value, false otherwise.
 	 */
-	
 	public static boolean equalToValue(double[] vector, double value){
 		for(double v:vector){
 			if(value!=v){

@@ -14,9 +14,12 @@ import com.simmachines.libsim.common.CommonStats;
  
  The Dispersion distance between two binary vectors \(A,B\) of length \(n\) is given by:
  <p>
- \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |A\backslash B|\cdot |B\backslash A|}{n^2} \)
  
  \( d = \frac{1-s}{2} \)
+ <p>
+ Where \(s\) is the Dispersion similarity:
+ <p>
+  \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |A\backslash B|\cdot |B\backslash A|}{n^2} \)
  
  
  * 

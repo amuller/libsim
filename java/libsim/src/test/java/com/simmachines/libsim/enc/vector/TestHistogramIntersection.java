@@ -42,6 +42,8 @@ public class TestHistogramIntersection {
 		Asserts.assertEquals(res, 0.42125550660793);
 	}
 	
+	//no zero-vectors allowed
+/*	
 	@Test
 	//jfquesada
 	public void test4(){
@@ -65,7 +67,7 @@ public class TestHistogramIntersection {
 		double res = HistogramIntersection.distance(v1, v2);
 		Asserts.assertEquals(res, 1.0);
 	}
-	
+*/	
 	@Test
 	//jfquesada
 	public void test6(){

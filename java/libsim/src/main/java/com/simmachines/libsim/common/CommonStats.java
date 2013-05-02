@@ -10,7 +10,6 @@ public class CommonStats {
 	 * @param vector the vector received.
 	 * @return the mean value of the vector.
 	 */
-
 	public static double mean(double[] vector) {
 		StaticBin1D sb = new StaticBin1D();
 		for (double d : vector) {
@@ -25,7 +24,6 @@ public class CommonStats {
 	 * @param value the number received.
 	 * @return the absolute value of the number.
 	 */
-	
 	public static double abs(double value){
 		if(value<0){
 			value*=-1;
@@ -42,7 +40,6 @@ public class CommonStats {
 	 * @param c third integer number.
 	 * @return the least number out of the three.
 	 */
-	
 	public static int min(int a, int b, int c) {
 		int mi;
 
@@ -64,7 +61,6 @@ public class CommonStats {
 	 * @param b second number.
 	 * @return the least number out of the two.
 	 */
-	
 	public static double min(double a, double b) {
 		if(a<b){
 			return a;
@@ -72,6 +68,12 @@ public class CommonStats {
 		return b;
 	}
 	
+	/**
+	 * Receives two  numbers and calculates which one is the least.
+	 * @param a first number.
+	 * @param b second number.
+	 * @return the least number out of the two.
+	 */
 	public static int min(int a, int b) {
 		if(a<b){
 			return a;
@@ -86,7 +88,6 @@ public class CommonStats {
 	 * @param b second number.
 	 * @return the highest number out of the two.
 	 */
-	
 	public static double max(double a, double b) {
 		if(a>b){
 			return a;
@@ -94,6 +95,12 @@ public class CommonStats {
 		return b;
 	}
 	
+	/**
+	 * Receives two numbers and calculates which one is the highest.
+	 * @param a first number.
+	 * @param b second number.
+	 * @return the highest number out of the two.
+	 */
 	public static int max(int a, int b) {
 		if(a>b){
 			return a;
@@ -151,7 +158,6 @@ public class CommonStats {
 	 * @param v vector received.
 	 * @return the Euclidean norm.
 	 */
-	
 	public static double norm(double[] v){
 		return Math.sqrt(dotProduct(v,v));
 	}

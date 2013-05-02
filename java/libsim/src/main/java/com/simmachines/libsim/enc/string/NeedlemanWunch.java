@@ -37,6 +37,7 @@ Hamming metric between \(x^*\) and \(y^*\) with weight \(d(x^∗_i, y^*_i) = q\)
  * <p>
  * | 11.1 :: Distances on general strings :: P.207 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch
  * @see <a href="http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

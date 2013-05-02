@@ -30,6 +30,8 @@ import com.simmachines.libsim.common.Transformations;
  * | 11.1 :: Distances on general strings :: P.206 |
  * <p>
  * 
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler
+ * 
  * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
  * 
  * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">Wikipedia Article</a>

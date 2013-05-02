@@ -9,12 +9,19 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * :: The Editex distance between two words x and y is a cost-based editing metric, is the minimal cost of transforming x into y by substitution, deletion and insertion of letters.
  * The letter classification into groups is according the Soundex method, in which each group have a code depending of the letters  contained, the codes are:
+ * <p>
  * 0 to a, e, h, i, o, u, w, y;
+ * <p>
  * 1 to b, p, f, v; 
+ * <p>
  * 2 to c, g, j, k, q, s, x, z; 
+ * <p>
  * 3 to d, t; 
+ * <p>
  * 4 to l;
+ * <p>
  * 5 to m, n;
+ * <p>
  * 6 to r.
 
  * <p>
@@ -25,11 +32,17 @@ import com.simmachines.libsim.common.Transformations;
  The EditexSoundex distance between two strings \(a,b\) is given by:
  <p>
  The minimal cost of transforming x into y by substitution, deletion and insertion of letters, where the costs are:
- $->$ 1 for insertion and deletion.
- And for substitutions the costs are:
- $->$ 0 if both letters are the same.
- $->$ 1 if both letters are in the same group.
- $->$ 2 otherwise.
+ * <p>
+ * \(->\) 1 for insertion and deletion.
+ * <p>
+ * <p>
+ * And for substitutions the costs are:
+ * <p>
+ * \(->\) 0 if both letters are the same.
+ * <p>
+ * \(->\) 1 if both letters are in the same group.
+ * <p>
+ * \(->\) 2 otherwise.
  * 
  * <p>
  * [Reference]

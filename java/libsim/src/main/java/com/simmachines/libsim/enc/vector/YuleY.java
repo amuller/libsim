@@ -14,9 +14,14 @@ import com.simmachines.libsim.common.CommonStats;
  
  The Yule-Y distance between two binary vectors \(A,B\) of length \(n\) is given by:
  <p>
-\( s = \frac{\sqrt{|A\cap B|\cdot |\overline{A\cup B}|}- \sqrt{|A\backslash B|\cdot |B\backslash A|}}{\sqrt{|A\cap B|\cdot |\overline{A\cup B}|}+ \sqrt{|A\backslash B|\cdot |B\backslash A|}} \)
  
  \( d = \frac{1-s}{2} \)
+ 
+ <p>
+ Where \(s\) is the Yule-Y similarity:
+ <p>
+ 
+\( s = \frac{\sqrt{|A\cap B|\cdot |\overline{A\cup B}|}- \sqrt{|A\backslash B|\cdot |B\backslash A|}}{\sqrt{|A\cap B|\cdot |\overline{A\cup B}|}+ \sqrt{|A\backslash B|\cdot |B\backslash A|}} \)
  
  * 
  * <p>

@@ -14,10 +14,14 @@ import com.simmachines.libsim.common.CommonStats;
  
  The Pearson distance between two binary vectors \(A,B\) of length \(n\) is given by:
  <p>
- \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |X\backslash Y|\cdot |Y\backslash X|}{\sqrt{|A|\cdot |\overline{A}|\cdot |B|\cdot |\overline{B}|}} \)
  
  \( d = \frac{1-s}{2} \)
  
+  <p>
+ Where \(s\) is the Pearson similarity:
+ <p>
+ 
+ \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |X\backslash Y|\cdot |Y\backslash X|}{\sqrt{|A|\cdot |\overline{A}|\cdot |B|\cdot |\overline{B}|}} \)
  
  * 
  * <p>

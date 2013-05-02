@@ -17,7 +17,7 @@ import com.simmachines.libsim.common.Transformations;
  <p>
  \( d = a^{1 + LCP(x,y)} \),
  <p>
- where \(a\) is a fixed number from the interval \(0,1\), and \(LCP(x,y)\) is the length of the longest common prefix of \(x\) and \(y\).
+ where \(a\) is a fixed number from the interval \([0,1]\), and \(LCP(x,y)\) is the length of the longest common prefix of \(x\) and \(y\).
  
  * 
  * <p>

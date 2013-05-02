@@ -30,6 +30,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 17.3 :: Similarities and distances for binary data :: P.305 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient
  * @see <a href="http://en.wikipedia.org/wiki/Overlap_coefficient">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

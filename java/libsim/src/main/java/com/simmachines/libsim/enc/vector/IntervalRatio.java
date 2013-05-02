@@ -1,6 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
 import com.simmachines.libsim.common.CommonStats;
+import com.simmachines.libsim.asserts.Asserts;
 
 
 /**
@@ -55,6 +56,8 @@ public class IntervalRatio {
 	 */
 	public static double distance(int t1[],int t2[]){
 		double res = 0;
+		Asserts.assertHasNoZero(t1);
+		Asserts.assertHasNoZero(t2);
 		double v1[] = rhythmDifferenceVector(t1);
 		double v2[] = rhythmDifferenceVector(t2);
 		for(int i=0;i<v1.length;i++){

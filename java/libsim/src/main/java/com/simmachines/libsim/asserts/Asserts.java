@@ -34,10 +34,24 @@ public class Asserts {
 		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
 	}
 	
+	/**
+	 * Verifies if two vectors have the same length, if not, throws an exception with a custom message.
+	 * @param a vector number 1.
+	 * @param b vector number 2.
+	 * @see Asserts#validate
+	 * @see CommonChecks#equalLength
+	 */
 	public static void assertEqualLength(int a[], int b[]){
 		validate(CommonChecks.equalLength(a, b),"The vectors must have the same length");
 	}
 	
+	/**
+	 * Verifies if two matrices have the same dimensions, if not, throws an exception with a custom message.
+	 * @param a matrix number 1.
+	 * @param b matrix number 2.
+	 * @see Asserts#validate
+	 * @see CommonChecks#equalLength
+	 */
 	public static void assertEqualLength(double a[][], double b[][]){
 		validate(CommonChecks.equalLength(a, b),"The matrices must have the same dimensions");
 	}
@@ -73,12 +87,17 @@ public class Asserts {
 	 * @param v vector received.
 	 * @see Asserts#validate
 	 * @see CommonChecks#greaterThanZero
-	 */
-	
+	 */	
 	public static void assertGreaterThanZero(double v[]){
 		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
 	
+	/**
+	 * Verifies if the vector has at least one entry with a negative or zero value, if has it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts#validate
+	 * @see CommonChecks#greaterThanZero
+	 */
 	public static void assertGreaterThanZero(int v[]){
 		validate(CommonChecks.greaterThanZero(v),"The input vector has at least one entry with a value equal or less than zero");
 	}
@@ -121,12 +140,17 @@ public class Asserts {
 	 * @param v vector received.
 	 * @see Asserts#validate
 	 * @see CommonChecks#greaterThanZero
-	 */
-	
+	 */	
 	public static void assertPositiveValues(int v[]){
 		validate(CommonChecks.positiveValues(v),"The input vector has at least one entry with a value less than zero");
 	}
 	
+	/**
+	 * Verifies if the vector has at least one entry with a negative value, if has it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts#validate
+	 * @see CommonChecks#greaterThanZero
+	 */	
 	public static void assertPositiveValues(double v[]){
 		validate(CommonChecks.positiveValues(v),"The input vector has at least one entry with a value less than zero");
 	}
@@ -138,8 +162,17 @@ public class Asserts {
 	 * @see Asserts#validate
 	 * @see CommonChecks#hasNoZero
 	 */
-	
 	public static void assertHasNoZero(double v[]){
+		validate(CommonChecks.hasNoZero(v),"The input vector has at least one entry with a value equals to zero");
+	}
+	
+	/**
+	 * Verifies if the vector has at least one entry with a value equals to zero, if has it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts#validate
+	 * @see CommonChecks#hasNoZero
+	 */
+	public static void assertHasNoZero(int v[]){
 		validate(CommonChecks.hasNoZero(v),"The input vector has at least one entry with a value equals to zero");
 	}
 	
@@ -148,12 +181,17 @@ public class Asserts {
 	 * @param v vector received.
 	 * @see Asserts#validate
 	 * @see CommonChecks#hasNoZero
-	 */
-	
+	 */	
 	public static void assertHasAllZeros(double v[]){
 		validate(CommonChecks.hasAllZeros(v),"The input vector does not have at least one entry with a value different to zero");
 	}
 	
+	/**
+	 * Verifies if the vector has at least one entry with a value different to zero, if does not have it, throws an exception with a custom message.
+	 * @param v vector received.
+	 * @see Asserts#validate
+	 * @see CommonChecks#hasNoZero
+	 */	
 	public static void assertHasAllZeros(int v[]){
 		validate(CommonChecks.hasAllZeros(v),"The input vector does not have at least one entry with a value different to zero");
 	}
@@ -165,8 +203,7 @@ public class Asserts {
 	 * @param value comparison parameter.
 	 * @see Asserts#validate
 	 * @see CommonChecks#greaterOrEqualThanValue
-	 */
-	
+	 */	
 	public static void assertGreaterOrEqualThanValue(double number, double value){
 		validate(CommonChecks.greaterOrEqualThanValue(number, value),"The number received is less than "+value);
 	}

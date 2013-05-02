@@ -30,6 +30,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 17.4 :: Correlation similarities and distances :: P.308 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity
  * @see <a href="http://en.wikipedia.org/wiki/Cosine_similarity">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

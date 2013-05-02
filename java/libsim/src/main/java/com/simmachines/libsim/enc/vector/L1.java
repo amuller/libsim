@@ -4,10 +4,36 @@ import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
 /**
- * Name: L1 distance (euclidean distance)
+ * [L1 distance]
+ * <p>
+ * :: The L1 distance is a metric where the distance between two points is the sum of the absolute differences of their coordinates. 
+ * <p>
+ * [Brief Description]
+ * <p>
+ * The L1 distance (also known as Taxicab distance, city block distance, Manhattan distance), is a special case of the LP distance, with \(p=1\).
+ * <p>
+ * [Definition]
+ * <p>
+ 
+ 
+ The L1 distance between two vectors \(a,b\) is given by: 
+  <p>
+ \( l_1(a,b)=\sum{|a_i-b_i|} \)
+ 
+ 
  * 
- * @author amuller
- *
+ * <p>
+ * [Reference]
+ * <p>
+ * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer |
+ * 2009
+ * <p>
+ * | 19.2 :: Digital metrics :: P.333 |
+ * <p>
+ * @see <a href="http://en.wikipedia.org/wiki/Taxicab_geometry">Wikipedia Article</a>
+ * 
+ * @author  Arnoldo Jose Muller-Molina
+ * 
  */
 public class L1 {
 	

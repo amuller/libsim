@@ -11,13 +11,21 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * The goal is for homophones to be encoded to the same representation so that they can be matched despite minor
  *  differences in spelling. The algorithm mainly encodes consonants; a vowel will not be encoded unless it is the first letter.
+ * <p>
  * The Soundex letter classification into groups are:
+ * <p>
  * 0 to a, e, h, i, o, u, w, y;
+ * <p>
  * 1 to b, p, f, v; 
+ * <p>
  * 2 to c, g, j, k, q, s, x, z; 
+ * <p>
  * 3 to d, t; 
+ * <p>
  * 4 to l;
+ * <p>
  * 5 to m, n;
+ * <p>
  * 6 to r.
  * <p>
  * [Definition]
@@ -29,11 +37,8 @@ import com.simmachines.libsim.common.Transformations;
  The JaroWinkler between the two encoded representations \(a',b'\) is given by:
  <p>
  \( JW(a',b')=Jaro(a',b')+\frac{LCP(a',b')}{10}(1-Jaro(a',b')) \)
- 
+ <p>
  where \(Jaro(a',b')\) is the Jaro similarity, and \(LCP (a',b')\) is the length of the longest common prefix of \(a'\) and \(b'\).
- * 
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler
- * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
  * <p>
  * [Reference]
  * <p>
@@ -42,6 +47,9 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 28.3 :: Distances in Perception, Cognition and Language :: P.528 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex
+ * @see com.simmachines.libsim.enc.string.JaroWinkler
+ * @see com.simmachines.libsim.enc.string.Jaro
  * @see <a href="http://en.wikipedia.org/wiki/Soundex">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

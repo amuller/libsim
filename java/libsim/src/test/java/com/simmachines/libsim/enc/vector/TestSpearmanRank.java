@@ -15,7 +15,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 1.5);
+		Asserts.assertEquals(res, 0.75);
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 1);
+		Asserts.assertEquals(res, 0.5);
 	}
 	
 	@Test
@@ -39,7 +39,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 1.2);
+		Asserts.assertEquals(res, 0.6);
 	}
 	
 	@Test
@@ -51,7 +51,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 0.25);
+		Asserts.assertEquals(res, 0.125);
 	}
 	
 	@Test
@@ -63,7 +63,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 0.25);
+		Asserts.assertEquals(res, 0.125);
 	}
 	
 	@Test
@@ -75,7 +75,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 13456.15);
+		Asserts.assertEquals(res, 6728.075);
 	}
 		
 	@Test
@@ -87,7 +87,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 2.31362000817225984E17);
+		Asserts.assertEquals(res, /*1.15681000408613006E17*/1.15681000408613024E17);
 	}
 	
 	@Test
@@ -99,7 +99,7 @@ public class TestSpearmanRank {
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double res = SpearmanRank.distance(v1, v2);
-		Asserts.assertEquals(res, 7.2415154408654272E16);
+		Asserts.assertEquals(res, 3.6207577204327136E16);
 	}
 	
 }

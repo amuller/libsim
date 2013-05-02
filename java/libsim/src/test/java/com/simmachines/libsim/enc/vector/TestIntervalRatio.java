@@ -42,6 +42,8 @@ public class TestIntervalRatio {
 		Asserts.assertEquals(res, 6.81666666);
 	}
 	
+	//no zeros allowed
+/*	
 	@Test
 	//jfquesada
 	public void test4(){
@@ -65,7 +67,7 @@ public class TestIntervalRatio {
 		double res = IntervalRatio.distance(v1, v2);
 		Asserts.assertEquals(res, Double.NaN);
 	}
-	
+*/	
 	@Test
 	//jfquesada
 	public void test6(){

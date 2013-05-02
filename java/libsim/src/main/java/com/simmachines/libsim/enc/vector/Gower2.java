@@ -14,9 +14,13 @@ import com.simmachines.libsim.common.CommonStats;
  
  The Gower-2 distance between two binary vectors \(A,B\) of length \(n\) is given by:
  <p>
- \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|}{\sqrt{|A|\cdot |\overline{A}|\cdot |B|\cdot |\overline{B}|}} \)
- 
  \( d = \frac{1-s}{2} \)
+ 
+ <p>
+ Where \(s\) is the Gower-2 similarity:
+ <p>
+ 
+ \( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|}{\sqrt{|A|\cdot |\overline{A}|\cdot |B|\cdot |\overline{B}|}} \)
  
  
  * 

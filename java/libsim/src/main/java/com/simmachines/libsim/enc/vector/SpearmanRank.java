@@ -1,7 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
 /**
- * [SpearmanRank distance]
+ * [SpearmanRank correlation]
  * <p>
  * :: The Spearman rank correlation is a non-parametric measure of statistical dependence between two variables.
  * <p>
@@ -13,9 +13,11 @@ package com.simmachines.libsim.enc.vector;
  * <p>
  
  
- The SpearmanRank distance between two vectors \(a,b\) is given by:
+ The SpearmanRank correlation between two vectors \(a,b\) is given by:
  <p>
  \( \rho =1-\frac{6}{n(n^2-1)}\sum(a_i-b_i)^2 \)
+ 
+  \( d =\frac{1-\rho}{2} \)
  
  
  * 
@@ -37,10 +39,10 @@ package com.simmachines.libsim.enc.vector;
 public class SpearmanRank {
 	
 	/**
-	 * Received two integer vectors and calculates the SpearmanRank distance.
+	 * Received two integer vectors and calculates the SpearmanRank correlation.
 	 * @param v1 vector number 1.
 	 * @param v2 vector number 2.
-	 * @return The SpearmanRank distance.
+	 * @return The SpearmanRank correlation.
 	 */
 	
 	public static double distance(int[] v1,int[] v2){
@@ -48,7 +50,7 @@ public class SpearmanRank {
 		for(int i=0;i<v1.length;i++){
 			res += Math.pow(v1[i]-v2[i], 2);
 		}
-		return (6*((double)res)/(v1.length*(Math.pow(v1.length, 2)-1)));
+		return (6*((double)res)/(v1.length*(Math.pow(v1.length, 2)-1)))/2;
 	}
 	
 }

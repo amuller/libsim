@@ -20,15 +20,6 @@ import antlr.TokenStreamException;
  * neighbor engine is likely broken. The triangle-inequality function BDist has
  * been validated.
  * <p>
- * [Definition]
- * <p>
- 
- 
- The BDist distance between two trees \(a,b\) is given by:
- <p>
- \( latex-formula \)
- 
- 
  * 
  * <p>
  * [Reference]

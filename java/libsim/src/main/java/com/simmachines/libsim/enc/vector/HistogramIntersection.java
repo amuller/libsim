@@ -1,5 +1,6 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
 /**
@@ -41,6 +42,8 @@ public class HistogramIntersection {
 	 */
 	
 	public static double distance(int[] h1,int[] h2){
+		Asserts.assertHasAllZeros(h1);
+		Asserts.assertHasAllZeros(h2);
 		double sumNum = 0;
 		double sumDenom = 0;
 		for(int i=0;i<h1.length;i++){

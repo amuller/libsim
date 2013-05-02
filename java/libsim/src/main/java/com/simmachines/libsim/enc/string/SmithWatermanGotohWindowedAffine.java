@@ -7,10 +7,6 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * :: The Smith-Waterman-Gotoh-Windowed-Affine distance is a measure between two strings applying an improved version (Gotoh with affine gaps) of the Smith-Waterman algorithm.
  * <p>
- * [Brief Description]
- * <p>
- * @see com.simmachines.libsim.enc.string.SmithWaterman
- * <p>
  * [Reference]
  * <p>
  * Deza, Michel Marie, Deza, Elena :: [Encyclopedia of Distances] :: Springer |
@@ -18,8 +14,9 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 11.1 :: Distances on general strings :: P.208 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotohWindowedAffine
+ * @see com.simmachines.libsim.enc.string.SmithWaterman
  * @see <a href="http://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm">Wikipedia Article</a>
- * <p>
  * @see <a href="http://www.gen.tcd.ie/molevol/nwswat.html">Reference by author</a>
  * 
  * @author Jose Daniel Salazar-Vargas

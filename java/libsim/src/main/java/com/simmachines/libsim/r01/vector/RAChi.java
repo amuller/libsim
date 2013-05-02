@@ -8,9 +8,8 @@ import com.simmachines.libsim.r01.abst.AbstractVector;
 /**
  * [Chi distance]
  * <p>
- * :: Receives two double vectors and calculates the chi square distance
+ * :: The Chi distance (or symmetric \(x^2\)-distance) is a distance on \( \mathbb{R}^n \) in data analysis; is a relative of the Euclidean distance.
  * <p>
- * 
  * @see com.simmachines.libsim.enc.vector.Chi
  * @author Juan Francisco Quesada-Brizuela
  */

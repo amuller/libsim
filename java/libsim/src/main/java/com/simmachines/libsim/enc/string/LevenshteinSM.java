@@ -34,6 +34,7 @@ import com.simmachines.libsim.common.Transformations;
  * | 11.1 :: Distances on General Strings :: P. 202 |
  * <p>
  * 
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
  * @see <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Wikipedia
  *      Article</a>
  * 

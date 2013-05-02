@@ -79,7 +79,7 @@ public abstract class AbstractTreeTester<D extends Distance> {
 	 * @throws TokenStreamException 
 	 * @throws RecognitionException 
 	 */
-	@Test
+//	@Test
 	public void TestTrees() throws IOException, RecognitionException, TokenStreamException{
 		File db = Utils.getTreesFile();
 		BufferedReader r = new BufferedReader(new FileReader(db));

@@ -31,6 +31,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 19.1 :: Metrics on real plane :: P.323 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance
  * @see <a href="http://en.wikipedia.org/wiki/Taxicab_geometry">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

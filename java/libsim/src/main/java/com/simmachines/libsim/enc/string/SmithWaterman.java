@@ -21,10 +21,11 @@ import com.simmachines.libsim.common.Transformations;
  The Smith-Waterman algorithm uses a matrix \(H\) that is built as follows:
  <p>
  \( H(i,0)=0, 0\leq i\leq m \)
+ <p>
  \( H(0,j)=0, 0\leq j\leq n \)
- 
+ <p>
  if \(a_i=b_i\) then \(w(a_i,b_i)=w(match)\) or if \(a_i \neq b_i\) then \(w(a_i,b_i)=w(mismatch)\)
- 
+ <p>
  \(
   H(i,j) = max\left\{ 
   \begin{array}{l l}
@@ -34,13 +35,17 @@ import com.simmachines.libsim.common.Transformations;
      H(i,j-1)+w(-,b_i) & \quad \text{Insertion}\\
   \end{array} \right\},1\leq i\leq m,1\leq j\leq n
 \)
-
+<p>
 Where:
-
+<p>
 \(\cdot\) \(a,b=\) strings over the Alphabet \(\sum\)
+<p>
 \(\cdot\) \(m=length(a)\)
+<p>
 \(\cdot\) \(n=length(b)\)
+<p>
 \(\cdot\) \(H(i,j)\) – is the maximum Similarity-Score between a suffix of \(a[1\dots i]\) and a suffix of \(b[1\dots j]\)
+<p>
 \(\cdot\) \(w(c,d),\) \(c,d \in \sum \cup \{'-'\}\), \('-'\) is the gap-scoring scheme 
  
  * 
@@ -52,8 +57,8 @@ Where:
  * <p>
  * | 11.1 :: Distances on general strings :: P.208 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
  * @see <a href="http://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm">Wikipedia Article</a>
- * <p>
  * @see <a href="http://www.gen.tcd.ie/molevol/nwswat.html">Additional Information</a>
  * 
  * @author Jose Daniel Salazar-Vargas

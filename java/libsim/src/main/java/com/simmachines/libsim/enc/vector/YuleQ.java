@@ -14,11 +14,15 @@ import com.simmachines.libsim.common.CommonStats;
  
  The Yule-Q distance between two binary vectors \(A,B\) of length \(n\) is given by:
  <p>
-\( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |A\backslash B|\cdot |B\backslash A|}{|A\cap B|\cdot |\overline{A\cup B}|+ |A\backslash B|\cdot |B\backslash A|} \)
  
  \( d = \frac{1-s}{2} \)
- 
- 
+  
+  <p>
+ Where \(s\) is the Yule-Q similarity:
+ <p>
+  
+\( s = \frac{|A\cap B|\cdot |\overline{A\cup B}|- |A\backslash B|\cdot |B\backslash A|}{|A\cap B|\cdot |\overline{A\cup B}|+ |A\backslash B|\cdot |B\backslash A|} \)
+  
  * 
  * <p>
  * [Reference]

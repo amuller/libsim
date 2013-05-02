@@ -18,14 +18,6 @@ import antlr.TokenStreamException;
  * <p>
  * [Definition]
  * <p>
- 
- 
- The ShashaAndZhangReferenceImpl distance between two trees \(a,b\) is given by:
- <p>
- \( latex-formula \)
- 
- 
- * 
  * <p>
  * [Reference]
  * <p>

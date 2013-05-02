@@ -32,6 +32,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 11.1 :: Distances on general strings :: P.206 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro
  * 
  * @author Jose Daniel Salazar-Vargas
  * 

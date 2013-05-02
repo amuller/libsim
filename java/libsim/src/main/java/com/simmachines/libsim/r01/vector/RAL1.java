@@ -4,6 +4,15 @@ import com.diapai.ramiel.RA;
 import com.simmachines.libsim.enc.vector.L1;
 import com.simmachines.libsim.r01.abst.AbstractVector;
 
+/**
+ * [L1 distance]
+ * <p>
+ * :: The L1 distance is a metric where the distance between two points is the sum of the absolute differences of their coordinates.
+ * <p>
+ * @see com.simmachines.libsim.enc.vector.L1
+ * @author Arnoldo Jose Muller-Molina
+ */
+
 
 public class RAL1 extends AbstractVector{
 		

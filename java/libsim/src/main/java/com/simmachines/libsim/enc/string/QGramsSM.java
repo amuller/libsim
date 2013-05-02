@@ -9,9 +9,9 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * [Brief Description]
  * <p>
- * The q-gram function $q(x)$ is the size of multiset of all q-grams (sub-strings of length q) occurring in x,
- * this is, for example: $x="Nelson"$, for $q=2, \Rightarrow q(x)=5$, being q the length of the substrings to find;
- * in this case the q-grams (substrings) occurring in x are: $\{"Ne","el","ls","so","on"\}$, 5 in total.
+ * The q-gram function \(q(x)\) is the size of multiset of all q-grams (sub-strings of length q) occurring in x,
+ * this is, for example: \(x="Nelson"\), for \(q=2, \Rightarrow q(x)=5\), being q the length of the substrings to find;
+ * in this case the q-grams (substrings) occurring in x are: \(\{"Ne","el","ls","so","on"\}\), 5 in total.
  * <p>
  * [Definition]
  * <p>
@@ -31,6 +31,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 11.1 :: Distances on general strings :: P.206 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance
  * @see <a href="http://en.wikipedia.org/wiki/N-gram">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

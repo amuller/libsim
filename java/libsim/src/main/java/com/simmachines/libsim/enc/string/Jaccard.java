@@ -29,6 +29,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 17.1 :: Similarities and distances for numerical data :: P.299 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity
  * @see <a href="http://en.wikipedia.org/wiki/Jaccard_index">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas

@@ -29,6 +29,7 @@ import com.simmachines.libsim.common.Transformations;
  * <p>
  * | 5 :: Metric on Normed Structures :: P.94 |
  * <p>
+ * @see uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance
  * @see <a href="http://en.wikipedia.org/wiki/Euclidean_distance">Wikipedia Article</a>
  * 
  * @author  Jose Daniel Salazar-Vargas
