@@ -12,7 +12,6 @@ public class PhoneticWord {
 	 * Call this method before using the Phonetic word distance
 	 * @param dictionary
 	 * @param includeAccents
-	 * @return
 	 */
 	public static void initializeFactory(File dictionary, boolean includeAccents){
 		

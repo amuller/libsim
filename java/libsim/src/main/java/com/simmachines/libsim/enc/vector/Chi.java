@@ -41,17 +41,17 @@ public class Chi {
 	 * @param v2 vector number 2.
 	 * @return The Chi distance.
 	 */
-	public static double distance(double[] o1, double[] o2) {
-		double mean_v1 = CommonStats.mean(o1);
-		double mean_v2 = CommonStats.mean(o2);
+	public static double distance(double[] v1, double[] v2) {
+		double mean_v1 = CommonStats.mean(v1);
+		double mean_v2 = CommonStats.mean(v2);
 		double cons = (mean_v1 + mean_v2)
-				/ (((double)o1.length) * (mean_v1 * mean_v2) * (mean_v1 * mean_v2));	//casting (double) a o1.length
+				/ (((double)v1.length) * (mean_v1 * mean_v2) * (mean_v1 * mean_v2));	//casting (double) a v1.length
 		double res = 0;
 		int i = 0;
-		while (i < o1.length) {
-			double t = (o1[i] * mean_v2) - (o2[i] * mean_v1);
+		while (i < v1.length) {
+			double t = (v1[i] * mean_v2) - (v2[i] * mean_v1);
 			t = t * t;
-			t = (t / (o1[i] + o2[i]));
+			t = (t / (v1[i] + v2[i]));
 			res += (cons * t);
 			i++;
 		}

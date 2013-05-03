@@ -65,8 +65,8 @@ public class Asserts {
 	 * @see CommonChecks#equals
 	 */
 	
-	public static void assertEquals(String v1, String v2){
-		validate(CommonChecks.equals(v1, v2),"The input values are not equal");
+	public static void assertEquals(String s1, String s2){
+		validate(CommonChecks.equals(s1, s2),"The input values are not equal");
 	}
 	
 	

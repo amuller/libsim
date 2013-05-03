@@ -82,7 +82,6 @@ public class ShashaAndZhangReferenceImpl
      * returns an integer with the given value of the cache, otherwise returns
      * -1
      * @param k
-     * @return
      */
     protected int get(String k) {
         IntegerHolder r = cache.get(k);

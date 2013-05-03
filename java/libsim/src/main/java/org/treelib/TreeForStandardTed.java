@@ -67,7 +67,6 @@ public class TreeForStandardTed
 
     /**
      * toplight never
-     * @return
      */
     public LinkedList < TreeForStandardTed > topLight() {
         if (heavy == null) {

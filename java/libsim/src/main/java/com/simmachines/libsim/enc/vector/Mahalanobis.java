@@ -49,13 +49,13 @@ public class Mahalanobis {
 	 * @param m1 is a positive-definite matrix (usually, the covariance matrix of a finite set consisting of \(observation\) \(vectors\)).
 	 * @return the Mahalanobis distance.
 	 */
-		public static double distance(RealMatrix m1, double o1[], double o2[]) {
-				double det = Math.pow((new LUDecompositionImpl(m1).getDeterminant()), 1/(o1.length));
-				double[] tempSub = new double[o1.length];
-				for(int i=0; i < o1.length; i++){
-					tempSub[i] = (o1[i]-o2[i]);
+		public static double distance(RealMatrix m1, double v1[], double v2[]) {
+				double det = Math.pow((new LUDecompositionImpl(m1).getDeterminant()), 1/(v1.length));
+				double[] tempSub = new double[v1.length];
+				for(int i=0; i < v1.length; i++){
+					tempSub[i] = (v1[i]-v2[i]);
 				}
-				double[] temp = new double[o1.length];
+				double[] temp = new double[v1.length];
 				for(int i=0; i < temp.length; i++){
 					temp[i] = tempSub[i]*det;
 				}

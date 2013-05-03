@@ -28,8 +28,7 @@ public class RALevenshtein extends AbstractIntVector {
 	/**
 	 * Copy constructor
 	 * 
-	 * @param An
-	 *            integer vector.
+	 * @param vector An integer vector.
 	 */
 	public RALevenshtein(int[] vector) {
 		super(vector);
@@ -38,20 +37,15 @@ public class RALevenshtein extends AbstractIntVector {
 	/**
 	 * Parse a vector from a String
 	 * 
-	 * @param String
-	 *            that contains an encoded version of the object.
+	 * @param line String that contains an encoded version of the object.
 	 */
 	public RALevenshtein(String line) {
 		super(line);
 	}
 
 	/**
-	 * Calculates the Levenshtein distance between:
-	 * 
-	 * @param First
-	 *            sequence of symbols.
-	 * @param Second
-	 *            sequence of symbols.
+	 * Calculates the Levenshtein distance between this and other RALevenshtein object.
+	 * @param other RALevenshtein object.
 	 * @return The minimum number of inserts, deletes and renames required to
 	 *         convert one sequence of symbols into the other.
 	 */

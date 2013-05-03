@@ -41,7 +41,6 @@ public class TreeFactory {
     /**
      * Creates a tree from a slice string definition
      * @param x
-     * @return
      */
     protected static TreeIds createSliceAST(String x)
             throws RecognitionException, TokenStreamException {
@@ -60,7 +59,6 @@ public class TreeFactory {
      *  Arnoldo Muller, Kouichi Hirata and Takeshi Shinohara. A Tree Distance Function Based
      *  on Multi-sets. In ALSIP 2008 - Osaka, Japan (to appear in LNCS).
      * @param t A string representation of a tree.
-     * @return
      * @throws RecognitionException
      * @throws TokenStreamException
      */
@@ -86,7 +84,6 @@ public class TreeFactory {
     /**
      * creates the base clase of the ast. it is lighter
      * @param x
-     * @return
      * @throws RecognitionException
      * @throws TokenStreamException
      */
@@ -116,7 +113,6 @@ public class TreeFactory {
      * D. Shasha and K. Zhang. Simple fast algorithms for the editing distance between trees and related problems.
      * SIAM Journal of Computing, 18(6):1245–1262, 1989.
      * @param t A string representation of a tree.
-     * @return
      * @throws RecognitionException
      * @throws TokenStreamException
      */
@@ -128,7 +124,7 @@ public class TreeFactory {
      * Create a new Tree that can be matched with the O(n^3) Tree edit distance algorithm
      *  An optimal decomposition algorithm for tree edit distance (2007)
      *  Erik D. Demaine, Shay Mozes, Benjamin Rossman, Oren Weimann 
-     * @param x A string representation of a tree.
+     * @param t A string representation of a tree.
      * @return A new DMRW object.
      * @throws RecognitionException
      * @throws TokenStreamException

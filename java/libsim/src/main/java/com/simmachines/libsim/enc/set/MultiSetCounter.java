@@ -68,7 +68,6 @@ public class MultiSetCounter<O> {
 	}
 	/**
 	 * Returns a list of entries sorted by cardinality (largest cardinality in the beginning of the array).
-	 * @return
 	 */
 	public List<Map.Entry<O, IntegerCounter>> getSortedResults(){
 		List<Map.Entry<O, IntegerCounter>> res = new ArrayList<Map.Entry<O, IntegerCounter>>(m.size());

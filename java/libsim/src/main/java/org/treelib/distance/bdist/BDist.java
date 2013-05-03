@@ -188,9 +188,7 @@ public class BDist implements Distance<BDist>{
 
     /**
      * BDist as defined by Yang
-     * @param x
-     *                another similarity evaluation tree
-     * @return
+     * @param x another similarity evaluation tree
      */
     public int bDist(BDist x) {
         Iterator < Map.Entry < String, Bib >> it = this.brv.entrySet()

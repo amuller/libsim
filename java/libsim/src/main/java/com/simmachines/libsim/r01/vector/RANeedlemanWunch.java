@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Needleman–Wunsch algorithm performs a global alignment on two sequences.
  * <p>
- * @see com.simmachines.libsim.enc.vector.NeedlemanWunch
+ * @see com.simmachines.libsim.enc.string.NeedlemanWunch
  * @author Jose Daniel Salazar-Vargas
  */ 
 

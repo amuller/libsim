@@ -210,8 +210,8 @@ public class CommonChecks {
 	
 	/**
 	 * Checks if two matrices have the same dimensions..
-	 * @param v1 matrix number 1.
-	 * @param v2 matrix number 1.
+	 * @param m1 matrix number 1.
+	 * @param m2 matrix number 1.
 	 * @return true if the matrices have the same dimensions, false otherwise.
 	 */
 	public static boolean equalLength(double m1[][], double m2[][]){
