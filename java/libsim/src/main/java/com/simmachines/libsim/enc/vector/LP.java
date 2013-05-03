@@ -29,7 +29,7 @@ import com.simmachines.libsim.common.CommonStats;
  * <p>
  * | 5 :: Metric on Normed Structures :: P.94 |
  * <p>
- * @see <a href=http://http://en.wikipedia.org/wiki/Lp_space">Wikipedia Article</a>
+ * @see <a href="http://http://en.wikipedia.org/wiki/Lp_space">Wikipedia Article</a>
  * 
  * @author Jose Daniel Salazar-Vargas
  * 
