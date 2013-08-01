@@ -19,9 +19,9 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.2</version>
-      <scope>test</scope>
+			<scope>test</scope>
     </dependency>
-		
+
 		<dependency>
 			<groupId>colt</groupId>
 			<artifactId>colt</artifactId>
