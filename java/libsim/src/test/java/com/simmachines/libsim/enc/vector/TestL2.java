@@ -1,6 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
 import org.junit.Test;
+
 import com.simmachines.libsim.asserts.Asserts;
 
 public class TestL2 {

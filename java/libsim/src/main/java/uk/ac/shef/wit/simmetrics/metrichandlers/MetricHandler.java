@@ -39,20 +39,20 @@
 
 package uk.ac.shef.wit.simmetrics.metrichandlers;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.net.JarURLConnection;
 import java.net.URL;
-import java.util.Enumeration;
 import java.util.ArrayList;
-import java.util.jar.JarFile;
+import java.util.Enumeration;
 import java.util.jar.JarEntry;
+import java.util.jar.JarFile;
 import java.util.zip.ZipEntry;
+
+import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance;
 
 /**
  * uk.ac.shef.wit.simmetrics.metrichandlers.MetricHandler defines a class able to detail information about the metrics available.

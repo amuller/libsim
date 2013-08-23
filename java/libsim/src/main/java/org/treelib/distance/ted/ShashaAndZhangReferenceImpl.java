@@ -19,10 +19,9 @@ under the License.
 */
 import java.util.HashMap;
 
-import org.treelib.Distance;
+import org.treelib.Forest;
 import org.treelib.Tree;
 import org.treelib.TreeFactory;
-import org.treelib.Forest;
 import org.treelib.misc.IntegerHolder;
 
 

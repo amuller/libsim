@@ -39,12 +39,11 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.AbstractSubstitutionCost;
-import uk.ac.shef.wit.simmetrics.math.MathFuncs;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.SubCost01;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-
 import java.io.Serializable;
+
+import uk.ac.shef.wit.simmetrics.math.MathFuncs;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.AbstractSubstitutionCost;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.SubCost01;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.needlemanwunch

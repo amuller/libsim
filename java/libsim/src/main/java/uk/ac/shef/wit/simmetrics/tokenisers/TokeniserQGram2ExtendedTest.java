@@ -39,9 +39,9 @@
 
 package uk.ac.shef.wit.simmetrics.tokenisers;
 
-import junit.framework.TestCase;
-
 import java.util.ArrayList;
+
+import junit.framework.TestCase;
 
 /**
  * Created by IntelliJ IDEA.
@@ -88,7 +88,7 @@ public class TokeniserQGram2ExtendedTest  extends TestCase {
      * Tests emptying the cart.
      */
     public void testTokeniseToArrayList() {
-        ArrayList results = tokeniser.tokenizeToArrayList("12345678");
+        ArrayList<String> results = tokeniser.tokenizeToArrayList("12345678");
         assertEquals(9, results.size());
         assertEquals("#1", results.get(0));
         assertEquals("12", results.get(1));

@@ -39,13 +39,13 @@
 
 package uk.ac.shef.wit.simmetrics;
 
-import uk.ac.shef.wit.simmetrics.arbitrators.InterfaceMetricArbitrator;
-import uk.ac.shef.wit.simmetrics.arbitrators.MeanMetricArbitrator;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.*;
-import uk.ac.shef.wit.simmetrics.metrichandlers.MetricHandler;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+
+import uk.ac.shef.wit.simmetrics.arbitrators.InterfaceMetricArbitrator;
+import uk.ac.shef.wit.simmetrics.arbitrators.MeanMetricArbitrator;
+import uk.ac.shef.wit.simmetrics.metrichandlers.MetricHandler;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.InterfaceStringMetric;
 
 /**
  *

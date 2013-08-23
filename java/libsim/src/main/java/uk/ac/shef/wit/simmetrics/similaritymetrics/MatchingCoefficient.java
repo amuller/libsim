@@ -39,11 +39,11 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
-import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
-
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
+import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.matchingcoefficient

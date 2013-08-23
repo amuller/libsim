@@ -20,7 +20,6 @@ under the License.
 import java.util.Iterator;
 import java.util.List;
 
-import org.treelib.Distance;
 import org.treelib.Forest;
 
 

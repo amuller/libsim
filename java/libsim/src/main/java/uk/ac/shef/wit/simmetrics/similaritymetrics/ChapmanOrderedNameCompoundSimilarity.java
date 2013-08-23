@@ -39,11 +39,11 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
-import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
-
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
+import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
 
 /**
  * Description: ChapmanOrderedNameCompoundSimilarity tests similarity upon the most similar in terms of token based
@@ -150,8 +150,8 @@ public final class ChapmanOrderedNameCompoundSimilarity extends AbstractStringMe
      */
     public final float getSimilarity(final String string1, final String string2) {
         //split the strings into tokens for comparison
-        final ArrayList str1Tokens = tokeniser.tokenizeToArrayList(string1);
-        final ArrayList str2Tokens = tokeniser.tokenizeToArrayList(string2);
+        final ArrayList<String> str1Tokens = tokeniser.tokenizeToArrayList(string1);
+        final ArrayList<String> str2Tokens = tokeniser.tokenizeToArrayList(string2);
         int str1TokenNum = str1Tokens.size();
         int str2TokenNum = str2Tokens.size();
         int minTokens = Math.min(str1TokenNum, str2TokenNum);

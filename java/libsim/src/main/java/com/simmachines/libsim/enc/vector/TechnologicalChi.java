@@ -1,7 +1,6 @@
 package com.simmachines.libsim.enc.vector;
 
 import com.simmachines.libsim.common.Transformations;
-import com.simmachines.libsim.enc.vector.Chi;
 
 /**
  * [TechnologicalChi distance]

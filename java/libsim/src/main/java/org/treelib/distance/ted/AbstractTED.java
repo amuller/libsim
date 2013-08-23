@@ -18,8 +18,8 @@ specific language governing permissions and limitations
 under the License.    
 */
 import org.treelib.Distance;
-import org.treelib.Tree;
 import org.treelib.Forest;
+import org.treelib.Tree;
 
 
 

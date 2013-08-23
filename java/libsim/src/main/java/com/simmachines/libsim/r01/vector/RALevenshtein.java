@@ -1,7 +1,6 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-
 import com.simmachines.libsim.enc.string.Levenshtein;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 

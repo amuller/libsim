@@ -151,7 +151,7 @@ public class ByteConversion {
 		}
 	}
 	
-	public static  Comparable get(ByteBuffer buf, ByteConstants b){
+	public static Comparable get(ByteBuffer buf, ByteConstants b){
 		
 		if(b == ByteConstants.Byte){
 			return Byte.valueOf(buf.get());

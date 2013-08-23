@@ -39,10 +39,10 @@
 
 package uk.ac.shef.wit.simmetrics.arbitrators;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.InterfaceStringMetric;
-
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import uk.ac.shef.wit.simmetrics.similaritymetrics.InterfaceStringMetric;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.arbitrators

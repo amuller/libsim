@@ -3,7 +3,6 @@ package com.simmachines.libsim.enc.binary;
 import org.junit.Test;
 
 import com.simmachines.libsim.asserts.Asserts;
-import com.simmachines.libsim.enc.binary.Dispersion;
 
 public class TestDispersion {
 
@@ -36,5 +35,57 @@ public class TestDispersion {
 		double res = Dispersion.distance(v1, v2);
 		Asserts.assertEquals(res, 0.48);
 	}
+	
+	@Test
+	//jxwang
+	public void test4(){
+		int[] v1 = new int[]{1,0,1,1,0,1};
+		int[] v2 = new int[]{1,1,0,1,1,0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Dispersion.distance(v1, v2);
+		Asserts.assertEquals(res, .555555);
+	}
+	
+	@Test
+	//jxwang
+	public void test5(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1};
+		int[] v2 = new int[]{1,1,0,1,1,0,1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Dispersion.distance(v1, v2);
+		Asserts.assertEquals(res, 0.540816);
+	} 
+	
+	@Test
+	//jxwang
+	public void test6(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0};
+		int[] v2 = new int[]{1,1,0,1,1,0,0,1};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Dispersion.distance(v1, v2);
+		Asserts.assertEquals(res, 0.5703125);
+	}
+	
+	@Test
+	//jxwang
+	public void test7(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0,0};
+		int[] v2 = new int[]{1,1,0,1,0,0,0,1,0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Dispersion.distance(v1, v2);
+		Asserts.assertEquals(res, 0.512345);
+	}
+	
+	@Test
+	//jxwang
+	public void test8(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0,1,0};
+		int[] v2 = new int[]{1,1,0,1,1,0,0,1,1,0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = Dispersion.distance(v1, v2);
+		Asserts.assertEquals(res, 0.53);
+	}
+	
+	
 	
 }

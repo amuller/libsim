@@ -1,7 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.SokalSneath3;
+import com.simmachines.libsim.enc.binary.SokalSneath3;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Sokal-Sneath 3 similarity is a similarity for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.SokalSneath3
+ * @see com.simmachines.libsim.enc.binary.SokalSneath3
  * @author Jose Daniel Salazar-Vargas
  */
 

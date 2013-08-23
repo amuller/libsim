@@ -42,10 +42,6 @@ package uk.ac.shef.wit.simmetrics.metrichandlers;
 import junit.framework.TestCase;
 import junit.textui.TestRunner;
 
-import java.util.ArrayList;
-
-import uk.ac.shef.wit.simmetrics.math.MathFuncsTest;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Administrator

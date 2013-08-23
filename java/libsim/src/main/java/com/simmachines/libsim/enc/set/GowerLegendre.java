@@ -1,6 +1,5 @@
 package com.simmachines.libsim.enc.set;
 
-import com.diapai.ramiel.RA;
 import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonSet;
 

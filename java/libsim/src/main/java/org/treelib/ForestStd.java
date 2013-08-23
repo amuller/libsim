@@ -4,9 +4,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import antlr.Token;
-import antlr.collections.AST;
-
 /*	 
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -159,7 +156,7 @@ public class ForestStd implements Forest {
     }
 
     protected final void insertSiblings(TreeForStandardTed x) {
-        TreeForStandardTed p = x;
+        //TreeForStandardTed p = x;
         if (x != null) {
             insertSiblings((TreeForStandardTed) x.getNextSibling());
             this.treeAddLeft(x);

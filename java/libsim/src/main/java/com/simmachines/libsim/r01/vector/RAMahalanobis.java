@@ -2,13 +2,13 @@ package com.simmachines.libsim.r01.vector;
 
 import java.nio.ByteBuffer;
 
+import org.apache.commons.math.linear.Array2DRowRealMatrix;
+import org.apache.commons.math.linear.RealMatrix;
+
 import com.diapai.ramiel.RA;
 import com.diapai.ramiel.exception.RAException;
 import com.simmachines.libsim.enc.vector.Mahalanobis;
 import com.simmachines.libsim.r01.abst.AbstractVector;
-
-import org.apache.commons.math.linear.Array2DRowRealMatrix;
-import org.apache.commons.math.linear.RealMatrix;
 
 /**
  * [Mahalanobis distance]

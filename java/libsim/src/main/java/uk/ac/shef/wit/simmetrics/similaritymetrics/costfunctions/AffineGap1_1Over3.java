@@ -39,8 +39,6 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.AbstractAffineGapCost;
-
 import java.io.Serializable;
 
 /**

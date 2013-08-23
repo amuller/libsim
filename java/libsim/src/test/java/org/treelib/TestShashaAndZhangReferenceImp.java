@@ -23,7 +23,7 @@ import org.treelib.distance.ted.ShashaAndZhangReferenceImpl;
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
 
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
 
 public class TestShashaAndZhangReferenceImp extends AbstractTreeTester<ShashaAndZhangReferenceImpl> {
 	@Before

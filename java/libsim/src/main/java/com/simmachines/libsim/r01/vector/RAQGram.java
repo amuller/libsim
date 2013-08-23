@@ -1,6 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
 import java.nio.ByteBuffer;
+
 import com.diapai.ramiel.RA;
 import com.diapai.ramiel.exception.RAException;
 import com.simmachines.libsim.enc.string.QGram;

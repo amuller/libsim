@@ -39,11 +39,14 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserQGram3Extended;
-
-import java.io.Serializable;
-import java.util.*;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.qgrams

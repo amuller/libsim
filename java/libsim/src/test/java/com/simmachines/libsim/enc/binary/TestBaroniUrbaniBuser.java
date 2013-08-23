@@ -35,5 +35,51 @@ public class TestBaroniUrbaniBuser {
 		double res = BaroniUrbaniBuser.distance(v1, v2);
 		Asserts.assertEquals(res, 0.369398063);
 	}
+
+	@Test
+	//jxwang
+	public void test4(){
+		int[] v1 = new int[]{1,0,1,1,0,0};
+		int[] v2 = new int[]{1,1,0,1,0,0};
+		double res = BaroniUrbaniBuser.distance(v1, v2);
+		Asserts.assertEquals(res, 0.3333333);
+	}
+	
+	@Test
+	//jxwang
+	public void test5(){
+		int[] v1 = new int[]{1,0,1,1,0,0,1};
+		int[] v2 = new int[]{1,1,0,1,1,0,1};
+		double res = BaroniUrbaniBuser.distance(v1, v2);
+		Asserts.assertEquals(res, 0.38799538);
+	} 
+	
+	@Test
+	//jxwang
+	public void test6(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0};
+		int[] v2 = new int[]{1,1,0,1,1,0,0,0};
+		double res = BaroniUrbaniBuser.distance(v1, v2);
+		Asserts.assertEquals(res, 0.59423259);
+	}
+	
+	@Test
+	//jxwang
+	public void test7(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0,0};
+		int[] v2 = new int[]{1,1,0,1,0,0,0,1,0};
+		double res = BaroniUrbaniBuser.distance(v1, v2);
+		Asserts.assertEquals(res, 0.555555);
+	}
+	
+	@Test
+	//jxwang
+	public void test8(){
+		int[] v1 = new int[]{1,0,1,1,0,1,1,0,1,0};
+		int[] v2 = new int[]{1,1,0,1,1,0,0,1,1,0};
+		Asserts.assertEqualLength(v1, v2);
+		double res = BaroniUrbaniBuser.distance(v1, v2);
+		Asserts.assertEquals(res, 0.5590730);
+	}
 	
 }

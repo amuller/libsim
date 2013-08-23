@@ -42,8 +42,6 @@ package uk.ac.shef.wit.simmetrics.arbitrators;
 import junit.framework.TestCase;
 import junit.textui.TestRunner;
 
-import java.util.ArrayList;
-
 /**
  * Created by IntelliJ IDEA.
  * User: Administrator

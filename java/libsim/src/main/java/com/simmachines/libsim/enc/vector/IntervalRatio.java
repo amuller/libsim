@@ -1,7 +1,7 @@
 package com.simmachines.libsim.enc.vector;
 
-import com.simmachines.libsim.common.CommonStats;
 import com.simmachines.libsim.asserts.Asserts;
+import com.simmachines.libsim.common.CommonStats;
 
 
 /**

@@ -39,9 +39,9 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
-
 import java.io.Serializable;
+
+import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.chapmanmatchingsoundex

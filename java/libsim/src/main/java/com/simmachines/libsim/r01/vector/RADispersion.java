@@ -1,7 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.Dispersion;
+import com.simmachines.libsim.enc.binary.Dispersion;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 
@@ -10,7 +10,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Dispersion distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.Dispersion
+ * @see com.simmachines.libsim.enc.binary.Dispersion
  * @author Jose Daniel Salazar-Vargas
  */
 

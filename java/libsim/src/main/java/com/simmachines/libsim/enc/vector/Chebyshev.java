@@ -1,5 +1,6 @@
 package com.simmachines.libsim.enc.vector;
 
+import com.simmachines.libsim.asserts.Asserts;
 import com.simmachines.libsim.common.CommonStats;
 
 
@@ -46,6 +47,7 @@ public class Chebyshev {
 	 */
 	
 	public static double distance(double[] v1,double[] v2){
+		Asserts.assertEqualLength(v1, v2);
 		double[] res=new double[v1.length];
 		for(int i=0;i<v1.length;i++){
 			res[i] = Math.abs(v1[i]-v2[i]);

@@ -1,7 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.SokalSneath2;
+import com.simmachines.libsim.enc.binary.SokalSneath2;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Sokal-Sneath 2 distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.SokalSneath2
+ * @see com.simmachines.libsim.enc.binary.SokalSneath2
  * @author Jose Daniel Salazar-Vargas
  */
 

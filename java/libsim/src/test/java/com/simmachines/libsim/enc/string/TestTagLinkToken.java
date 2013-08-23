@@ -1,8 +1,7 @@
 package com.simmachines.libsim.enc.string;
 
 import org.junit.Test;
-
-import com.simmachines.libsim.asserts.Asserts;
+//import com.simmachines.libsim.asserts.Asserts;
 
 public class TestTagLinkToken {
 

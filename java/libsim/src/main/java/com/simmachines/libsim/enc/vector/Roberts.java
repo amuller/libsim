@@ -41,8 +41,6 @@ public class Roberts {
 	 */
 	public static double distance(double[] v1,double[] v2){
 		Asserts.assertEqualLength(v1, v2);
-		Asserts.assertHasAllZeros(v1);
-		Asserts.assertHasAllZeros(v2);
 		Asserts.assertPositiveValues(v1);
 		Asserts.assertPositiveValues(v2);
 		double sumNum = 0;

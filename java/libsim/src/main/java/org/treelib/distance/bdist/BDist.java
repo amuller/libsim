@@ -1,20 +1,13 @@
 package org.treelib.distance.bdist;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.treelib.Distance;
 import org.treelib.Tree;
 import org.treelib.UnmatchableException;
 import org.treelib.misc.IntegerHolder;
-
-
-
-
 
 import antlr.collections.AST;
 

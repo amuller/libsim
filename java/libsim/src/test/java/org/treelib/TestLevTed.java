@@ -17,7 +17,9 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.    
 */
-import java.util.Arrays;
+//import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.treelib.distance.levted.LevTed;
@@ -26,13 +28,11 @@ import org.treelib.distance.ted.ShashaAndZhangReferenceImpl;
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
 
-import static org.junit.Assert.*;
-
-import cern.colt.matrix.ObjectMatrix1D;
-import cern.colt.matrix.impl.SparseObjectMatrix1D;
+//import cern.colt.matrix.ObjectMatrix1D;
+//import cern.colt.matrix.impl.SparseObjectMatrix1D;
 
 
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
 
 
 public class TestLevTed

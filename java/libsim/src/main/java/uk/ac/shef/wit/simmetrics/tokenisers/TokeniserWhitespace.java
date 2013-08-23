@@ -39,13 +39,13 @@
 
 package uk.ac.shef.wit.simmetrics.tokenisers;
 
-import uk.ac.shef.wit.simmetrics.wordhandlers.InterfaceTermHandler;
-import uk.ac.shef.wit.simmetrics.wordhandlers.DummyStopTermHandler;
-
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.ArrayList;
-import java.io.Serializable;
+
+import uk.ac.shef.wit.simmetrics.wordhandlers.DummyStopTermHandler;
+import uk.ac.shef.wit.simmetrics.wordhandlers.InterfaceTermHandler;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.tokenisers
