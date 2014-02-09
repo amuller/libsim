@@ -4,7 +4,7 @@
 
   <groupId>com.simmachines.libsim</groupId>
   <artifactId>libsim</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.5</version>
   <packaging>jar</packaging>
 
   <name>libsim</name>
@@ -19,7 +19,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.2</version>
-			<scope>test</scope>
+			<scope>compile</scope>
     </dependency>
 
 		<dependency>
@@ -35,13 +35,13 @@
 			<version>2.7.6</version>
 			<scope>compile</scope>
 		</dependency>
-
+<!--
     <dependency>
       <groupId>simMachines</groupId>
       <artifactId>R01</artifactId>
       <version>1.0</version>
     </dependency>
-		
+		-->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math</artifactId>

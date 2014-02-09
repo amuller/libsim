@@ -97,7 +97,7 @@ public class EditexSoundexCostCalculator implements CostCalculator {
 		if(ch == (int) 'r'|| ch == (int) 'R'){
 			return 6;
 		}
-		return -1;
+		return 0;
 	}
 
 }
