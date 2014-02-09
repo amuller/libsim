@@ -12,4 +12,4 @@ Some of the ideas that we propose:
 * Add new distance functions using the Encyclopedia of distance functions by Desa et al. 
 * Improve test cases 
 * Add a new algorithm to OBSearch.net, improve packaging and distribution. 
-* Add a new distance learning technique.
+* Add new automatic distance learning techniques to the library.
