@@ -1,9 +1,11 @@
 package com.simmachines.libsim.r01.abst;
 
 import java.nio.ByteBuffer;
+
+import org.apache.commons.math.linear.RealMatrix;
+
 import com.diapai.ramiel.RA;
 import com.diapai.ramiel.exception.RAException;
-import org.apache.commons.math.linear.RealMatrix;
 /**
  * An abstract matrix class that holds common matrix functionality. 
  * @author Jose Daniel Salazar-Vargas

@@ -64,11 +64,14 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
-
-import java.io.Serializable;
-import java.util.*;
 
 /**
  * TagLink inplements a TagLink String Metric.

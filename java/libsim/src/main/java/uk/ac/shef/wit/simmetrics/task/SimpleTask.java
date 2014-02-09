@@ -39,17 +39,15 @@
 
 package uk.ac.shef.wit.simmetrics.task;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
-import uk.ac.shef.wit.simmetrics.utils.FileLoader;
-
 import java.beans.XMLEncoder;
 import java.io.BufferedOutputStream;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+
+import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 
 /**
  * Description: a simple single metric task.
@@ -63,7 +61,7 @@ import java.util.ArrayList;
 public class SimpleTask implements InterfaceTask {
 
     public static void main(final String[] args) {
-        SimpleTask task = new SimpleTask();
+//        SimpleTask task = new SimpleTask();
     }
 
     public SimpleTask() {
@@ -102,7 +100,7 @@ public class SimpleTask implements InterfaceTask {
      * @param path the path of the task definition file
      */
     public void ParseTask(String path) {
-        StringBuffer fileContent = FileLoader.fileToString(new File(path));
+//        StringBuffer fileContent = FileLoader.fileToString(new File(path));
 
 
     }

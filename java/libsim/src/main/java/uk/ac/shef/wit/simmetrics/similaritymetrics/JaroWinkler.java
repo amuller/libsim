@@ -39,10 +39,9 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.math.MathFuncs;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-
 import java.io.Serializable;
+
+import uk.ac.shef.wit.simmetrics.math.MathFuncs;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.jarowinkler

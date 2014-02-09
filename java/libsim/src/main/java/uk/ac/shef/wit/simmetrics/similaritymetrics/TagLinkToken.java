@@ -27,8 +27,8 @@
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public final class TagLinkToken extends AbstractStringMetric implements Serializable {
     private float matched;

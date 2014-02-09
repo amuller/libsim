@@ -1,7 +1,7 @@
 package com.simmachines.libsim.enc.string;
 
 import com.simmachines.libsim.common.Transformations;
-
+//test
 /**
  * [Chapman-Mean-Length distance]
  * <p>

@@ -82,29 +82,29 @@ public final class SubCost5_3_Minus3 extends AbstractSubstitutionCost implements
      */
     static {
         approx = new Set[7];
-        approx[0] = new HashSet();
-        approx[0].add('d');
+        approx[0] = new HashSet<Character>();
+        approx[0].<Character>add('d');
         approx[0].add('t');
-        approx[1] = new HashSet();
+        approx[1] = new HashSet<Character>();
         approx[1].add('g');
         approx[1].add('j');
-        approx[2] = new HashSet();
+        approx[2] = new HashSet<Character>();
         approx[2].add('l');
         approx[2].add('r');
-        approx[3] = new HashSet();
+        approx[3] = new HashSet<Character>();
         approx[3].add('m');
         approx[3].add('n');
-        approx[4] = new HashSet();
+        approx[4] = new HashSet<Character>();
         approx[4].add('b');
         approx[4].add('p');
         approx[4].add('v');
-        approx[5] = new HashSet();
+        approx[5] = new HashSet<Character>();
         approx[5].add('a');
         approx[5].add('e');
         approx[5].add('i');
         approx[5].add('o');
         approx[5].add('u');
-        approx[6] = new HashSet();
+        approx[6] = new HashSet<Character>();
         approx[6].add(',');
         approx[6].add('.');
     }

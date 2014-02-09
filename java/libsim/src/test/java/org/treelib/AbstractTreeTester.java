@@ -17,7 +17,7 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.    
 */
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -26,8 +26,6 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 import org.junit.Test;
-
-
 
 import antlr.RecognitionException;
 import antlr.TokenStreamException;

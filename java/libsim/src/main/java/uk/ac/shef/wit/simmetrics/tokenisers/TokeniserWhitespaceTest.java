@@ -39,9 +39,9 @@
 
 package uk.ac.shef.wit.simmetrics.tokenisers;
 
-import junit.framework.TestCase;
-
 import java.util.ArrayList;
+
+import junit.framework.TestCase;
 
 /**
  * Created by IntelliJ IDEA.
@@ -88,7 +88,7 @@ public class TokeniserWhitespaceTest  extends TestCase {
      * Tests emptying the cart.
      */
     public void testTokeniseToArrayList() {
-        ArrayList results = tokeniser.tokenizeToArrayList("A B  C");
+        ArrayList<String> results = tokeniser.tokenizeToArrayList("A B  C");
         assertEquals(3, results.size());
         assertEquals("A", results.get(0));
         assertEquals("B", results.get(1));

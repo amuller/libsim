@@ -8,7 +8,6 @@ import org.treelib.distance.mtd.MTD;
 import org.treelib.distance.ted.DMRW;
 import org.treelib.distance.ted.ShashaAndZhangReferenceImpl;
 
-
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
 

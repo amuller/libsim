@@ -2,8 +2,6 @@ package org.treelib;
 
 import java.util.BitSet;
 
-import antlr.collections.AST;
-
 import org.treelib.misc.IntegerHolder;
 
 /*	 

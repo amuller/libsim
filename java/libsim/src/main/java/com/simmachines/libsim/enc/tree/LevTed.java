@@ -2,10 +2,10 @@ package com.simmachines.libsim.enc.tree;
 
 import org.treelib.TreeFactory;
 
-import com.simmachines.libsim.common.Transformations;
-
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
+
+import com.simmachines.libsim.common.Transformations;
 
 /**
  * [LevTed distance]

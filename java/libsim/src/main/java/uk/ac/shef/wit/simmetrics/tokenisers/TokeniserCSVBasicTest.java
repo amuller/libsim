@@ -39,9 +39,9 @@
 
 package uk.ac.shef.wit.simmetrics.tokenisers;
 
-import junit.framework.TestCase;
-
 import java.util.ArrayList;
+
+import junit.framework.TestCase;
 
 /**
  * Created by IntelliJ IDEA.
@@ -88,7 +88,7 @@ public class TokeniserCSVBasicTest  extends TestCase {
      * Tests emptying the cart.
      */
     public void testTokeniseToArrayList() {
-        ArrayList results = tokeniser.tokenizeToArrayList("1a,2a,3a,4a\n1b,2b,3b,4b");
+        ArrayList<String> results = tokeniser.tokenizeToArrayList("1a,2a,3a,4a\n1b,2b,3b,4b");
         assertEquals(1, results.size());
         assertEquals("1a", results.get(0));
         assertEquals("2a", results.get(1));

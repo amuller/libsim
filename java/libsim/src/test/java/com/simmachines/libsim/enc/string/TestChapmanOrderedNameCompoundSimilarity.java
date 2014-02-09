@@ -1,14 +1,14 @@
 package com.simmachines.libsim.enc.string;
 
 import org.junit.Test;
-
-import com.simmachines.libsim.asserts.Asserts;
+//import com.simmachines.libsim.asserts.Asserts;
 
 public class TestChapmanOrderedNameCompoundSimilarity {
 
 	@Test
 	//jdsalazar
 	public void test1(){
+		//test still under construction
 		String str1 = "Test String1";
 		String str2 = "Test String2";
 		double res = ChapmanOrderedNameCompoundSimilarity.distance(str1,str2);

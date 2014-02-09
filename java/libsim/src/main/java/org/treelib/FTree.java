@@ -1,7 +1,8 @@
 package org.treelib;
 
-import antlr.collections.AST;
 import org.treelib.misc.IntegerHolder;
+
+import antlr.collections.AST;
 
        /*	 Licensed to the Apache Software Foundation (ASF) under one
                   or more contributor license agreements.  See the NOTICE file

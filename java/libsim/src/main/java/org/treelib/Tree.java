@@ -1,14 +1,9 @@
 package org.treelib;
 
-import java.util.BitSet;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.treelib.misc.IntegerHolder;
-
 import antlr.BaseAST;
-import antlr.CommonAST;
 import antlr.Token;
 import antlr.collections.AST;
 

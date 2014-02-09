@@ -39,11 +39,31 @@
 
 package uk.ac.shef.wit.simmetrics;
 
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.*;
-
 import java.text.DecimalFormat;
 import java.util.Vector;
+
+import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.BlockDistance;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanLengthDeviation;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMatchingSoundex;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.ChapmanMeanLength;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.CosineSimilarity;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.DiceSimilarity;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.EuclideanDistance;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.InterfaceStringMetric;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.JaccardSimilarity;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.MatchingCoefficient;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.NeedlemanWunch;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.OverlapCoefficient;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.QGramsDistance;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotoh;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWatermanGotohWindowedAffine;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Soundex;
 
 /**
  *

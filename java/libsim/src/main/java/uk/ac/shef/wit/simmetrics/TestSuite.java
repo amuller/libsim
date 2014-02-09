@@ -40,8 +40,6 @@
 package uk.ac.shef.wit.simmetrics;
 
 
-import org.junit.Test;
-
 import junit.framework.TestCase;
 import junit.textui.TestRunner;
 

@@ -39,11 +39,10 @@
 
 package uk.ac.shef.wit.simmetrics.tokenisers;
 
-import uk.ac.shef.wit.simmetrics.wordhandlers.InterfaceTermHandler;
-
-import java.util.Set;
-import java.util.Vector;
 import java.util.ArrayList;
+import java.util.Set;
+
+import uk.ac.shef.wit.simmetrics.wordhandlers.InterfaceTermHandler;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.api

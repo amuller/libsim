@@ -14,7 +14,7 @@ package com.simmachines.libsim.enc.set;
  * <p>
  
  
- The Czekanowsky_Dice distance between two sets \(a,b\) is given by \( \operatorname{d}_{a,b}(|a|,|b|) \) where:
+ The Czekanowsky_Dice distance between two sets \(a,b\) is given by \( \operatorname{d}_{A,B}(|A|,|B|) \) where:
  <p>
  \( d(A,B)=1-\frac{2|A \cap B|}{|A|+|B|} \)
  

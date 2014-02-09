@@ -18,16 +18,14 @@ specific language governing permissions and limitations
 under the License.    
 */
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.treelib.distance.ted.DMRW;
 import org.treelib.distance.ted.ShashaAndZhangReferenceImpl;
 
 import antlr.RecognitionException;
 import antlr.TokenStreamException;
-
-import junit.framework.TestCase;
-
-import static org.junit.Assert.*;
 
 public class TestDMRW extends AbstractTreeTester<DMRW> {
 	

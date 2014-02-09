@@ -17,16 +17,12 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.    
 */
-import java.io.DataInputStream;
-import java.io.StringBufferInputStream;
+//import java.io.DataInputStream;
+//import java.io.StringBufferInputStream;
 import java.io.StringReader;
 
-
-
 import junit.framework.TestCase;
-
 import antlr.RecognitionException;
-import antlr.Token;
 import antlr.TokenStreamException;
 import antlr.collections.AST;
 
@@ -136,7 +132,7 @@ public class TestSliceSyntax extends TestCase {
 			SliceParser parser = new SliceParser(lexer);
 			parser.setASTNodeClass(Tree.class.getCanonicalName());
 		    parser.slice();
-		    AST tree = parser.getAST();
+//		    AST tree = parser.getAST();
 		    
 		}
 		catch (RecognitionException e)

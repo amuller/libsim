@@ -1,7 +1,7 @@
 package com.simmachines.libsim.r01.vector;
 
 import com.diapai.ramiel.RA;
-import com.simmachines.libsim.enc.vector.RusselRao;
+import com.simmachines.libsim.enc.binary.RusselRao;
 import com.simmachines.libsim.r01.abst.AbstractIntVector;
 
 /**
@@ -9,7 +9,7 @@ import com.simmachines.libsim.r01.abst.AbstractIntVector;
  * <p>
  * :: The Russel-Rao distance is a distance for binary data on \(\{0,1\}^n\).
  * <p>
- * @see com.simmachines.libsim.enc.vector.RusselRao
+ * @see com.simmachines.libsim.enc.binary.RusselRao
  * @author Jose Daniel Salazar-Vargas
  */
 

@@ -515,6 +515,15 @@ public class TestPharmacological {
 		Asserts.assertDistance(ref);
 		Asserts.assertEquals(res, ref);
 	}
-
 	
+	@Test
+	//jfquesada
+		public void auto_test39(){
+			double[] v1 = new double[]{0, 0, 0, 0, 0};
+			double[] v2 = new double[]{1, 2, 3, 4, 5};
+			double res = Pharmacological.distance(v1, v2);
+			double ref = 7.416198487095663;
+			Asserts.assertDistance(ref);
+			Asserts.assertEquals(res, ref);
+		}
 }

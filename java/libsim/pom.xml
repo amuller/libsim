@@ -35,6 +35,7 @@
 			<version>2.7.6</version>
 			<scope>compile</scope>
 		</dependency>
+<<<<<<< HEAD
 <!--
     <dependency>
       <groupId>simMachines</groupId>
@@ -42,6 +43,10 @@
       <version>1.0</version>
     </dependency>
 		-->
+=======
+
+		
+>>>>>>> 4f3eaa99966eb1787ce5f53e665ca626b2bc5f60
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math</artifactId>

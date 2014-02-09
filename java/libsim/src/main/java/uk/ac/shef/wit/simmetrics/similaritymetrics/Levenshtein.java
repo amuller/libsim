@@ -39,11 +39,11 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
+import java.io.Serializable;
+
 import uk.ac.shef.wit.simmetrics.math.MathFuncs;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.AbstractSubstitutionCost;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.costfunctions.SubCost01;
-
-import java.io.Serializable;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.levensteindistance

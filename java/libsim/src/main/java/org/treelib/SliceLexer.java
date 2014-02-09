@@ -3,28 +3,23 @@
     package org.treelib;
 
 import java.io.InputStream;
+import java.io.Reader;
+import java.util.Hashtable;
+
+import antlr.ByteBuffer;
+import antlr.CharBuffer;
+import antlr.CharStreamException;
+import antlr.CharStreamIOException;
+import antlr.InputBuffer;
+import antlr.LexerSharedInputState;
+import antlr.NoViableAltForCharException;
+import antlr.RecognitionException;
+import antlr.Token;
+import antlr.TokenStream;
 import antlr.TokenStreamException;
 import antlr.TokenStreamIOException;
 import antlr.TokenStreamRecognitionException;
-import antlr.CharStreamException;
-import antlr.CharStreamIOException;
-import antlr.ANTLRException;
-import java.io.Reader;
-import java.util.Hashtable;
-import antlr.CharScanner;
-import antlr.InputBuffer;
-import antlr.ByteBuffer;
-import antlr.CharBuffer;
-import antlr.Token;
-import antlr.CommonToken;
-import antlr.RecognitionException;
-import antlr.NoViableAltForCharException;
-import antlr.MismatchedCharException;
-import antlr.TokenStream;
-import antlr.ANTLRHashString;
-import antlr.LexerSharedInputState;
 import antlr.collections.impl.BitSet;
-import antlr.SemanticException;
 
 public class SliceLexer extends antlr.CharScanner implements SliceParserTokenTypes, TokenStream
  {
@@ -41,14 +36,14 @@ public SliceLexer(LexerSharedInputState state) {
 	super(state);
 	caseSensitiveLiterals = true;
 	setCaseSensitive(true);
-	literals = new Hashtable();
+	literals = new Hashtable<Object, Object>();
 }
 
 public Token nextToken() throws TokenStreamException {
 	Token theRetToken=null;
 tryAgain:
 	for (;;) {
-		Token _token = null;
+//		Token _token = null;
 		int _ttype = Token.INVALID_TYPE;
 		resetText();
 		try {   // for char stream error handling
@@ -135,7 +130,7 @@ tryAgain:
 	public final void mCONSTRUCT_NAME(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = CONSTRUCT_NAME;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		{
 		int _cnt10=0;
@@ -202,7 +197,7 @@ tryAgain:
 	public final void mLEFT_PAREN(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = LEFT_PAREN;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		match('(');
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -215,7 +210,7 @@ tryAgain:
 	public final void mRIGHT_PAREN(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = RIGHT_PAREN;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		match(')');
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -228,7 +223,7 @@ tryAgain:
 	public final void mPARAM_SEPARATOR(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = PARAM_SEPARATOR;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		match(',');
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
@@ -241,7 +236,7 @@ tryAgain:
 	public final void mNUMBER(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = NUMBER;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		if ((LA(1)=='-') && (LA(2)=='I')) {
 			match('-');
@@ -366,7 +361,7 @@ tryAgain:
 	public final void mWS(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
 		int _ttype; Token _token=null; int _begin=text.length();
 		_ttype = WS;
-		int _saveIndex;
+//		int _saveIndex;
 		
 		{
 		switch ( LA(1)) {

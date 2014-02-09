@@ -39,13 +39,13 @@
 
 package uk.ac.shef.wit.simmetrics.similaritymetrics;
 
-import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
-import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
-
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.ArrayList;
-import java.io.Serializable;
+
+import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
+import uk.ac.shef.wit.simmetrics.tokenisers.TokeniserWhitespace;
 
 /**
  * Package: uk.ac.shef.wit.simmetrics.similaritymetrics.jaccard

@@ -19,7 +19,6 @@ under the License.
 */
 import java.util.LinkedList;
 
-
 import junit.framework.TestCase;
 
 public class TestTreeAST extends TestCase {
