@@ -8,6 +8,10 @@ Propymes Grant FP-034-12 from the Costa Rican Ministry of
 Science and Technology and CONICIT (National Council for Scientific and Technological Research).  
 
 
+Encyclopedia of Distances
+======
+
+We have translated to code many distance functions from the Encyclopedia of Distances.
 
 A quote from Dr. Michel Deza (author of the Encyclopedia of Distances)
 
